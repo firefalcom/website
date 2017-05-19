@@ -77,35 +77,37 @@ googleAnalytics = ""
     # To change the background image of the hero, replace 'header-bg.jpg' in
     # the 'static/img' folder.
     title = "Welcome To Our Studio!"
-    #subtitle = "It's nice to meet you"
-    buttonText = "Tell me more"
+    subtitle = ""
+    buttonText = "Show more"
 
 
   # Services section
   [params.services]
     enable = true
     title = "Services"
-    subtitle = "Lorem ipsum dolor sit amet consectetur."
+    subtitle = ""
+
 
     [[params.services.row]]
 
     [[params.services.row.list]]
-      icon = "fa-shopping-cart"
-      title = "E-Commerce"
-      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+      icon = "fa-laptop"
+      title = "Flash to HTML5 conversions"
+      description = "We can convert your Flash games to HTML5 without rewriting all your code"
       url = "#"
 
     [[params.services.row.list]]
       icon = "fa-laptop"
-      title = "Responsive Design"
-      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+      title = "Ports"
+      description = "We can port your games to any platform"
       url = "#"
 
     [[params.services.row.list]]
-      icon = "fa-lock"
-      title = "Web"
-      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+      icon = "fa-laptop"
+      title = "Technical tasks"
+      description = "We have strong knowledge on specific technical tasks from enhancing performances to fixing glitches"
       url = "#"
+
 
   # Portfolio section
   [params.portfolio]
@@ -128,7 +130,7 @@ googleAnalytics = ""
   [params.about]
     enable = true
     title = "About"
-    subtitle = "Lorem ipsum dolor sit amet consectetur."
+    subtitle = ""
     #endpoint = "Be part<br>of our<br>story!"
 
     # The events will be listed from the top to the bottom.
@@ -138,7 +140,7 @@ googleAnalytics = ""
       img = "1.jpg"
       date = "2017"
       title = "A fresh start"
-      description = "After years of experience we decided to summon the Fire Falcom."
+      description = "After years of experience in the gaming industry we decided to create Fire Falcom to focus on our specialities."
 
   # Team section
   [params.team]
@@ -147,7 +149,7 @@ googleAnalytics = ""
     center = true
     title = "Our team"
     subtitle = "Combines decades of experience!"
-    description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde."
+    description = "-"
 
     # All team member's pictures are stored under 'static/img/team'.
     # Replace them with your own too.
@@ -207,7 +209,7 @@ googleAnalytics = ""
   [params.contact]
     enable = true
     title = "Contact us"
-    subtitle  = "Lorem ipsum dolor sit amet consectetur."
+    subtitle  = ""
     buttonText = "Send message"
 
     # Since this template is static, the contact form uses www.formspree.io as a
@@ -228,10 +230,10 @@ googleAnalytics = ""
     # add some custom JS script to finish the implementation.
     # postURL = "https://example.com/mailout/"
 
-    email = "your@email.com"
+    email = "contact@firefal.com"
 
     # Success and error message overwrite for async contact form
-    #thanks = "Thank you for awesomely contacting us."
+    thanks = "Thank you for awesomely contacting us."
     #error = "Message could not be send. Please contact us at mail@example.com instead."
 
     # 'warning' defines error messages for invalid inputs
@@ -242,10 +244,6 @@ googleAnalytics = ""
     [params.contact.form.email]
       text = "Your Email *"
       warning = "Please enter your email address."
-
-    [params.contact.form.phone]
-      text = "Your Phone *"
-      warning = "Please enter your phone number."
 
     [params.contact.form.message]
       text = "Your Message *"
@@ -265,17 +263,17 @@ googleAnalytics = ""
     enable = true
     copyright = "Published under the Apache License 2.0."
 
-    [[params.footer.social]]
-      icon = "fa-twitter"
-      link = "#"
+    #[[params.footer.social]]
+    #  icon = "fa-twitter"
+    #  link = "#"
 
-    [[params.footer.social]]
-      icon = "fa-facebook"
-      link = "#"
+    #[[params.footer.social]]
+    #  icon = "fa-facebook"
+    #  link = "#"
 
-    [[params.footer.social]]
-      icon = "fa-linkedin"
-      link = "#"
+    #[[params.footer.social]]
+    #  icon = "fa-linkedin"
+    #  link = "#"
 
     [[params.footer.quicklinks]]
       text = "Privacy Policy"
