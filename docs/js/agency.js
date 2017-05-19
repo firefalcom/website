@@ -47,7 +47,7 @@ $('.navbar-collapse ul li a').click(function() {
 });
 
 // Async contact form
-$('form[id=contactForm]').submit(function(){
+/*$('form[id=contactForm]').submit(function(){
   $.post($(this).attr('action'), $(this).serialize(), function(res){
     $('form[id=contactForm] #success').hide();
     $('form[id=contactForm] #error').hide();
@@ -59,7 +59,7 @@ $('form[id=contactForm]').submit(function(){
     $('form[id=contactForm] #error').show();
   });
   return false;
-});
+});*/
 
 // Contact form validation
 $.validate({
