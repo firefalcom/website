@@ -1,0 +1,9 @@
+modalID: 1
+title: Hungry Hero
+subtitle: Flash project using Starling
+img: hungry_hero.png
+preview: hungry_hero.png
+client: Demo projects
+clientLink: "#"
+category: Flash ports
+description: This project is an example of a flash port. The original game is open-source on [github](https://github.com/hsharma/Hungry-Hero)<br><br>**Want to test this live?** You can test the game <a href="./hh" target="_blank">here</a>.
