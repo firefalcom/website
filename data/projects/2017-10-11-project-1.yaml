@@ -6,4 +6,4 @@ preview: hungry_hero.png
 client: Demo projects
 clientLink: "#"
 category: Flash ports
-description: This project is an example of a flash port. The original game is open-source on [github](https://github.com/hsharma/Hungry-Hero)<br><br>**Want to test it live?** You can test the game <a href="/hh" target="_blank">here</a>.<br><br>You can test the original swf game <a href="/hhswf" target="_blank">here</a> ( requires flash plugin )
+description: This project is an example of a flash port. The original game is open-source on [github](https://github.com/hsharma/Hungry-Hero)<br><br>**Want to test it live?** You can test the game <a href="./hh" target="_blank">here</a>.<br><br>You can test the original swf game <a href="./hhswf" target="_blank">here</a> ( requires flash plugin )
