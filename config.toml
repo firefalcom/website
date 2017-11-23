@@ -19,7 +19,7 @@ googleAnalytics = ""
   # To provide some metadata for search engines feel free to add a few
   # information about you and your website.
   name = "Fire Falcom"
-  description = "Your description"
+  description = "Game development studio"
 
   # Link custom assets relative to /static
   custom_css = []
@@ -156,26 +156,24 @@ googleAnalytics = ""
     # Suggestion: Image size should be at least 360px*360px or the alignment might be affected.
     [[params.team.members]]
       img = "1.jpg"
-      name = "---"
-      position = "Developer"
+      name = "Julien Hamaide"
+      position = "Owner"
       # For bio markdown and even multiline strings are available.
       bio = """Developer in the game industry since 2005."""
       social = [
-        ["fa-twitter", "#"],
-        ["fa-facebook", "#"],
-        ["fa-linkedin", "#"]
+        ["fa-twitter", "https://twitter.com/julienhamaide"],
+        ["fa-linkedin", "https://www.linkedin.com/in/julienhamaide/"]
       ]
 
     [[params.team.members]]
       img = "1.jpg"
-      name = "---"
-      position = "Developer"
+      name = "Gauthier Billot"
+      position = "Owner"
       # For bio markdown and even multiline strings are available.
       bio = """Developer in the game industry since 2010."""
       social = [
-        ["fa-twitter", "#"],
-        ["fa-facebook", "#"],
-        ["fa-linkedin", "#"]
+        ["fa-twitter", "https://twitter.com/gogoprog"],
+        ["fa-linkedin", "https://www.linkedin.com/in/gauthier-billot-1a499014/"]
       ]
 
   # Client section
