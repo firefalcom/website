@@ -1,7 +1,7 @@
 # Site settings
 baseurl = "./"
 languageCode = "en-us"
-title = "FireFalcom"
+title = "Fire Falcom"
 theme = "our-theme"
 publishdir = "docs"
 
@@ -48,7 +48,7 @@ googleAnalytics = ""
   [params.navigation]
     brand = "Fire Falcom"
     # Optional logo as brand stored in img/
-    #logo = "logo.svg"
+    logo = "brand.png"
     services = "Services"
     portfolio = "Portfolio"
     about = "About"
