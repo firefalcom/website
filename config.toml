@@ -104,8 +104,8 @@ googleAnalytics = ""
 
     [[params.services.row.list]]
       icon = "fa-laptop"
-      title = "Technical tasks"
-      description = "We have strong knowledge on specific technical tasks from enhancing performances to fixing glitches"
+      title = "Development"
+      description = "We can develop your project from scratch or work on specific technical tasks"
       url = "#"
 
 
@@ -155,7 +155,7 @@ googleAnalytics = ""
     # Replace them with your own too.
     # Suggestion: Image size should be at least 360px*360px or the alignment might be affected.
     [[params.team.members]]
-      img = "1.jpg"
+      img = "julien.jpg"
       name = "Julien Hamaide"
       position = "Owner"
       # For bio markdown and even multiline strings are available.
@@ -166,7 +166,7 @@ googleAnalytics = ""
       ]
 
     [[params.team.members]]
-      img = "1.jpg"
+      img = "gauthier.jpg"
       name = "Gauthier Billot"
       position = "Owner"
       # For bio markdown and even multiline strings are available.
@@ -261,17 +261,21 @@ googleAnalytics = ""
     enable = true
     copyright = "Published under the Apache License 2.0."
 
-    #[[params.footer.social]]
-    #  icon = "fa-twitter"
-    #  link = "#"
+    [[params.footer.social]]
+      icon = "fa-github"
+      link = "https://github.com/firefalcom"
 
-    #[[params.footer.social]]
-    #  icon = "fa-facebook"
-    #  link = "#"
+    [[params.footer.social]]
+      icon = "fa-twitter"
+      link = "https://twitter.com/firefalcom"
 
-    #[[params.footer.social]]
-    #  icon = "fa-linkedin"
-    #  link = "#"
+    [[params.footer.social]]
+      icon = "fa-facebook"
+      link = "https://www.facebook.com/Fire-Falcom-2031600673794637/"
+
+    [[params.footer.social]]
+      icon = "fa-linkedin"
+      link = "https://www.linkedin.com/company/fire-falcom/"
 
     [[params.footer.quicklinks]]
       text = "Privacy Policy"
