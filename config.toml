@@ -137,15 +137,20 @@ googleAnalytics = ""
     # All images are stored under 'static/img/about'.
     # Replace them with your own.
     [[params.about.events]]
-      img = "gdc2018.jpg"
-      date = "2018"
-      title = "GDC 2018"
-      description = "Our first public appearance: We had a booth at the GDC 2018 in San Francisco."
+      img = "logo.png"
+      date = ""
+      title = "Info"
+      description = "Fire Falcom is a Belgian company located south of Brussels."
     [[params.about.events]]
       img = "1.jpg"
       date = "2017"
       title = "A fresh start"
       description = "After years of experience in the gaming industry we decided to create Fire Falcom to focus on our specialities."
+    [[params.about.events]]
+      img = "gdc2018.jpg"
+      date = "2018"
+      title = "GDC 2018"
+      description = "Our first public appearance: We had a booth at the GDC 2018 in San Francisco."
 
   # Team section
   [params.team]
