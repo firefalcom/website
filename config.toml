@@ -193,30 +193,26 @@ googleAnalytics = ""
 
   # Client section
     [params.clients_list]
-      enable = false
+      enable = true
       # Possibility to center items
-      #center = true
+      center = true
       # Optional client title specifying the involvement
-      #title = "Used and trusted by"
+      title = "Clients"
 
       # All the clients' logos are stored under 'static/img/logos'.
       # Replace them with your clients's logos.
       # Suggestion: .svg in the size of 280px*80px looks good
       [[params.clients]]
-        logo = "envato.jpg"
-        link = "#"
+        logo = "fc.svg"
+        link = "//fishingcactus.com"
 
       [[params.clients]]
-        logo = "designmodo.jpg"
-        link = "#"
+        logo = "bosskey.jpg"
+        link = "//bosskey.com"
 
       [[params.clients]]
-        logo = "themeforest.jpg"
-        link = "#"
-
-      [[params.clients]]
-        logo = "creative-market.jpg"
-        link = "#"
+        logo = "rtbf.jpg"
+        link = "//rtbf.be"
 
   # Contact section
   [params.contact]
