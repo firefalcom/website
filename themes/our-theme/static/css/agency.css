@@ -287,6 +287,7 @@ header {
   text-align: center;
   color: #fff;
   background-attachment: scroll;
+  background-color: black;
   background-image: url(../img/header-bg.jpg);
   background-position: center bottom;
   background-repeat: none;
