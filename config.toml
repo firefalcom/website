@@ -214,6 +214,10 @@ googleAnalytics = ""
         logo = "rtbf.jpg"
         link = "//rtbf.be"
 
+      [[params.clients]]
+        logo = "addicting.png"
+        link = "//addictinggames.com"
+
   # Contact section
   [params.contact]
     enable = true
