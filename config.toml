@@ -153,9 +153,14 @@ googleAnalytics = ""
       description = "Our first public appearance: We had a booth at the GDC 2018 in San Francisco."
     [[params.about.events]]
       img = "gamescom2018.jpg"
-      date = "Q3 2018"
-      title = "Gamescom 2018"
-      description = "Our second booth at the Gamescom 2018 in Köln."
+      date = "q3 2018"
+      title = "gamescom 2018"
+      description = "Our second booth at the gamescom 2018 in köln."
+    [[params.about.events]]
+      img = "gdc19.png"
+      date = "q1 2019"
+      title = "GDC 2019"
+      description = "Our booth at the GDC 2019 in San Francisco."
 
   # Team section
   [params.team]
