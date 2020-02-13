@@ -111,7 +111,7 @@ googleAnalytics = ""
 
   # Portfolio section
   [params.portfolio]
-    enable = true
+    enable = false
     # All projects defined in their own files. You can find example projects
     # at 'exampleSite/data/projects'. Copy the 'projects' folder into the 'data' directory
     # at the root of this Hugo site.
@@ -227,6 +227,22 @@ googleAnalytics = ""
       [[params.clients]]
         logo = "addicting.png"
         link = "//addictinggames.com"
+
+      [[params.clients]]
+        logo = "metidia.png"
+        link = "//metidia.com"
+
+      [[params.clients]]
+        logo = "uzik.jpg"
+        link = "//uzik.com"
+
+      [[params.clients]]
+        logo = "sfr.jpg"
+        link = "//sfr.fr"
+
+      [[params.clients]]
+        logo = "gamehollywood.png"
+        link = "//gamehollywood.com"
 
   # Contact section
   [params.contact]
