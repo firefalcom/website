@@ -87,25 +87,24 @@ googleAnalytics = ""
     title = "Services"
     subtitle = ""
 
-
     [[params.services.row]]
 
     [[params.services.row.list]]
       icon = "fa-laptop"
-      title = "Flash to HTML5 conversions"
-      description = "We can convert your Flash games to HTML5 without rewriting all your code"
+      title = "Porting to any platforms"
+      description = "Experience on many platforms since PlayStation 2."
       url = "#"
 
     [[params.services.row.list]]
       icon = "fa-laptop"
-      title = "Ports"
-      description = "We can port your games to any platform"
+      title = "Reviving old codebase"
+      description = "Bringing old games to modern platforms."
       url = "#"
 
     [[params.services.row.list]]
       icon = "fa-laptop"
-      title = "Development"
-      description = "We can develop your project from scratch or work on specific technical tasks"
+      title = "HD Remakes"
+      description = "Inserting modern rendering engine in old games."
       url = "#"
 
 
