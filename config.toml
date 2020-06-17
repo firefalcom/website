@@ -76,8 +76,8 @@ googleAnalytics = ""
   [params.hero]
     # To change the background image of the hero, replace 'header-bg.jpg' in
     # the 'static/img' folder.
-    title = "Game development studio"
-    subtitle = ""
+    title = "Porting and remaking with"
+    subtitle = "Fire Falcom"
     buttonText = "Show more"
 
 
@@ -86,27 +86,19 @@ googleAnalytics = ""
     enable = true
     title = "Services"
     subtitle = ""
+    center = true
 
     [[params.services.row]]
 
     [[params.services.row.list]]
       icon = "fa-laptop"
-      title = "Porting to any platforms"
-      description = "Experience on many platforms since PlayStation 2."
-      url = "#"
+      title = "Porting to any platform"
+      description = "We are licensed developers."
 
     [[params.services.row.list]]
       icon = "fa-laptop"
-      title = "Reviving old codebase"
-      description = "Bringing old games to modern platforms."
-      url = "#"
-
-    [[params.services.row.list]]
-      icon = "fa-laptop"
-      title = "HD Remakes"
-      description = "Inserting modern rendering engine in old games."
-      url = "#"
-
+      title = "Remastering old titles"
+      description = "Our experience allows us to work with any engines and make it work on modern platforms."
 
   # Portfolio section
   [params.portfolio]
@@ -228,6 +220,10 @@ googleAnalytics = ""
         link = "//addictinggames.com"
 
       [[params.clients]]
+        logo = "ckg.jpg"
+        link = "//castlekeepgaming.com"
+
+      [[params.clients]]
         logo = "metidia.png"
         link = "//metidia.com"
 
@@ -299,7 +295,11 @@ googleAnalytics = ""
   # Footer section
   [params.footer]
     enable = true
-    copyright = "Published under the Apache License 2.0."
+    # copyright = "Published under the Apache License 2.0."
+    #
+    
+    left = "Fire Falcom SNC | VAT: BE0685572937 contact@firefal.com"
+    right = "© 2020 Fire Falcom. All Rights Reserved."
 
     [[params.footer.social]]
       icon = "fa-github"
@@ -317,10 +317,10 @@ googleAnalytics = ""
       icon = "fa-linkedin"
       link = "https://www.linkedin.com/company/fire-falcom/"
 
-    [[params.footer.quicklinks]]
-      text = "Privacy Policy"
-      link = "#"
+    # [[params.footer.quicklinks]]
+    #   text = "Privacy Policy"
+    #   link = "#"
 
-    [[params.footer.quicklinks]]
-      text = "Terms of Use"
-      link = "#"
+    # [[params.footer.quicklinks]]
+    #   text = "Terms of Use"
+    #   link = "#"
