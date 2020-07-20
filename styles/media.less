@@ -1,0 +1,515 @@
+// 1440 PX
+@media (min-width: 1440px) {
+    header{
+        height:125vh;
+    }
+
+}
+
+@media (max-width: 1440px){
+    .background_section_03{
+        #big_planet{
+            top: calc(-920px + 20vw);
+            right: -1180px;
+            width: 1700px;
+        }
+        #pink_star{
+            position: absolute;
+            top: -521px;
+            left: -630px;
+            width: 1500px;
+            z-index: 5;
+        }
+    }
+}
+
+//-------------------------------
+// 1000 PX
+@media (max-width: 1000px) {
+    header{
+        height:90vh;
+
+        nav{
+            width:50%;
+        }
+    }
+    h2{
+        margin-top: 18vw;
+    }
+    #services #our_services ul{
+        flex-direction: column;
+        align-items: center;
+        width:100%;
+        min-width:0;
+
+    }
+    #services #our_services li{
+        width:50% !important;
+        margin:50px 0;
+    }
+
+    .background_section_03{
+        #big_planet{
+            display:none;
+        }
+        #space_tail{
+            width:250%;
+            left:-75%;
+        }
+    }
+
+    #clients{
+        li{
+            height: 150px;
+        }
+        .content_section{
+            padding: 2% 4% 8% 4%;
+        }
+    }
+
+    #contact{
+        .content_section{
+            padding:2% 4% 150px 4%;
+        }
+        #block_BG img:nth-last-child(1){
+            width: 100vw;
+        }
+        #block_BG img:nth-last-child(2){
+            width: 95vw;
+        }
+    }
+    .background_footer{
+        #launcher{
+        bottom:4vw;
+        }
+    }
+}
+
+//-------------------------------
+// 860 PX
+@media (max-width: 860px) {
+    h2{
+        margin-top: 150px;
+    }
+    header{
+        height:90vh;
+
+        nav{
+            width:50%;
+        }
+    }
+    
+    #about{
+        #why_us{
+            ul li{
+                width: 65%;
+                min-width: 0;
+            }
+        }
+    }
+
+    #content_footer{
+        #main_content{
+        flex-wrap: wrap;
+
+        }
+        #info_1{
+            order:1;
+            width: 48%;
+        }
+        #info_2{
+            order:3;
+            margin-top: 20px;
+            width:100%;
+            justify-content: center;
+            
+        }
+        #info_3{
+            order:2;
+            width: 48%;
+        }
+    }
+    .background_section_03{
+        #big_planet{
+            display:none;
+        }
+        #space_tail{
+            width:2000px;
+            left:-75%;
+        }
+    }
+    .background_footer{
+        #parable{
+            bottom:calc(0% + 10px);
+        }
+    }
+}
+//-------------------------------
+// 800 PX
+@media (max-width: 800px) {
+    header{
+        h2{
+            margin-top: 200px;
+        }
+        #FF_logo{
+            display:none;
+        }
+        nav{
+            width:100%;
+        }
+        nav ul{
+            justify-content: space-around;
+        }
+    }
+
+    .content_arrow {
+        margin-top: 70px;
+    }
+
+    #clients{
+        li{
+            width: 20%;
+        }
+    }
+
+    footer{
+        #bottom_info{
+            margin-top:4% !important;
+            text-align: center;
+            flex-direction: column;
+        }
+    }
+}
+
+//-------------------------------
+// 660 PX
+@media (max-width: 660px) {
+    h1{
+        font-size: 3em;
+    }
+    h2{
+        font-size: 1em;
+    }
+    nav{
+        float:none;
+        width:100%;
+    }
+
+    #about{
+        .step_block{
+            width: 75vw !important;
+            margin-bottom: 50px;
+        }
+        #line{
+            display: none;
+        }
+    }
+
+    #clients{
+        .background_section_04 #city_block{
+            #city{
+                width:175%;
+                left:-37.5%
+            }
+        }
+    }
+
+    #contact{
+        ul{
+            flex-direction: column;
+            justify-content: center;
+        }
+        li{
+            width:100%;
+        }
+        textarea{
+            padding:6%;
+            width:88%;
+        }
+    }
+
+    footer{
+        .background_footer{
+            #floor{
+            bottom: calc(110%);
+            }
+            #launcher{
+            display:none;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    #fixed_nav{
+
+        li:nth-child(1){
+            display:none;
+        }
+        li:nth-last-child(1){
+            margin:0 2% 0 2%;
+        }
+    }
+    #services{
+        #skills{
+            #platform_wheel{
+                width:350px
+            }
+            #platform_wheel .wheel{
+                width: 330px;
+                height: 280px;
+            }
+            .wheel .label{
+                position: absolute;
+                background-color: #51DBAB;
+                border-radius: 1000px;
+                width: 100px;
+                height: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            // ----
+            [class^="myarrow"] .line{
+                height: 5rem;
+            }
+
+
+            .myarrow-1a{
+                top: 107px;
+                left: 120px;
+                transform: rotate(35deg);
+                .line, .arrow{
+                    border-color: white;
+                }
+            }
+            .myarrow-1b{
+                top: 89px;
+                left: 101px;
+                transform: rotate(215deg);
+                .line, .arrow{
+                    border-color: white;
+                }
+            }
+            //------------------------
+            .myarrow-2a{
+                top: 95px;
+                left: 245px;
+                transform: rotate(-35deg);
+                .line, .arrow{
+                    border-color: white;
+                }
+            }
+            .myarrow-2b{
+                top: 106px;
+                left: 224px;
+                transform: rotate(-215deg);
+                .line, .arrow{
+                    border-color: white;
+                }
+            }
+            //------------------------
+            .myarrow-3a{
+                top: 204px;
+                left: 176px;
+                transform: rotate(90deg);
+                .line, .arrow{
+                    border-color: white;
+                }
+            }
+            .myarrow-3b{
+                top: 180px;
+                left: 176px;
+                transform: rotate(-90deg);
+                .line, .arrow{
+                    border-color: white;
+                }
+            }
+            #techno_wheel{
+                width:100%;
+            }
+        }
+    }
+
+    #clients{
+        li{
+            width: 30%;
+        }
+        .content_section{
+            padding: 2% 4% 15% 4%;
+        }
+        #list_block{
+            margin: 0 auto 100px auto;
+        }
+        .background_section_04 #sun{
+                width:160px;
+                top:2%;
+        }
+        .background_section_04 #planet{
+            top: 5%;
+        }
+    }
+}
+
+//-------------------------------
+// 500 PX
+@media (max-width: 500px) {
+    header{
+        #stars{
+            width: 220%;
+            min-width: 0;
+        }
+    }
+    h3{
+        font-size: 2.5em;
+    }
+    nav p{
+        font-size: 90%;
+        text-align: center;
+    }
+    
+    #fixed_nav{
+        p{
+            font-size: 0.8em;
+        }
+    }
+
+    #services{
+        #comet{
+            margin: -153% 0px 0px -30%;
+            width: 350px;
+        }
+        #our_services li{
+            min-width: 0 !important;
+            width:75% !important;
+            margin:50px
+        }
+        #our_services li p{
+            font-size: 0.9em;
+        }
+        #our_services .title_block{
+            font-size:1.75em;
+        }
+        #skills{
+            #techno_wheel .wheel{
+                width:150px;
+                height:150px;
+            }
+        }
+    }
+
+    #about #why_us .block_BG{
+        left:-6.5%;
+        width:115%;
+        height:115%;
+    }
+
+    #contact input{
+        width: 85%;
+        margin-left: 4.5%;
+        padding: 7px 0% 7px 5%;
+        font-size: 1em;
+    }
+    #contact textarea{
+        width:79%;
+        margin-left: 4.5%;
+
+        font-size: 1em;
+    }
+
+    
+    footer{
+        #main_content{
+            flex-direction: column !important;
+            align-items: center;
+        }
+        #info_1, #info_2, #info_3{
+            width:100% !important;
+            text-align: center;
+            margin:15px 0;
+
+        }
+        #content_footer #info_3 p{
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    #clients{
+        li{
+            width: 48%;
+        }
+        .content_section{
+            padding: 2% 4% 15% 4%;
+        }
+        #list_block{
+            margin: 0 auto 100px auto;
+        }
+        .background_section_04 #sun{
+            width:160px;
+            top:2%;
+        }
+        .background_section_04 #planet{
+            top: 5%;
+            width:75px;
+            min-width: 0;
+        }
+    }
+
+    #services{
+
+    
+        #skills{
+            #platform_wheel{
+                width:280px
+            }
+            #platform_wheel .wheel{
+                width: 280px;
+                height: 250px;
+            }
+            .wheel .label{
+                width: 80px;
+                height: 80px;
+            }
+            // ----
+            [class^="myarrow"] .line{
+                height: 4rem;
+            }
+
+
+            .myarrow-1a{
+                top: 98px;
+                left: 95px;
+                transform: rotate(35deg);
+            }
+            .myarrow-1b{
+                top: 82px;
+                left: 75px;
+                transform: rotate(215deg);
+            }
+            //------------------------
+            .myarrow-2a{
+                top: 82px;
+                left: 207px;
+                transform: rotate(-35deg);
+            }
+            .myarrow-2b{
+                top: 94px;
+                left: 186px;
+                transform: rotate(-215deg);
+            }
+            //------------------------
+            .myarrow-3a{
+                top: 185px;
+                left: 140px;
+                transform: rotate(90deg);
+            }
+            .myarrow-3b{
+                top: 160px;
+                left: 140px;
+                transform: rotate(-90deg);
+            }
+        }
+    }
+}

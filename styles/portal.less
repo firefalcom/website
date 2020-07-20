@@ -1,0 +1,366 @@
+:root{
+    --hightTop:0px;
+    --portalHeight:80vh;
+}
+
+// PORTAL 1
+
+.portal-1{
+    position: relative;
+    top:0;
+    width:100%;
+    height:var(--portalHeight);
+    z-index:50;
+    background-color:#00034A;
+
+
+    /* Front wave */
+    .front_wave{
+        position:absolute;
+        bottom:calc(-20px + var(--portalHeight));
+        width:100%;
+        z-index:59;
+    }
+
+    /* Fill */
+    .fill_transition{
+        position: absolute;
+        top:0;
+        width:100%;
+        height:100%;
+        background-color: #00034A;
+        z-index:60;
+    }
+
+    /* Hole */
+    .hole_content{
+        position:absolute;
+        bottom:calc(-15vw + var(--portalHeight));
+        width:100%;
+        margin:0 auto;
+        left:0;
+        right:0;
+        z-index:55;
+    }
+    #hole1, #hole2{
+        position:absolute;
+        margin:0 auto;
+        left:0;
+        right:0;
+        z-index:55;
+    }
+    #hole1{
+        width:90%;
+        top:20px;
+        opacity:0.7;
+    }
+    #hole2{
+        width:75%;
+        top:50px;
+        opacity:0.4;
+    }
+
+    /* Wave BG */
+    .wave_BG_01{
+        position: absolute;
+        bottom:calc(-2vw + var(--portalHeight));
+        z-index: 52;
+        width: 100%;
+    }
+    .wave_BG_02{
+        position: absolute;
+        bottom:calc(8vw + var(--portalHeight));
+        left:0;
+        opacity:0.6;
+        z-index: 51;
+        width: 100%;
+    }
+
+    /* Glow */
+    .glow{
+        position:absolute;
+        bottom:calc(-10vw + var(--portalHeight));
+        width:100%;
+        z-index:50;
+        opacity:1;
+    }
+
+    /* Wave out */
+    .wave_out{
+        position:absolute;
+        top:calc(-10px + var(--portalHeight)); /* To stay down when resizing */
+        width:100%;
+        transform: rotate(180deg);
+        z-index:65;
+    }
+}
+
+// PORTAL 2
+.portal-2{
+    position: relative;
+    width:100%;
+    height:var(--portalHeight);
+    z-index:50;
+    background-color:#00034A;
+
+
+    /* Front wave */
+    .front_wave{
+        position:absolute;
+        bottom:calc(-20px + var(--portalHeight));
+        width:100%;
+        z-index:59;
+    }
+
+    /* Fill */
+    .fill_transition{
+        position: absolute;
+        top:0;
+        width:100%;
+        height:100%;
+        background-color: #1A0042;
+        z-index:60;
+    }
+
+    /* Hole */
+    .hole_content{
+        position:absolute;
+        bottom:calc(-15vw + var(--portalHeight));
+        width:100%;
+        margin:0 auto;
+        left:0;
+        right:0;
+        z-index:55;
+    }
+    #hole1, #hole2{
+        position:absolute;
+        margin:0 auto;
+        left:0;
+        right:0;
+        z-index:55;
+    }
+    #hole1{
+        width:90%;
+        top:20px;
+        opacity:0.7;
+    }
+    #hole2{
+        width:75%;
+        top:50px;
+        opacity:0.4;
+    }
+
+    /* Wave BG */
+    .wave_BG_01{
+        position: absolute;
+        bottom:calc(-2vw + var(--portalHeight));
+        z-index: 52;
+        width: 100%;
+    }
+    .wave_BG_02{
+        position: absolute;
+        bottom:calc(8vw + var(--portalHeight));
+        left:0;
+        opacity:0.6;
+        z-index: 51;
+        width: 100%;
+    }
+
+    /* Glow */
+    .glow{
+        position:absolute;
+        bottom:calc(-10vw + var(--portalHeight));
+        width:100%;
+        z-index:50;
+        opacity:0.7;
+    }
+
+    /* Wave out */
+    .wave_out{
+        position:absolute;
+        top:calc(-10px + var(--portalHeight)); /* To stay down when resizing */
+        width:100%;
+        transform: rotate(180deg);
+        z-index:65;
+    }
+}
+
+// PORTAL 3
+.portal-3{
+    position: relative;
+    width:100%;
+    height:var(--portalHeight);
+    z-index:50;
+    background-color:#00034A;
+
+
+    /* Front wave */
+    .front_wave{
+        position:absolute;
+        bottom:calc(-20px + var(--portalHeight));
+        width:100%;
+        z-index:59;
+    }
+
+    /* Fill */
+    .fill_transition{
+        position: absolute;
+        top:0;
+        width:100%;
+        height:100%;
+        background-color: #1A0042;
+        z-index:60;
+    }
+
+    /* Hole */
+    .hole_content{
+        position:absolute;
+        bottom:calc(-15vw + var(--portalHeight));
+        width:100%;
+        margin:0 auto;
+        left:0;
+        right:0;
+        z-index:55;
+    }
+    #hole1, #hole2{
+        position:absolute;
+        margin:0 auto;
+        left:0;
+        right:0;
+        z-index:55;
+    }
+    #hole1{
+        width:90%;
+        top:20px;
+        opacity:0.7;
+    }
+    #hole2{
+        width:75%;
+        top:50px;
+        opacity:0.4;
+    }
+
+    /* Wave BG */
+    .wave_BG_01{
+        position: absolute;
+        bottom:calc(-2vw + var(--portalHeight));
+        z-index: 52;
+        width: 100%;
+    }
+    .wave_BG_02{
+        position: absolute;
+        bottom:calc(8vw + var(--portalHeight));
+        left:0;
+        opacity:0.6;
+        z-index: 51;
+        width: 100%;
+    }
+
+    /* Glow */
+    .glow{
+        position:absolute;
+        bottom:calc(-10vw + var(--portalHeight));
+        width:100%;
+        z-index:50;
+        opacity:0.7;
+    }
+
+    /* Wave out */
+    .wave_out{
+        position:absolute;
+        top:calc(-10px + var(--portalHeight)); /* To stay down when resizing */
+        width:100%;
+        transform: rotate(180deg);
+        z-index:65;
+    }
+}
+
+// PORTAL 3
+.portal-4{
+    position: relative;
+    width:100%;
+    height:var(--portalHeight);
+    z-index:50;
+    background-color:#00034A;
+
+
+    /* Front wave */
+    .front_wave{
+        position:absolute;
+        bottom:calc(-20px + var(--portalHeight));
+        width:100%;
+        z-index:59;
+    }
+
+    /* Fill */
+    .fill_transition{
+        position: absolute;
+        top:0;
+        width:100%;
+        height:100%;
+        background-color: #00034A;
+        z-index:60;
+    }
+
+    /* Hole */
+    .hole_content{
+        position:absolute;
+        bottom:calc(-15vw + var(--portalHeight));
+        width:100%;
+        margin:0 auto;
+        left:0;
+        right:0;
+        z-index:55;
+    }
+    #hole1, #hole2{
+        position:absolute;
+        margin:0 auto;
+        left:0;
+        right:0;
+        z-index:55;
+    }
+    #hole1{
+        width:90%;
+        top:20px;
+        opacity:0.7;
+    }
+    #hole2{
+        width:75%;
+        top:50px;
+        opacity:0.4;
+    }
+
+    /* Wave BG */
+    .wave_BG_01{
+        position: absolute;
+        bottom:calc(-2vw + var(--portalHeight));
+        z-index: 52;
+        width: 100%;
+    }
+    .wave_BG_02{
+        position: absolute;
+        bottom:calc(8vw + var(--portalHeight));
+        left:0;
+        opacity:0.6;
+        z-index: 51;
+        width: 100%;
+    }
+
+    /* Glow */
+    .glow{
+        position:absolute;
+        bottom:calc(-10vw + var(--portalHeight));
+        width:100%;
+        z-index:50;
+        opacity:0.7;
+    }
+
+    /* Wave out */
+    .wave_out{
+        position:absolute;
+        top:calc(-10px + var(--portalHeight)); /* To stay down when resizing */
+        width:100%;
+        transform: rotate(180deg);
+        z-index:65;
+    }
+}
