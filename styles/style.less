@@ -41,6 +41,10 @@ body{
 section, footer{
     position:relative;
 }
+section{
+    overflow: hidden;
+
+}
 li{
     list-style: none;
 }
@@ -144,16 +148,22 @@ header{
             color:#886409;
         }
     }
-    .content_arrow{
-        margin-top: 125px;
-        width:100%;
-        text-align: center;
-    }
-    .arrow{
-        width:25px;
-        position:relative;
-        cursor:pointer;
-    }
+}
+
+.autoscroll_arrow{
+    margin: 80px 0 125px 0;
+    width:100%;
+    text-align: center;
+    z-index: 200;
+}
+.autoscroll_arrow .arrow{
+    width:25px;
+    position:relative;
+    cursor:pointer;
+}
+#autoscroll_arrow_backhome{
+    transform: rotate(180deg);
+    margin: 80px 0 0 0;
 }
 
 #fixed_nav{
@@ -171,6 +181,15 @@ header{
         color:white;
         margin:0;
         padding:16px 0;
+        border-radius: 100px;
+        transition: all ease 0.1s;
+        &:hover{
+            color:black;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+        &:active{
+        filter: brightness(80%);
+        }
     }
     img{
         width:200px;
@@ -413,7 +432,7 @@ header{
             left: 165px;
             transform: rotate(37deg);
             .line, .arrow{
-                border-color: #F3B110;
+                border-color: white;
             }
         }
         .myarrow-1b{
@@ -478,6 +497,13 @@ header{
             margin: auto;
             left:0;
             right:0;
+            cursor: pointer;
+            z-index:10;
+            transition: all ease 0.25s;
+            &:hover{
+                background-color:hsl(159, 75%, 59%);
+                box-shadow: 0 0 20px hsl(159, 75%, 59%);
+            }
         }
         #techno_wheel .wheel img:nth-child(1){
             width:50%;
@@ -948,5 +974,17 @@ header{
     }
 }
 
+@keyframes Flickering1 {
+    0%{
+        opacity:1;
+    }
 
-/* SERVICES BACKGROUND */
+    50%{
+        opacity:0.7;
+    }
+
+    100%{
+        opacity:1;
+    }
+}
+
