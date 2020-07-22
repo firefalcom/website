@@ -379,7 +379,7 @@ header{
             font-size: 1.5em;
             color:white;
             width:100%;
-            margin:0 0 100px 0;
+            margin:0 0 75px 0;
         }
 
         .block_BG-1{
@@ -398,7 +398,6 @@ header{
             transform: rotate(-90deg);
             animation:linear infinite 50s rotation2;
         }
-        
         //---ARROW---//
         [class^="myarrow"]{
             position: absolute;
@@ -481,6 +480,7 @@ header{
         #techno_wheel{
             position: relative;
             width:500px;
+            height:500px;
             
         }
         #techno_wheel .wheel{
@@ -508,6 +508,63 @@ header{
         #techno_wheel .wheel img:nth-child(1){
             width:50%;
         }
+
+        .circle_list {
+            position: absolute;
+            width: 330px;
+            height: 330px;
+            border-radius: 50%;
+            margin: auto;
+            top: -20%;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            transform: scale(0);
+            transition: all ease 0.3s;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .circle_list img{
+            width: 100%;
+        }
+        .circle_list [class^="deg"] {
+            position: absolute;
+            transform-origin: center;
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .circle_list div div{
+            position: absolute;
+            top:-75px;
+            opacity:0;
+            transition: all ease 0.25s;
+            p{
+                position: relative;
+                display:inline-block;
+                border-radius: 10px;
+                text-align: center;
+                background-color: white;
+                font-family: "Baumans-regular";
+                color:black;
+                font-size:0.85em;
+                padding: 10px;
+            }
+        }
+        .deg0 {transform: rotate(-90deg) translate(10.2em) rotate(90deg);}
+        .deg45 {transform: rotate(-45deg) translate(10.2em) rotate(45deg);}
+        .deg90 {transform: rotate(0deg) translate(10.2em) rotate(-0deg);}
+        .deg135 {transform: rotate(45deg) translate(10.2em) rotate(-45deg);}
+        .deg180 {transform: rotate(90deg) translate(10.2em) rotate(-90deg);}
+        .deg225 {transform: rotate(135deg) translate(10.2em) rotate(-135deg);}
+        .deg270 {transform: rotate(180deg) translate(10.2em) rotate(-180deg);}
+        .deg315 {transform: rotate(225deg) translate(10.2em) rotate(-225deg);}
+
     }
 }
 
@@ -799,12 +856,26 @@ header{
         padding: 12px 45px;
         border-radius: 100px;
         cursor:pointer;
-        transition: all ease 0.1s;
+        transition: all ease 0.25s;
         &:hover{
-            filter: brightness(80%);
+            background-color:#ffb700;
+            box-shadow: 0 0 20px #ffb700;
         }
         &:active{
-            filter: brightness(70%);
+            filter: brightness(85%);
+        }
+        button{
+            appearance: none;
+            background-color: transparent; /* Green */
+            border: none;
+            padding: 0;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+            &:focus{
+                outline: none;
+            }
         }
         p{
             margin:0;
@@ -913,8 +984,6 @@ header{
         padding: 0;
         width:30%;
     }
-    #info_1{
-    }
     #info_2{
         display: flex;
         justify-content: space-between;
@@ -952,6 +1021,7 @@ header{
     }
     
 }
+
 
 
 @keyframes rotation1 {
