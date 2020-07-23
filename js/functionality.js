@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+
 	// Detect browser
 	var isFirefox = typeof InstallTrigger !== 'undefined';
 	var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
@@ -10,6 +11,14 @@ $(document).ready(function(){
 	else{
 		$("[class^='background_section'], #planet, #sun, #city_block").css("transition", "none");
 	}
+
+	// Detect OS
+	var platform = window.navigator.platform;
+    var  os = null;
+	if (!os && /Linux/.test(platform)) {
+		window.scrollTo(0, 0);
+	}
+
 
 	var currentAnimation = "before";
 	// capture scroll any percentage
@@ -22,12 +31,14 @@ $(document).ready(function(){
 			if(currentAnimation == "before"){
 				$("#fixed_nav").stop().animate({top: '0'});
 				currentAnimation = "after";
+				console.log("Show fixed nav");
 			}
 		}
 		else{
 			if(currentAnimation == "after"){
 				$("#fixed_nav").stop().animate({top: '-80px'});
 				currentAnimation = "before";
+				console.log("Hide fixed nav");
 			}
 		}
 
