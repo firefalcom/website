@@ -12,12 +12,13 @@ $(window).on("load", function () {
 	}
 
 	var currentAnimation = "before";
+	var wheelStatus = 0;
 	// capture scroll any percentage
 	$(window).scroll(function () {
 		let wintop = $(window).scrollTop();
 		let scrolltrigger = parseInt($("#services_anchor").offset().top);
-		console.log("Scrolltrigger : ", scrolltrigger);
-
+		let wheel = parseInt($("#techno_wheel .wheel").offset().top) - 500;
+		
 		//	Show fixed nav		
 		if (wintop >= scrolltrigger) {
 			if (currentAnimation == "before") {
@@ -30,6 +31,13 @@ $(window).on("load", function () {
 				$("#fixed_nav").stop().animate({ top: '-80px' });
 				currentAnimation = "before";
 			}
+		}
+
+		// auto open techno wheel
+		if(wintop >= wheel){
+			$("#techno_wheel .wheel").css({ "width": "150px", "height": "150px" });
+			$("#skills .circle_list").css({ "transform": "scale(1)" });
+			wheelStatus = 1;
 		}
 
 		if (isFirefox != true) {
@@ -110,17 +118,16 @@ $(window).on("load", function () {
 
 	// Techno wheel
 	if ($(window).width() >= 500) {
-		let status = 0;
 		$("#techno_wheel .wheel").click(function () {
-			if (status == 0) {
-				status = 1;
+			if (wheelStatus == 0) {
+				wheelStatus = 1;
 				$("#techno_wheel .wheel").css({ "width": "150px", "height": "150px" });
 				$("#skills .circle_list").css({ "transform": "scale(1)" });
 			}
 			else {
 				$("#techno_wheel .wheel").css({ "width": "300px", "height": "300px" });
 				$("#skills .circle_list").css({ "transform": "scale(0)" });
-				status = 0;
+				wheelStatus = 0;
 			}
 		});
 	}
