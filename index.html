@@ -2,10 +2,11 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="language" content="en" >
+        <meta name="language" content="en">
         <meta name="description" content="Game development studio">
+        <meta name="robots" content="index, nofollow">
         <meta name="author" content="Urbain Guillaume">
-        <meta name="copyright" content="© 2020 Fire Falcom. All Rights Reserved"/>
+        <meta name="copyright" content="© 2020 Fire Falcom. All Rights Reserved">
         <meta name="publisher" content="Fire Falcom">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -23,34 +24,7 @@
         <title>Fire Falcom</title>
 
     </head>
-
     <body>
-        <header id="home">
-            <!-- CONTENT -->
-            <div class="content_section">
-                <img src="images/logos/firefalcom_logo.svg" id="FF_logo" alt="Fire Falcom logo">
-                <nav>
-                    <ul>
-                        <li><a href="#services_anchor"><p>OUR SERVICES</p></a></li>
-                        <li><a href="#about_anchor"><p>HOW WE WORK</p></a></li>
-                        <li><a href="#clients_anchor"><p>CLIENTS</p></a></li>
-                        <li><a href="#contact_anchor"><p>CONTACT</p></a></li>
-                    </ul>
-                </nav>
-                <h2>Porting and remaking with</h2>
-                <h1>Fire Falcom</h1>
-                <div class="autoscroll_arrow"><a href="#services_anchor"><img src="images/icons/Arrow_UI.svg" class="arrow" alt="Arrow"></a></div>
-                
-            </div>
-            
-            <!-- BACKGROUND -->
-            <div class="background_section">
-                <img src="images/background/FFlogo_BG.svg" id="logo_BG" alt="Blue shape">
-                <img src="images/background/spaceTrail_01.svg" id="ST" alt="Space trail">
-                <img src="images/background/stars_01.png" id="stars" alt="Stars">
-            </div>
-        </header>
-
         <div id="fixed_nav">
             <div id="background_nav"></div>
             <ul>
@@ -61,652 +35,678 @@
                 <li><a href="#contact_anchor"><p>CONTACT</p></a></li>
             </ul>
         </div>
-        <!-- PORTAL -->
-        <div class="portal-1">
-            <!-- Wave front -->
-            <div class="front_wave">
-                <svg viewBox="0 0 1440 320">
-                    <path fill="#00034A" d="M0,224L12,213.3C24,203,48,181,72,170.7C96,160,120,160,144,165.3C168,171,192,181,216,176C240,171,264,149,288,138.7C312,128,336,128,360,144C384,160,408,192,432,181.3C456,171,480,117,504,96C528,75,552,85,576,112C600,139,624,181,648,197.3C672,213,696,203,720,213.3C744,224,768,256,792,250.7C816,245,840,203,864,176C888,149,912,139,936,154.7C960,171,984,213,1008,234.7C1032,256,1056,256,1080,250.7C1104,245,1128,235,1152,208C1176,181,1200,139,1224,112C1248,85,1272,75,1296,106.7C1320,139,1344,213,1368,240C1392,267,1416,245,1428,234.7L1440,224L1440,320L1428,320C1416,320,1392,320,1368,320C1344,320,1320,320,1296,320C1272,320,1248,320,1224,320C1200,320,1176,320,1152,320C1128,320,1104,320,1080,320C1056,320,1032,320,1008,320C984,320,960,320,936,320C912,320,888,320,864,320C840,320,816,320,792,320C768,320,744,320,720,320C696,320,672,320,648,320C624,320,600,320,576,320C552,320,528,320,504,320C480,320,456,320,432,320C408,320,384,320,360,320C336,320,312,320,288,320C264,320,240,320,216,320C192,320,168,320,144,320C120,320,96,320,72,320C48,320,24,320,12,320L0,320Z"></path>
-                </svg>
-            </div>
 
-            <!-- Fill center (for hide) -->
-            <div class="fill_transition"></div>
-
-            <!-- Hole -->
-            <div class="hole_content">
-                <img src="images/background/hole_center.svg" id="hole1" alt="hole">
-                <img src="images/background/hole_center.svg" id="hole2" alt="hole">
-                <svg id="border_hole" viewBox="0 0 1920 558.1">
-                    <ellipse fill="#11F2A5" cx="960" cy="279.1" rx="960" ry="279.1"/>
-                </svg>
-            </div>
-
-            <!-- Wave background -->
-            <div class="wave_BG_content">
-                <!-- Wave 01 -->
-                <div class="wave_BG_01">
-                    <svg viewBox="0 0 1915 500">
-                        <defs>
-                            <linearGradient id="P1-Gradient1" x1="0" x2="0" y1="1" y2="0">
-                                <stop offset="60%" stop-color="#11F2A5"/>
-                                <stop offset="98%" stop-color="#043B5F"/>
-                            </linearGradient>
-                        </defs>
-                        <path fill="url(#P1-Gradient1)" d="M1920,717.6c-58.7-8.4-136.6-22-228.2-35.3c-169.7-25.4-386.7-49.5-608.3-56.1c-221.5-7.6-447.6,2.3-633.4,22.7c-185.9,19.4-331.5,49.3-395.8,57.5c-10.5,1.4-30.6,4.6-54.4,7.6l0-552.5c48.9-41.8,85.1-64.7,128.6-70.6c76.9-9.7,102.5,42.7,159,33.3c61.6-9.8,65.5-77.3,129.4-86.5c84.7-11.9,167.9,92.6,222.4,85.9c45.4-5.3,24.9-79.7,77.3-85.9c66.6-7.5,154.3,102.8,221,99.7c72.9-3.2,75.9-137.7,122.9-137.4c48.9,0.8,65.7,144.1,156.4,152.2c73,7,140.3-78.9,235.1-66.5c86.6,11.9,92.5,92.3,160.1,102.7c85.3,14.2,139.5-105.1,249.2-87.9c17.1,2.6,37.5,10.5,58.7,21.9V717.6z"/>
-                    </svg>
-                </div>
-
-                <!-- Wave 02 -->
-                <div class="wave_BG_02">
-                    <svg viewBox="0 0 1915 357">
-                        <defs>
-                            <linearGradient id="P1-Gradient2" x1="0" x2="0" y1="1" y2="0">
-                                <stop offset="65%" stop-color="#00034A"/>
-                                <stop offset="100%" stop-color="#46B38D"/>
-                            </linearGradient>
-                        </defs>
-                        <path fill="url(#P1-Gradient2)" d="M0,526.1L0,91.3C38,55,88.3,26.7,136.7,33.2c58.8,8,63.6,60.8,139.1,78c43.8,9.9,81.5,0.4,156.8-18.7c103.8-26.3,107-48.3,149.6-43.5c86.7,9.7,108.7,105.1,163.5,97.6C808.6,138,810.3,8.5,869.8,0.4c64.8-8.8,111.3,138.2,181.2,128.9c48.1-6.4,48.5-79.2,107.5-92.8c54.1-12.5,74.7,43.7,154.4,59.5c105.6,20.9,143.4-63.1,239.4-43c91.3,19.1,91.4,102.4,170.6,114.1c83.4,12.4,146.6-70.4,197.1-105.8l0,463.1L0,526.1z"/>
-                    </svg>
-                </div>
-            </div>
-
-            <!-- Glow -->
-            <div class="glow">
-                <svg viewBox="0 0 1377.8 734.2">
-                    <defs>
-                        <radialGradient  id="P1-Gradient3" cx="0.5" cy="0.5" r="0.5">
-                            <stop offset="0%" stop-color="#46B38D"/>
-                            <stop offset="90%" stop-color="#00034A" stop-opacity="0"/>
-                        </radialGradient >
-                    </defs>
-                    <ellipse fill="url(#P1-Gradient3)" cx="688.9" cy="367.1" rx="1200" ry="350"/>
-                </svg>
-            </div>
-
-            <!-- Wave out -->
-            <div class=wave_out>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                    <path fill="#00034A" d="M0,32L9.6,37.3C19.2,43,38,53,58,74.7C76.8,96,96,128,115,128C134.4,128,154,96,173,90.7C192,85,211,107,230,112C249.6,117,269,107,288,122.7C307.2,139,326,181,346,186.7C364.8,192,384,160,403,160C422.4,160,442,192,461,176C480,160,499,96,518,90.7C537.6,85,557,139,576,149.3C595.2,160,614,128,634,101.3C652.8,75,672,53,691,48C710.4,43,730,53,749,96C768,139,787,213,806,208C825.6,203,845,117,864,69.3C883.2,21,902,11,922,32C940.8,53,960,107,979,117.3C998.4,128,1018,96,1037,117.3C1056,139,1075,213,1094,218.7C1113.6,224,1133,160,1152,144C1171.2,128,1190,160,1210,192C1228.8,224,1248,256,1267,266.7C1286.4,277,1306,267,1325,245.3C1344,224,1363,192,1382,165.3C1401.6,139,1421,117,1430,106.7L1440,96L1440,320L1430.4,320C1420.8,320,1402,320,1382,320C1363.2,320,1344,320,1325,320C1305.6,320,1286,320,1267,320C1248,320,1229,320,1210,320C1190.4,320,1171,320,1152,320C1132.8,320,1114,320,1094,320C1075.2,320,1056,320,1037,320C1017.6,320,998,320,979,320C960,320,941,320,922,320C902.4,320,883,320,864,320C844.8,320,826,320,806,320C787.2,320,768,320,749,320C729.6,320,710,320,691,320C672,320,653,320,634,320C614.4,320,595,320,576,320C556.8,320,538,320,518,320C499.2,320,480,320,461,320C441.6,320,422,320,403,320C384,320,365,320,346,320C326.4,320,307,320,288,320C268.8,320,250,320,230,320C211.2,320,192,320,173,320C153.6,320,134,320,115,320C96,320,77,320,58,320C38.4,320,19,320,10,320L0,320Z"></path>
-                </svg>
-            </div>
-        </div>
-
-        <!-- OUR SERVICES -->
-        <section id="services">
-            <!-- CONTENT -->
-            <span id="services_anchor"></span>
-            <div class="content_section">
-                <div id="our_services">
-
-                    <h3>Our services</h3>
+        <div id="parallax">
+            <header id="home">
+                <!-- CONTENT -->
+                <div class="content_section">
+                    <img src="images/logos/firefalcom_logo.svg" id="FF_logo" alt="Fire Falcom logo">
+                    <nav>
+                        <ul>
+                            <li><a href="#services_anchor"><p>OUR SERVICES</p></a></li>
+                            <li><a href="#about_anchor"><p>HOW WE WORK</p></a></li>
+                            <li><a href="#clients_anchor"><p>CLIENTS</p></a></li>
+                            <li><a href="#contact_anchor"><p>CONTACT</p></a></li>
+                        </ul>
+                    </nav>
+                    <h2>Porting and remaking with</h2>
+                    <h1>Fire Falcom</h1>
+                    <div class="autoscroll_arrow"><a href="#services_anchor"><img src="images/icons/Arrow_UI.svg" class="arrow" alt="Arrow"></a></div>
                     
-                    <ul>
-                        <li>
-                            <div class="block_content">
-                                <div class="text_content">
-                                    <p class="title_block">Porting</p>
-                                    <p class="text_block">Tur solvendae ego archetypi hoc attentius. At potestque ii extitisse in ingeniosi contingit. Partibus vis diversas pauciora actualis vox imo agi. Efficta nec quaedam capacem ita invenit hae cum. Illis mundo aliis ei ab magna. Illi ut quod si sese esto. Is pauciora im ad possumus absoluta pendeant compages. </p>
-                                </div>
-                            </div>
-                            <div class="block_BG">
-                                <img src="images/background/block-rect_BG_01.png" alt="Background block">
-                                <img src="images/background/block-rect_BG_01.png" alt="Background block">
-                            </div>
-                        </li>
-                    <!--  -->
-                        <li>
-                            <div class="block_content">
-                                <div class="text_content">
-                                    <p class="title_block">Remastering</p>
-                                    <p class="text_block">Tur solvendae ego archetypi hoc attentius. At potestque ii extitisse in ingeniosi contingit. Partibus vis diversas pauciora actualis vox imo agi. Efficta nec quaedam capacem ita invenit hae cum. Illis mundo aliis ei ab magna. Illi ut quod si sese esto. Is pauciora im ad possumus absoluta pendeant compages. </p>
-                                </div>
-                            </div>
-                            <div class="block_BG">
-                                <img src="images/background/block-rect_BG_01.png" alt="Background block">
-                                <img src="images/background/block-rect_BG_01.png" alt="Background block">
-                            </div>
-                        </li>
-                    </ul>
+                </div>
+                
+                <!-- BACKGROUND -->
+                <div class="background_section">
+                    <img src="images/background/FFlogo_BG.svg" id="logo_BG" alt="Blue shape">
+                    <img src="images/background/spaceTrail_01.svg" id="ST" alt="Space trail">
+                    <img src="images/background/stars_01.png" id="stars" alt="Stars">
+                </div>
+            </header>
+
+            <!-- PORTAL -->
+            <div class="portal-1">
+                <!-- Wave front -->
+                <div class="front_wave">
+                    <svg viewBox="0 0 1440 320">
+                        <path fill="#00034A" d="M0,224L12,213.3C24,203,48,181,72,170.7C96,160,120,160,144,165.3C168,171,192,181,216,176C240,171,264,149,288,138.7C312,128,336,128,360,144C384,160,408,192,432,181.3C456,171,480,117,504,96C528,75,552,85,576,112C600,139,624,181,648,197.3C672,213,696,203,720,213.3C744,224,768,256,792,250.7C816,245,840,203,864,176C888,149,912,139,936,154.7C960,171,984,213,1008,234.7C1032,256,1056,256,1080,250.7C1104,245,1128,235,1152,208C1176,181,1200,139,1224,112C1248,85,1272,75,1296,106.7C1320,139,1344,213,1368,240C1392,267,1416,245,1428,234.7L1440,224L1440,320L1428,320C1416,320,1392,320,1368,320C1344,320,1320,320,1296,320C1272,320,1248,320,1224,320C1200,320,1176,320,1152,320C1128,320,1104,320,1080,320C1056,320,1032,320,1008,320C984,320,960,320,936,320C912,320,888,320,864,320C840,320,816,320,792,320C768,320,744,320,720,320C696,320,672,320,648,320C624,320,600,320,576,320C552,320,528,320,504,320C480,320,456,320,432,320C408,320,384,320,360,320C336,320,312,320,288,320C264,320,240,320,216,320C192,320,168,320,144,320C120,320,96,320,72,320C48,320,24,320,12,320L0,320Z"></path>
+                    </svg>
                 </div>
 
-                <img id="comet" src="images/items/comet.svg" alt="Comet">
+                <!-- Fill center (for hide) -->
+                <div class="fill_transition"></div>
 
-                <div id="skills">
-                    <h4>We are certified developers</h4>
-                    <ul id="certif_platform">
-                        <li><img src="images/logos/nintendo-logo.png" alt="Nintendo logo"></li>
-                    </ul>
+                <!-- Hole -->
+                <div class="hole_content">
+                    <img src="images/background/hole_center.svg" id="hole1" alt="hole">
+                    <img src="images/background/hole_center.svg" id="hole2" alt="hole">
+                    <svg id="border_hole" viewBox="0 0 1920 558.1">
+                        <ellipse fill="#11F2A5" cx="960" cy="279.1" rx="960" ry="279.1"></ellipse>
+                    </svg>
+                </div>
 
-                    <div id="cross_platform">
-                        <!-- PLATFORM -->
-                        <div id="platform_wheel">
-                            <div class="wheel">
-                                <div class="label console">
-                                    <img src="images/icons/consol_icon.svg" alt="Joystick icon">
-                                    <img class="block_BG-1" src="images/background/block-circle_BG.png" alt="Background block">
-                                    <img class="block_BG-2" src="images/background/block-circle_BG.png" alt="Background block">
-                                </div>
+                <!-- Wave background -->
+                <div class="wave_BG_content">
+                    <!-- Wave 01 -->
+                    <div class="wave_BG_01">
+                        <svg viewBox="0 0 1915 500">
+                            <defs>
+                                <linearGradient id="P1-Gradient1" x1="0" x2="0" y1="1" y2="0">
+                                    <stop offset="60%" stop-color="#11F2A5"></stop>
+                                    <stop offset="98%" stop-color="#043B5F"></stop>
+                                </linearGradient>
+                            </defs>
+                            <path fill="url(#P1-Gradient1)" d="M1920,717.6c-58.7-8.4-136.6-22-228.2-35.3c-169.7-25.4-386.7-49.5-608.3-56.1c-221.5-7.6-447.6,2.3-633.4,22.7c-185.9,19.4-331.5,49.3-395.8,57.5c-10.5,1.4-30.6,4.6-54.4,7.6l0-552.5c48.9-41.8,85.1-64.7,128.6-70.6c76.9-9.7,102.5,42.7,159,33.3c61.6-9.8,65.5-77.3,129.4-86.5c84.7-11.9,167.9,92.6,222.4,85.9c45.4-5.3,24.9-79.7,77.3-85.9c66.6-7.5,154.3,102.8,221,99.7c72.9-3.2,75.9-137.7,122.9-137.4c48.9,0.8,65.7,144.1,156.4,152.2c73,7,140.3-78.9,235.1-66.5c86.6,11.9,92.5,92.3,160.1,102.7c85.3,14.2,139.5-105.1,249.2-87.9c17.1,2.6,37.5,10.5,58.7,21.9V717.6z"></path>
+                        </svg>
+                    </div>
 
-                                <div class="label PC">
-                                    <img src="images/icons/PC_icon.svg" alt="Mouse icon">
-                                    <img class="block_BG-1" src="images/background/block-circle_BG.png" alt="Background block">
-                                    <img class="block_BG-2" src="images/background/block-circle_BG.png" alt="Background block">
-                                </div>
+                    <!-- Wave 02 -->
+                    <div class="wave_BG_02">
+                        <svg viewBox="0 0 1915 357">
+                            <defs>
+                                <linearGradient id="P1-Gradient2" x1="0" x2="0" y1="1" y2="0">
+                                    <stop offset="65%" stop-color="#00034A"></stop>
+                                    <stop offset="100%" stop-color="#46B38D"></stop>
+                                </linearGradient>
+                            </defs>
+                            <path fill="url(#P1-Gradient2)" d="M0,526.1L0,91.3C38,55,88.3,26.7,136.7,33.2c58.8,8,63.6,60.8,139.1,78c43.8,9.9,81.5,0.4,156.8-18.7c103.8-26.3,107-48.3,149.6-43.5c86.7,9.7,108.7,105.1,163.5,97.6C808.6,138,810.3,8.5,869.8,0.4c64.8-8.8,111.3,138.2,181.2,128.9c48.1-6.4,48.5-79.2,107.5-92.8c54.1-12.5,74.7,43.7,154.4,59.5c105.6,20.9,143.4-63.1,239.4-43c91.3,19.1,91.4,102.4,170.6,114.1c83.4,12.4,146.6-70.4,197.1-105.8l0,463.1L0,526.1z"></path>
+                        </svg>
+                    </div>
+                </div>
 
-                                <div class="label smartphone">
-                                    <img src="images/icons/smartphone_icon.svg" alt="Smartphone icon">
-                                    <img class="block_BG-1" src="images/background/block-circle_BG.png" alt="Background block">
-                                    <img class="block_BG-2" src="images/background/block-circle_BG.png" alt="Background block">
-                                </div>
-                            </div>
+                <!-- Glow -->
+                <div class="glow">
+                    <svg viewBox="0 0 1377.8 734.2">
+                        <defs>
+                            <radialGradient  id="P1-Gradient3" cx="0.5" cy="0.5" r="0.5">
+                                <stop offset="0%" stop-color="#46B38D"></stop>
+                                <stop offset="90%" stop-color="#00034A" stop-opacity="0"></stop>
+                            </radialGradient >
+                        </defs>
+                        <ellipse fill="url(#P1-Gradient3)" cx="688.9" cy="367.1" rx="1200" ry="350"></ellipse>
+                    </svg>
+                </div>
 
-                                <div class="myarrow-1a arr1" data-description="Computer to Console">
-                                    <span class="arrow left"></span>
-                                    <span class="line"></span>
-                                    <span class="arrow right"></span>
-                                </div>
-                                <div class="myarrow-1b arr2" data-description="Console to Computer">
-                                    <span class="arrow left"></span>
-                                    <span class="line"></span>
-                                    <span class="arrow right"></span>
-                                </div>
+                <!-- Wave out -->
+                <div class=wave_out>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                        <path fill="#00034A" d="M0,32L9.6,37.3C19.2,43,38,53,58,74.7C76.8,96,96,128,115,128C134.4,128,154,96,173,90.7C192,85,211,107,230,112C249.6,117,269,107,288,122.7C307.2,139,326,181,346,186.7C364.8,192,384,160,403,160C422.4,160,442,192,461,176C480,160,499,96,518,90.7C537.6,85,557,139,576,149.3C595.2,160,614,128,634,101.3C652.8,75,672,53,691,48C710.4,43,730,53,749,96C768,139,787,213,806,208C825.6,203,845,117,864,69.3C883.2,21,902,11,922,32C940.8,53,960,107,979,117.3C998.4,128,1018,96,1037,117.3C1056,139,1075,213,1094,218.7C1113.6,224,1133,160,1152,144C1171.2,128,1190,160,1210,192C1228.8,224,1248,256,1267,266.7C1286.4,277,1306,267,1325,245.3C1344,224,1363,192,1382,165.3C1401.6,139,1421,117,1430,106.7L1440,96L1440,320L1430.4,320C1420.8,320,1402,320,1382,320C1363.2,320,1344,320,1325,320C1305.6,320,1286,320,1267,320C1248,320,1229,320,1210,320C1190.4,320,1171,320,1152,320C1132.8,320,1114,320,1094,320C1075.2,320,1056,320,1037,320C1017.6,320,998,320,979,320C960,320,941,320,922,320C902.4,320,883,320,864,320C844.8,320,826,320,806,320C787.2,320,768,320,749,320C729.6,320,710,320,691,320C672,320,653,320,634,320C614.4,320,595,320,576,320C556.8,320,538,320,518,320C499.2,320,480,320,461,320C441.6,320,422,320,403,320C384,320,365,320,346,320C326.4,320,307,320,288,320C268.8,320,250,320,230,320C211.2,320,192,320,173,320C153.6,320,134,320,115,320C96,320,77,320,58,320C38.4,320,19,320,10,320L0,320Z"></path>
+                    </svg>
+                </div>
+            </div>
 
-                                <div class="myarrow-2a arr3" data-description="Smartphone to Console">
-                                    <span class="arrow left"></span>
-                                    <span class="line"></span>
-                                    <span class="arrow right"></span>
-                                </div>
-                                <div class="myarrow-2b arr4" data-description="Console to Smartphone">
-                                    <span class="arrow left"></span>
-                                    <span class="line"></span>
-                                    <span class="arrow right"></span>
-                                </div>
+            <!-- OUR SERVICES -->
+            <section id="services">
+                <!-- CONTENT -->
+                <span id="services_anchor"></span>
+                <div class="content_section">
+                    <div id="our_services">
 
-                                <div class="myarrow-3a arr5" data-description="Computer to Smartphone">
-                                    <span class="arrow left"></span>
-                                    <span class="line"></span>
-                                    <span class="arrow right"></span>
-                                </div>
-                                <div class="myarrow-3b arr6" data-description="Smartphone to Computer">
-                                    <span class="arrow left"></span>
-                                    <span class="line"></span>
-                                    <span class="arrow right"></span>
-                                </div>
-
-                            <p id="text"></p>
-                        </div>
-
-                        <!-- LANGUAGE -->
-                        <div id="techno_wheel">
-                            <div class="wheel">
-                                <img src="images/icons/technology_icon.svg" alt="Technology icon">
-                                <img class="block_BG-1" src="images/background/block-circle_BG.png" alt="Background block">
-                                <img class="block_BG-2" src="images/background/block-circle_BG.png" alt="Background block">
-                            </div>
-                            <div class="circle_list">
-                                <div class="deg0"><img src="images/logos/haxe-logo-glyph.svg" alt="Logo"><div><p>Haxe</p></div></div>
-                                <div class="deg45"><img src="images/logos/HTML5_logo.svg" alt="Logo"><div><p>HTML 5</p></div></div>
-                                <div class="deg90"><img src="images/logos/cpp_logo.png" alt="Logo"><div><p>C++</p></div></div>
-                                <div class="deg135"><img src="images/logos/windows-logo.png" alt="Logo"><div><p>Windows</p></div></div>
-                                <div class="deg180"><img src="images/logos/apple-logo.png" alt="Logo"><div><p>OsX</p></div></div>
-                                <div class="deg225"><img src="images/logos/linux-logo.png" alt="Logo"><div><p>Linux</p></div></div>
-                                <div class="deg270"><img src="images/logos/android-logo.png" alt="Logo"><div><p>Android</p></div></div>
-                                <div class="deg315"><img src="images/logos/nintendo-switch.png" alt="Logo"><div><p>Nintendo Switch</p></div></div>
-                            </div>
-                        </div>
+                        <h3>Our services</h3>
                         
+                        <ul>
+                            <li>
+                                <div class="block_content">
+                                    <div class="text_content">
+                                        <p class="title_block">Porting</p>
+                                        <p class="text_block">Tur solvendae ego archetypi hoc attentius. At potestque ii extitisse in ingeniosi contingit. Partibus vis diversas pauciora actualis vox imo agi. Efficta nec quaedam capacem ita invenit hae cum. Illis mundo aliis ei ab magna. Illi ut quod si sese esto. Is pauciora im ad possumus absoluta pendeant compages. </p>
+                                    </div>
+                                </div>
+                                <div class="block_BG">
+                                    <img src="images/background/block-rect_BG_01.png" alt="Background block">
+                                    <img src="images/background/block-rect_BG_01.png" alt="Background block">
+                                </div>
+                            </li>
+                        <!--  -->
+                            <li>
+                                <div class="block_content">
+                                    <div class="text_content">
+                                        <p class="title_block">Remastering</p>
+                                        <p class="text_block">Tur solvendae ego archetypi hoc attentius. At potestque ii extitisse in ingeniosi contingit. Partibus vis diversas pauciora actualis vox imo agi. Efficta nec quaedam capacem ita invenit hae cum. Illis mundo aliis ei ab magna. Illi ut quod si sese esto. Is pauciora im ad possumus absoluta pendeant compages. </p>
+                                    </div>
+                                </div>
+                                <div class="block_BG">
+                                    <img src="images/background/block-rect_BG_01.png" alt="Background block">
+                                    <img src="images/background/block-rect_BG_01.png" alt="Background block">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <img id="comet" src="images/items/comet.svg" alt="Comet">
+
+                    <div id="skills">
+                        <h4>We are certified developers</h4>
+                        <ul id="certif_platform">
+                            <li><img src="images/logos/nintendo-logo.png" alt="Nintendo logo"></li>
+                        </ul>
+
+                        <div id="cross_platform">
+                            <!-- PLATFORM -->
+                            <div id="platform_wheel">
+                                <div class="wheel">
+                                    <div class="label console">
+                                        <img src="images/icons/consol_icon.svg" alt="Joystick icon">
+                                        <img class="block_BG-1" src="images/background/block-circle_BG.png" alt="Background block">
+                                        <img class="block_BG-2" src="images/background/block-circle_BG.png" alt="Background block">
+                                    </div>
+
+                                    <div class="label PC">
+                                        <img src="images/icons/PC_icon.svg" alt="Mouse icon">
+                                        <img class="block_BG-1" src="images/background/block-circle_BG.png" alt="Background block">
+                                        <img class="block_BG-2" src="images/background/block-circle_BG.png" alt="Background block">
+                                    </div>
+
+                                    <div class="label smartphone">
+                                        <img src="images/icons/smartphone_icon.svg" alt="Smartphone icon">
+                                        <img class="block_BG-1" src="images/background/block-circle_BG.png" alt="Background block">
+                                        <img class="block_BG-2" src="images/background/block-circle_BG.png" alt="Background block">
+                                    </div>
+                                </div>
+
+                                    <div class="myarrow-1a arr1" data-description="Computer to Console">
+                                        <span class="arrow left"></span>
+                                        <span class="line"></span>
+                                        <span class="arrow right"></span>
+                                    </div>
+                                    <div class="myarrow-1b arr2" data-description="Console to Computer">
+                                        <span class="arrow left"></span>
+                                        <span class="line"></span>
+                                        <span class="arrow right"></span>
+                                    </div>
+
+                                    <div class="myarrow-2a arr3" data-description="Smartphone to Console">
+                                        <span class="arrow left"></span>
+                                        <span class="line"></span>
+                                        <span class="arrow right"></span>
+                                    </div>
+                                    <div class="myarrow-2b arr4" data-description="Console to Smartphone">
+                                        <span class="arrow left"></span>
+                                        <span class="line"></span>
+                                        <span class="arrow right"></span>
+                                    </div>
+
+                                    <div class="myarrow-3a arr5" data-description="Computer to Smartphone">
+                                        <span class="arrow left"></span>
+                                        <span class="line"></span>
+                                        <span class="arrow right"></span>
+                                    </div>
+                                    <div class="myarrow-3b arr6" data-description="Smartphone to Computer">
+                                        <span class="arrow left"></span>
+                                        <span class="line"></span>
+                                        <span class="arrow right"></span>
+                                    </div>
+
+                                <p id="text"></p>
+                            </div>
+
+                            <!-- LANGUAGE -->
+                            <div id="techno_wheel">
+                                <div class="wheel">
+                                    <img src="images/icons/technology_icon.svg" alt="Technology icon">
+                                    <img class="block_BG-1" src="images/background/block-circle_BG.png" alt="Background block">
+                                    <img class="block_BG-2" src="images/background/block-circle_BG.png" alt="Background block">
+                                </div>
+                                <div class="circle_list">
+                                    <div class="deg0"><img src="images/logos/haxe-logo-glyph.svg" alt="Logo"><div><p>Haxe</p></div></div>
+                                    <div class="deg45"><img src="images/logos/HTML5_logo.svg" alt="Logo"><div><p>HTML 5</p></div></div>
+                                    <div class="deg90"><img src="images/logos/cpp_logo.png" alt="Logo"><div><p>C++</p></div></div>
+                                    <div class="deg135"><img src="images/logos/windows-logo.png" alt="Logo"><div><p>Windows</p></div></div>
+                                    <div class="deg180"><img src="images/logos/apple-logo.png" alt="Logo"><div><p>OsX</p></div></div>
+                                    <div class="deg225"><img src="images/logos/linux-logo.png" alt="Logo"><div><p>Linux</p></div></div>
+                                    <div class="deg270"><img src="images/logos/android-logo.png" alt="Logo"><div><p>Android</p></div></div>
+                                    <div class="deg315"><img src="images/logos/nintendo-switch.png" alt="Logo"><div><p>Nintendo Switch</p></div></div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="autoscroll_arrow"><a href="#about_anchor"><img src="images/icons/Arrow_UI.svg" class="arrow" alt="Arrow"></a></div>
+                </div>
+                <!-- BACKGROUND -->
+                <div class="background_section_02">
+                    <img id="planet_01" src="images/background/planet-far_01.svg" alt="Distant planet">
+                    <img id="planet_02" src="images/background/planet-far_02.svg" alt="Distant planet">
+
+                    <img id="space_tail_07" src="images/background/space_tail_07.png" alt="Distant planet">
+                    <img id="stars" src="images/background/stars_02.png" alt="stars">
+                </div>
+            </section>
+
+            <!-- PORTAL -->
+            <div class="portal-2">
+                <!-- Wave front -->
+                <div class="front_wave">
+                    <svg viewBox="0 0 1440 320">
+                        <path fill="#1A0042" d="M0,224L12,213.3C24,203,48,181,72,170.7C96,160,120,160,144,165.3C168,171,192,181,216,176C240,171,264,149,288,138.7C312,128,336,128,360,144C384,160,408,192,432,181.3C456,171,480,117,504,96C528,75,552,85,576,112C600,139,624,181,648,197.3C672,213,696,203,720,213.3C744,224,768,256,792,250.7C816,245,840,203,864,176C888,149,912,139,936,154.7C960,171,984,213,1008,234.7C1032,256,1056,256,1080,250.7C1104,245,1128,235,1152,208C1176,181,1200,139,1224,112C1248,85,1272,75,1296,106.7C1320,139,1344,213,1368,240C1392,267,1416,245,1428,234.7L1440,224L1440,320L1428,320C1416,320,1392,320,1368,320C1344,320,1320,320,1296,320C1272,320,1248,320,1224,320C1200,320,1176,320,1152,320C1128,320,1104,320,1080,320C1056,320,1032,320,1008,320C984,320,960,320,936,320C912,320,888,320,864,320C840,320,816,320,792,320C768,320,744,320,720,320C696,320,672,320,648,320C624,320,600,320,576,320C552,320,528,320,504,320C480,320,456,320,432,320C408,320,384,320,360,320C336,320,312,320,288,320C264,320,240,320,216,320C192,320,168,320,144,320C120,320,96,320,72,320C48,320,24,320,12,320L0,320Z"></path>
+                    </svg>
+                </div>
+
+                <!-- Fill center (for hide) -->
+                <div class="fill_transition"></div>
+
+                <!-- Hole -->
+                <div class="hole_content">
+                    <img src="images/background/hole_center.svg" id="hole1" alt="hole">
+                    <img src="images/background/hole_center.svg" id="hole2" alt="hole">
+                    <svg id="border_hole" viewBox="0 0 1920 558.1">
+                        <ellipse fill="#B608FF" cx="960" cy="279.1" rx="960" ry="279.1"></ellipse>
+                    </svg>
+                </div>
+
+                <!-- Wave background -->
+                <div class="wave_BG_content">
+                    <!-- Wave 01 -->
+                    <div class="wave_BG_01">
+                        <svg viewBox="0 0 1915 500">
+                            <defs>
+                                <linearGradient id="P2-Gradient1" x1="0" x2="0" y1="1" y2="0">
+                                    <stop offset="60%" stop-color="#B608FF"></stop>
+                                    <stop offset="98%" stop-color="#1C0526"></stop>
+                                </linearGradient>
+                            </defs>
+                            <path fill="url(#P2-Gradient1)" d="M1920,717.6c-58.7-8.4-136.6-22-228.2-35.3c-169.7-25.4-386.7-49.5-608.3-56.1c-221.5-7.6-447.6,2.3-633.4,22.7c-185.9,19.4-331.5,49.3-395.8,57.5c-10.5,1.4-30.6,4.6-54.4,7.6l0-552.5c48.9-41.8,85.1-64.7,128.6-70.6c76.9-9.7,102.5,42.7,159,33.3c61.6-9.8,65.5-77.3,129.4-86.5c84.7-11.9,167.9,92.6,222.4,85.9c45.4-5.3,24.9-79.7,77.3-85.9c66.6-7.5,154.3,102.8,221,99.7c72.9-3.2,75.9-137.7,122.9-137.4c48.9,0.8,65.7,144.1,156.4,152.2c73,7,140.3-78.9,235.1-66.5c86.6,11.9,92.5,92.3,160.1,102.7c85.3,14.2,139.5-105.1,249.2-87.9c17.1,2.6,37.5,10.5,58.7,21.9V717.6z"></path>
+                        </svg>
+                    </div>
+
+                    <!-- Wave 02 -->
+                    <div class="wave_BG_02">
+                        <svg viewBox="0 0 1915 357">
+                            <defs>
+                                <linearGradient id="P2-Gradient2" x1="0" x2="0" y1="1" y2="0">
+                                    <stop offset="65%" stop-color="#1C0526"></stop>
+                                    <stop offset="100%" stop-color="#8134A1"></stop>
+                                </linearGradient>
+                            </defs>
+                            <path fill="url(#P2-Gradient2)" d="M0,526.1L0,91.3C38,55,88.3,26.7,136.7,33.2c58.8,8,63.6,60.8,139.1,78c43.8,9.9,81.5,0.4,156.8-18.7c103.8-26.3,107-48.3,149.6-43.5c86.7,9.7,108.7,105.1,163.5,97.6C808.6,138,810.3,8.5,869.8,0.4c64.8-8.8,111.3,138.2,181.2,128.9c48.1-6.4,48.5-79.2,107.5-92.8c54.1-12.5,74.7,43.7,154.4,59.5c105.6,20.9,143.4-63.1,239.4-43c91.3,19.1,91.4,102.4,170.6,114.1c83.4,12.4,146.6-70.4,197.1-105.8l0,463.1L0,526.1z"></path>
+                        </svg>
                     </div>
                 </div>
-                <div class="autoscroll_arrow"><a href="#about_anchor"><img src="images/icons/Arrow_UI.svg" class="arrow" alt="Arrow"></a></div>
-            </div>
-            <!-- BACKGROUND -->
-            <div class="background_section_02">
-                <img id="planet_01" src="images/background/planet-far_01.svg" alt="Distant planet">
-                <img id="planet_02" src="images/background/planet-far_02.svg" alt="Distant planet">
-                
-                <img class="tail_1" src="images/background/spaceTrail_02.svg" alt="Space tail">
-                <img class="tail_2" src="images/background/spaceTrail_03.svg" alt="Space tail">
-                <img class="tail_3" src="images/background/spaceTrail_05.svg" alt="Space tail">
 
-                <img id="stars" src="images/background/stars_02.png" alt="stars">
-            </div>
-        </section>
-
-        <!-- PORTAL -->
-        <div class="portal-2">
-            <!-- Wave front -->
-            <div class="front_wave">
-                <svg viewBox="0 0 1440 320">
-                    <path fill="#1A0042" d="M0,224L12,213.3C24,203,48,181,72,170.7C96,160,120,160,144,165.3C168,171,192,181,216,176C240,171,264,149,288,138.7C312,128,336,128,360,144C384,160,408,192,432,181.3C456,171,480,117,504,96C528,75,552,85,576,112C600,139,624,181,648,197.3C672,213,696,203,720,213.3C744,224,768,256,792,250.7C816,245,840,203,864,176C888,149,912,139,936,154.7C960,171,984,213,1008,234.7C1032,256,1056,256,1080,250.7C1104,245,1128,235,1152,208C1176,181,1200,139,1224,112C1248,85,1272,75,1296,106.7C1320,139,1344,213,1368,240C1392,267,1416,245,1428,234.7L1440,224L1440,320L1428,320C1416,320,1392,320,1368,320C1344,320,1320,320,1296,320C1272,320,1248,320,1224,320C1200,320,1176,320,1152,320C1128,320,1104,320,1080,320C1056,320,1032,320,1008,320C984,320,960,320,936,320C912,320,888,320,864,320C840,320,816,320,792,320C768,320,744,320,720,320C696,320,672,320,648,320C624,320,600,320,576,320C552,320,528,320,504,320C480,320,456,320,432,320C408,320,384,320,360,320C336,320,312,320,288,320C264,320,240,320,216,320C192,320,168,320,144,320C120,320,96,320,72,320C48,320,24,320,12,320L0,320Z"></path>
-                </svg>
-            </div>
-
-            <!-- Fill center (for hide) -->
-            <div class="fill_transition"></div>
-
-            <!-- Hole -->
-            <div class="hole_content">
-                <img src="images/background/hole_center.svg" id="hole1" alt="hole">
-                <img src="images/background/hole_center.svg" id="hole2" alt="hole">
-                <svg id="border_hole" viewBox="0 0 1920 558.1">
-                    <ellipse fill="#B608FF" cx="960" cy="279.1" rx="960" ry="279.1"/>
-                </svg>
-            </div>
-
-            <!-- Wave background -->
-            <div class="wave_BG_content">
-                <!-- Wave 01 -->
-                <div class="wave_BG_01">
-                    <svg viewBox="0 0 1915 500">
+                <!-- Glow -->
+                <div class="glow">
+                    <svg viewBox="0 0 1377.8 734.2">
                         <defs>
-                            <linearGradient id="P2-Gradient1" x1="0" x2="0" y1="1" y2="0">
-                                <stop offset="60%" stop-color="#B608FF"/>
-                                <stop offset="98%" stop-color="#1C0526"/>
-                            </linearGradient>
+                            <radialGradient  id="P2-Gradient3" cx="0.5" cy="0.5" r="0.5">
+                                <stop offset="0%" stop-color="#B608FF"></stop>
+                                <stop offset="90%" stop-color="#520473" stop-opacity="0"></stop>
+                            </radialGradient >
                         </defs>
-                        <path fill="url(#P2-Gradient1)" d="M1920,717.6c-58.7-8.4-136.6-22-228.2-35.3c-169.7-25.4-386.7-49.5-608.3-56.1c-221.5-7.6-447.6,2.3-633.4,22.7c-185.9,19.4-331.5,49.3-395.8,57.5c-10.5,1.4-30.6,4.6-54.4,7.6l0-552.5c48.9-41.8,85.1-64.7,128.6-70.6c76.9-9.7,102.5,42.7,159,33.3c61.6-9.8,65.5-77.3,129.4-86.5c84.7-11.9,167.9,92.6,222.4,85.9c45.4-5.3,24.9-79.7,77.3-85.9c66.6-7.5,154.3,102.8,221,99.7c72.9-3.2,75.9-137.7,122.9-137.4c48.9,0.8,65.7,144.1,156.4,152.2c73,7,140.3-78.9,235.1-66.5c86.6,11.9,92.5,92.3,160.1,102.7c85.3,14.2,139.5-105.1,249.2-87.9c17.1,2.6,37.5,10.5,58.7,21.9V717.6z"/>
+                        <ellipse fill="url(#P2-Gradient3)" cx="688.9" cy="367.1" rx="1200" ry="350"></ellipse>
                     </svg>
                 </div>
 
-                <!-- Wave 02 -->
-                <div class="wave_BG_02">
-                    <svg viewBox="0 0 1915 357">
-                        <defs>
-                            <linearGradient id="P2-Gradient2" x1="0" x2="0" y1="1" y2="0">
-                                <stop offset="65%" stop-color="#1C0526"/>
-                                <stop offset="100%" stop-color="#8134A1"/>
-                            </linearGradient>
-                        </defs>
-                        <path fill="url(#P2-Gradient2)" d="M0,526.1L0,91.3C38,55,88.3,26.7,136.7,33.2c58.8,8,63.6,60.8,139.1,78c43.8,9.9,81.5,0.4,156.8-18.7c103.8-26.3,107-48.3,149.6-43.5c86.7,9.7,108.7,105.1,163.5,97.6C808.6,138,810.3,8.5,869.8,0.4c64.8-8.8,111.3,138.2,181.2,128.9c48.1-6.4,48.5-79.2,107.5-92.8c54.1-12.5,74.7,43.7,154.4,59.5c105.6,20.9,143.4-63.1,239.4-43c91.3,19.1,91.4,102.4,170.6,114.1c83.4,12.4,146.6-70.4,197.1-105.8l0,463.1L0,526.1z"/>
+                <!-- Wave out -->
+                <div class=wave_out>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                        <path fill="#1A0042" d="M0,32L9.6,37.3C19.2,43,38,53,58,74.7C76.8,96,96,128,115,128C134.4,128,154,96,173,90.7C192,85,211,107,230,112C249.6,117,269,107,288,122.7C307.2,139,326,181,346,186.7C364.8,192,384,160,403,160C422.4,160,442,192,461,176C480,160,499,96,518,90.7C537.6,85,557,139,576,149.3C595.2,160,614,128,634,101.3C652.8,75,672,53,691,48C710.4,43,730,53,749,96C768,139,787,213,806,208C825.6,203,845,117,864,69.3C883.2,21,902,11,922,32C940.8,53,960,107,979,117.3C998.4,128,1018,96,1037,117.3C1056,139,1075,213,1094,218.7C1113.6,224,1133,160,1152,144C1171.2,128,1190,160,1210,192C1228.8,224,1248,256,1267,266.7C1286.4,277,1306,267,1325,245.3C1344,224,1363,192,1382,165.3C1401.6,139,1421,117,1430,106.7L1440,96L1440,320L1430.4,320C1420.8,320,1402,320,1382,320C1363.2,320,1344,320,1325,320C1305.6,320,1286,320,1267,320C1248,320,1229,320,1210,320C1190.4,320,1171,320,1152,320C1132.8,320,1114,320,1094,320C1075.2,320,1056,320,1037,320C1017.6,320,998,320,979,320C960,320,941,320,922,320C902.4,320,883,320,864,320C844.8,320,826,320,806,320C787.2,320,768,320,749,320C729.6,320,710,320,691,320C672,320,653,320,634,320C614.4,320,595,320,576,320C556.8,320,538,320,518,320C499.2,320,480,320,461,320C441.6,320,422,320,403,320C384,320,365,320,346,320C326.4,320,307,320,288,320C268.8,320,250,320,230,320C211.2,320,192,320,173,320C153.6,320,134,320,115,320C96,320,77,320,58,320C38.4,320,19,320,10,320L0,320Z"></path>
                     </svg>
                 </div>
             </div>
 
-            <!-- Glow -->
-            <div class="glow">
-                <svg viewBox="0 0 1377.8 734.2">
-                    <defs>
-                        <radialGradient  id="P2-Gradient3" cx="0.5" cy="0.5" r="0.5">
-                            <stop offset="0%" stop-color="#B608FF"/>
-                            <!-- <stop offset="65%" stop-color="#7405A3" stop-opacity="0.4"/> -->
-                            <stop offset="90%" stop-color="#520473" stop-opacity="0"/>
-                        </radialGradient >
-                    </defs>
-                    <ellipse fill="url(#P2-Gradient3)" cx="688.9" cy="367.1" rx="1200" ry="350"/>
-                </svg>
+            <section id="about">
+                <span id="about_anchor"></span>
+                <div class="content_section">
+                    <h3>How we work</h3>
+
+                    <div id="step_tree">
+                        <div id="line"></div>
+                        
+                        <div class="sub_block_left">
+                            <div class="step_block">
+                                <div class="label"><img src="images/icons/speak_icon.svg" alt="Step icon"></div>
+                                <div class="title_area">
+                                    <h5>Step 1 : Audit and quote</h5>
+                                </div>
+                                <div class="content_area">
+                                    <p>Huic quum fas cui suum sunt omne ego. Sed toga rea vim eram tur quum. Adjuvetis perlegere immittant quaslibet separatum nec eas rum uno explorant. Eos mox tur tum casu nunc huic bile meum. Ad sequentia expendere considero se dubitandi. Loco modi regi tur sex apti data olim. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="sub_block_right">
+                            <div class="step_block">
+                                <div class="label"><img src="images/icons/speak_icon.svg" alt="Step icon"></div>
+                                <div class="title_area">
+                                    <h5>Step 2 : Development</h5>
+                                </div>
+                                <div class="content_area">
+                                    Active comm, rolling release
+                                    <p>Huic quum fas cui suum sunt omne ego. Sed toga rea vim eram tur quum. Adjuvetis perlegere immittant quaslibet separatum nec eas rum uno explorant. Eos mox tur tum casu nunc huic bile meum. Ad sequentia expendere considero se dubitandi. Loco modi regi tur sex apti data olim. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="sub_block_left">
+                            <div class="step_block">
+                                <div class="label"><img src="images/icons/speak_icon.svg" alt="Step icon"></div>
+                                <div class="title_area">
+                                    <h5>Step 3 : Support and maintenance</h5>
+                                </div>
+                                <div class="content_area">
+                                    1 year warranty, follow backport
+                                    <p>Huic quum fas cui suum sunt omne ego. Sed toga rea vim eram tur quum. Adjuvetis perlegere immittant quaslibet separatum nec eas rum uno explorant. Eos mox tur tum casu nunc huic bile meum. Ad sequentia expendere considero se dubitandi. Loco modi regi tur sex apti data olim. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3>Why us</h3>
+                    <div id="why_us">
+                        <ul>
+                            <li>
+                                <div class="block_content">
+                                    <div class="text_content">
+                                        <p class="title_block">Title</p>
+                                        <p class="text_block">Tur solvendae ego archetypi hoc attentius. At potestque ii extitisse in ingeniosi contingit. Partibus vis diversas pauciora actualis vox imo agi. Efficta nec quaedam capacem ita invenit hae cum. Illis mundo aliis ei ab magna. Illi ut quod si sese esto. Is pauciora im ad possumus absoluta pendeant compages. </p>
+                                    </div>
+                                </div>
+                                <div class="block_BG">
+                                    <img src="images/background/block-rect_BG_01.png" alt="Background block">
+                                    <img src="images/background/block-rect_BG_01.png" alt="Background block">
+                                </div>
+                            </li>
+                            <!--  -->
+                            <li>
+                                <div class="block_content">
+                                    <div class="text_content">
+                                        <p class="title_block">Title</p>
+                                        <p class="text_block">Tur solvendae ego archetypi hoc attentius. At potestque ii extitisse in ingeniosi contingit. Partibus vis diversas pauciora actualis vox imo agi. Efficta nec quaedam capacem ita invenit hae cum. Illis mundo aliis ei ab magna. Illi ut quod si sese esto. Is pauciora im ad possumus absoluta pendeant compages. </p>
+                                    </div>
+                                </div>
+                                <div class="block_BG">
+                                    <img src="images/background/block-rect_BG_01.png" alt="Background block">
+                                    <img src="images/background/block-rect_BG_01.png" alt="Background block">
+                                </div>
+                            </li>
+                            <!--  -->
+                            <li>
+                                <div class="block_content">
+                                    <div class="text_content">
+                                        <p class="title_block">Title</p>
+                                        <p class="text_block">Tur solvendae ego archetypi hoc attentius. At potestque ii extitisse in ingeniosi contingit. Partibus vis diversas pauciora actualis vox imo agi. Efficta nec quaedam capacem ita invenit hae cum. Illis mundo aliis ei ab magna. Illi ut quod si sese esto. Is pauciora im ad possumus absoluta pendeant compages. </p>
+                                    </div>
+                                </div>
+                                <div class="block_BG">
+                                    <img src="images/background/block-rect_BG_01.png" alt="Background block">
+                                    <img src="images/background/block-rect_BG_01.png" alt="Background block">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="autoscroll_arrow"><a href="#clients_anchor"><img src="images/icons/Arrow_UI.svg" class="arrow" alt="Arrow"></a></div>
+
+                </div>
+
+
+                <div class="background_section_03">
+                    <img id="pink_star" src="images/items/sun_01.svg" alt="Pink star">
+                    <img id="big_planet" src="images/items/big_planet.svg" alt="Big planet">
+
+                    <img id="space_tail" src="images/background/space_tail_06.png" alt="Space tails">
+                    <img id="stars" src="images/background/stars_02.png" alt="stars">
+                </div>
+            </section>
+            
+
+            <!-- PORTAL -->
+            <div class="portal-3">
+                <!-- Wave front -->
+                <div class="front_wave">
+                    <svg viewBox="0 0 1440 320">
+                        <path fill="#1A0042" d="M0,224L12,213.3C24,203,48,181,72,170.7C96,160,120,160,144,165.3C168,171,192,181,216,176C240,171,264,149,288,138.7C312,128,336,128,360,144C384,160,408,192,432,181.3C456,171,480,117,504,96C528,75,552,85,576,112C600,139,624,181,648,197.3C672,213,696,203,720,213.3C744,224,768,256,792,250.7C816,245,840,203,864,176C888,149,912,139,936,154.7C960,171,984,213,1008,234.7C1032,256,1056,256,1080,250.7C1104,245,1128,235,1152,208C1176,181,1200,139,1224,112C1248,85,1272,75,1296,106.7C1320,139,1344,213,1368,240C1392,267,1416,245,1428,234.7L1440,224L1440,320L1428,320C1416,320,1392,320,1368,320C1344,320,1320,320,1296,320C1272,320,1248,320,1224,320C1200,320,1176,320,1152,320C1128,320,1104,320,1080,320C1056,320,1032,320,1008,320C984,320,960,320,936,320C912,320,888,320,864,320C840,320,816,320,792,320C768,320,744,320,720,320C696,320,672,320,648,320C624,320,600,320,576,320C552,320,528,320,504,320C480,320,456,320,432,320C408,320,384,320,360,320C336,320,312,320,288,320C264,320,240,320,216,320C192,320,168,320,144,320C120,320,96,320,72,320C48,320,24,320,12,320L0,320Z"></path>
+                    </svg>
+                </div>
+
+                <!-- Fill center (for hide) -->
+                <div class="fill_transition"></div>
+
+                <!-- Hole -->
+                <div class="hole_content">
+                    <img src="images/background/hole_center.svg" id="hole1" alt="hole">
+                    <img src="images/background/hole_center.svg" id="hole2" alt="hole">
+                    <svg id="border_hole" viewBox="0 0 1920 558.1">
+                        <ellipse fill="#FFF30D" cx="960" cy="279.1" rx="960" ry="279.1"></ellipse>
+                    </svg>
+                </div>
+
+                <!-- Wave background -->
+                <div class="wave_BG_content">
+                    <!-- Wave 01 -->
+                    <div class="wave_BG_01">
+                        <svg viewBox="0 0 1915 500">
+                            <defs>
+                                <linearGradient id="P3-Gradient1" x1="0" x2="0" y1="1" y2="0">
+                                    <stop offset="65%" stop-color="#FFF30D"></stop>
+                                    <stop offset="100%" stop-color="#262405"></stop>
+                                    
+                                </linearGradient>
+                            </defs>
+                            <path fill="url(#P3-Gradient1)" d="M1920,717.6c-58.7-8.4-136.6-22-228.2-35.3c-169.7-25.4-386.7-49.5-608.3-56.1c-221.5-7.6-447.6,2.3-633.4,22.7c-185.9,19.4-331.5,49.3-395.8,57.5c-10.5,1.4-30.6,4.6-54.4,7.6l0-552.5c48.9-41.8,85.1-64.7,128.6-70.6c76.9-9.7,102.5,42.7,159,33.3c61.6-9.8,65.5-77.3,129.4-86.5c84.7-11.9,167.9,92.6,222.4,85.9c45.4-5.3,24.9-79.7,77.3-85.9c66.6-7.5,154.3,102.8,221,99.7c72.9-3.2,75.9-137.7,122.9-137.4c48.9,0.8,65.7,144.1,156.4,152.2c73,7,140.3-78.9,235.1-66.5c86.6,11.9,92.5,92.3,160.1,102.7c85.3,14.2,139.5-105.1,249.2-87.9c17.1,2.6,37.5,10.5,58.7,21.9V717.6z"></path>
+                        </svg>
+                    </div>
+
+                    <!-- Wave 02 -->
+                    <div class="wave_BG_02">
+                        <svg viewBox="0 0 1915 357">
+                            <defs>
+                                <linearGradient id="P3-Gradient2" x1="0" x2="0" y1="1" y2="0">
+                                    <stop offset="70%" stop-color="#262405"></stop>
+                                    <stop offset="100%" stop-color="#FFF30D"></stop>
+                                </linearGradient>
+                            </defs>
+                            <path fill="url(#P3-Gradient2)" d="M0,526.1L0,91.3C38,55,88.3,26.7,136.7,33.2c58.8,8,63.6,60.8,139.1,78c43.8,9.9,81.5,0.4,156.8-18.7c103.8-26.3,107-48.3,149.6-43.5c86.7,9.7,108.7,105.1,163.5,97.6C808.6,138,810.3,8.5,869.8,0.4c64.8-8.8,111.3,138.2,181.2,128.9c48.1-6.4,48.5-79.2,107.5-92.8c54.1-12.5,74.7,43.7,154.4,59.5c105.6,20.9,143.4-63.1,239.4-43c91.3,19.1,91.4,102.4,170.6,114.1c83.4,12.4,146.6-70.4,197.1-105.8l0,463.1L0,526.1z"></path>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Glow -->
+                <div class="glow">
+                    <svg viewBox="0 0 1377.8 734.2">
+                        <defs>
+                            <radialGradient  id="P3-Gradient3" cx="0.5" cy="0.5" r="0.5">
+                                <stop offset="0%" stop-color="#FFF30D"></stop>
+                                <stop offset="100%" stop-color="#736D04" stop-opacity="0"></stop>
+                            </radialGradient >
+                        </defs>
+                        <ellipse fill="url(#P3-Gradient3)" cx="688.9" cy="367.1" rx="1200" ry="350"></ellipse>
+                    </svg>
+                </div>
+
+                <!-- Wave out -->
+                <div class=wave_out>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                        <path fill="#1A0042" d="M0,32L9.6,37.3C19.2,43,38,53,58,74.7C76.8,96,96,128,115,128C134.4,128,154,96,173,90.7C192,85,211,107,230,112C249.6,117,269,107,288,122.7C307.2,139,326,181,346,186.7C364.8,192,384,160,403,160C422.4,160,442,192,461,176C480,160,499,96,518,90.7C537.6,85,557,139,576,149.3C595.2,160,614,128,634,101.3C652.8,75,672,53,691,48C710.4,43,730,53,749,96C768,139,787,213,806,208C825.6,203,845,117,864,69.3C883.2,21,902,11,922,32C940.8,53,960,107,979,117.3C998.4,128,1018,96,1037,117.3C1056,139,1075,213,1094,218.7C1113.6,224,1133,160,1152,144C1171.2,128,1190,160,1210,192C1228.8,224,1248,256,1267,266.7C1286.4,277,1306,267,1325,245.3C1344,224,1363,192,1382,165.3C1401.6,139,1421,117,1430,106.7L1440,96L1440,320L1430.4,320C1420.8,320,1402,320,1382,320C1363.2,320,1344,320,1325,320C1305.6,320,1286,320,1267,320C1248,320,1229,320,1210,320C1190.4,320,1171,320,1152,320C1132.8,320,1114,320,1094,320C1075.2,320,1056,320,1037,320C1017.6,320,998,320,979,320C960,320,941,320,922,320C902.4,320,883,320,864,320C844.8,320,826,320,806,320C787.2,320,768,320,749,320C729.6,320,710,320,691,320C672,320,653,320,634,320C614.4,320,595,320,576,320C556.8,320,538,320,518,320C499.2,320,480,320,461,320C441.6,320,422,320,403,320C384,320,365,320,346,320C326.4,320,307,320,288,320C268.8,320,250,320,230,320C211.2,320,192,320,173,320C153.6,320,134,320,115,320C96,320,77,320,58,320C38.4,320,19,320,10,320L0,320Z"></path>
+                    </svg>
+                </div>
             </div>
 
-            <!-- Wave out -->
-            <div class=wave_out>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                    <path fill="#1A0042" d="M0,32L9.6,37.3C19.2,43,38,53,58,74.7C76.8,96,96,128,115,128C134.4,128,154,96,173,90.7C192,85,211,107,230,112C249.6,117,269,107,288,122.7C307.2,139,326,181,346,186.7C364.8,192,384,160,403,160C422.4,160,442,192,461,176C480,160,499,96,518,90.7C537.6,85,557,139,576,149.3C595.2,160,614,128,634,101.3C652.8,75,672,53,691,48C710.4,43,730,53,749,96C768,139,787,213,806,208C825.6,203,845,117,864,69.3C883.2,21,902,11,922,32C940.8,53,960,107,979,117.3C998.4,128,1018,96,1037,117.3C1056,139,1075,213,1094,218.7C1113.6,224,1133,160,1152,144C1171.2,128,1190,160,1210,192C1228.8,224,1248,256,1267,266.7C1286.4,277,1306,267,1325,245.3C1344,224,1363,192,1382,165.3C1401.6,139,1421,117,1430,106.7L1440,96L1440,320L1430.4,320C1420.8,320,1402,320,1382,320C1363.2,320,1344,320,1325,320C1305.6,320,1286,320,1267,320C1248,320,1229,320,1210,320C1190.4,320,1171,320,1152,320C1132.8,320,1114,320,1094,320C1075.2,320,1056,320,1037,320C1017.6,320,998,320,979,320C960,320,941,320,922,320C902.4,320,883,320,864,320C844.8,320,826,320,806,320C787.2,320,768,320,749,320C729.6,320,710,320,691,320C672,320,653,320,634,320C614.4,320,595,320,576,320C556.8,320,538,320,518,320C499.2,320,480,320,461,320C441.6,320,422,320,403,320C384,320,365,320,346,320C326.4,320,307,320,288,320C268.8,320,250,320,230,320C211.2,320,192,320,173,320C153.6,320,134,320,115,320C96,320,77,320,58,320C38.4,320,19,320,10,320L0,320Z"></path>
-                </svg>
+            <section id="clients">
+                <span id="clients_anchor"></span>
+
+                <div class="content_section">
+                    <h3>Our clients</h3>
+                    <h5 style="margin:50px 0 100px 0">Many collaborators already trust us</h5>
+
+                    <div id="list_block">
+                        <ul>
+                            <li><img src="images/logos/fishing_cactus.png" alt="logo"></li>
+                            <li><img src="images/logos/game_hollywood.png" alt="logo"></li>
+                            <li><img src="images/logos/metidia_white_logo.png" alt="logo" style="width:80%"></li>
+                            <li><img src="images/logos/RTBF_logo.png" alt="logo"></li>
+                            <li><img src="images/logos/SFR.png" alt="logo" style="width:50%"></li>
+
+                            <li><img src="images/logos/uzik.png" alt="logo"></li>
+                            <li><img src="images/logos/addicting_game_logo.png" alt="logo"></li>
+                            <li><img src="images/logos/boss_key_production.png" alt="logo"></li>
+                            <li><img src="images/logos/castle-keep-logo.png" alt="logo" style="width:80%"></li>
+
+                            <div class="block_BG">
+                                <img src="images/background/block-rect_BG_02.png" alt="background">
+                                <img src="images/background/block-rect_BG_02.png" alt="background">
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="autoscroll_arrow"><a href="#contact_anchor"><img src="images/icons/Arrow_UI.svg" class="arrow" alt="Arrow"></a></div>
+                </div>
+                <div class="space_items">
+                    <img id="planet" src="images/items/planet-far_03.svg" alt="Planet">
+                    <img id="sun" src="images/items/sun_02.svg" alt="Sun">
+                </div>
+                <div class="background_section_04">
+                    <div id="city_block">
+                        <img id="smog" src="images/items/smog.svg" alt="City smog">
+                        <div id="all_city">
+                            <img id="city" src="images/items/space_city.svg" alt="Space city">
+                            <div id="bottom_block"></div>
+                        </div>
+                    </div> 
+                </div>
+            </section>
+            <!-- PORTAL -->
+            <div class="portal-4">
+                <!-- Wave front -->
+                <div class="front_wave">
+                    <svg viewBox="0 0 1440 320">
+                        <path fill="#00034A" d="M0,224L12,213.3C24,203,48,181,72,170.7C96,160,120,160,144,165.3C168,171,192,181,216,176C240,171,264,149,288,138.7C312,128,336,128,360,144C384,160,408,192,432,181.3C456,171,480,117,504,96C528,75,552,85,576,112C600,139,624,181,648,197.3C672,213,696,203,720,213.3C744,224,768,256,792,250.7C816,245,840,203,864,176C888,149,912,139,936,154.7C960,171,984,213,1008,234.7C1032,256,1056,256,1080,250.7C1104,245,1128,235,1152,208C1176,181,1200,139,1224,112C1248,85,1272,75,1296,106.7C1320,139,1344,213,1368,240C1392,267,1416,245,1428,234.7L1440,224L1440,320L1428,320C1416,320,1392,320,1368,320C1344,320,1320,320,1296,320C1272,320,1248,320,1224,320C1200,320,1176,320,1152,320C1128,320,1104,320,1080,320C1056,320,1032,320,1008,320C984,320,960,320,936,320C912,320,888,320,864,320C840,320,816,320,792,320C768,320,744,320,720,320C696,320,672,320,648,320C624,320,600,320,576,320C552,320,528,320,504,320C480,320,456,320,432,320C408,320,384,320,360,320C336,320,312,320,288,320C264,320,240,320,216,320C192,320,168,320,144,320C120,320,96,320,72,320C48,320,24,320,12,320L0,320Z"></path>
+                    </svg>
+                </div>
+
+                <!-- Fill center (for hide) -->
+                <div class="fill_transition"></div>
+
+                <!-- Hole -->
+                <div class="hole_content">
+                    <img src="images/background/hole_center.svg" id="hole1" alt="hole">
+                    <img src="images/background/hole_center.svg" id="hole2" alt="hole">
+                    <svg id="border_hole" viewBox="0 0 1920 558.1">
+                        <ellipse fill="#00DBFF" cx="960" cy="279.1" rx="960" ry="279.1"></ellipse>
+                    </svg>
+                </div>
+
+                <!-- Wave background -->
+                <div class="wave_BG_content">
+                    <!-- Wave 01 -->
+                    <div class="wave_BG_01">
+                        <svg viewBox="0 0 1915 500">
+                            <defs>
+                                <linearGradient id="P4-Gradient1" x1="0" x2="0" y1="1" y2="0">
+                                    <stop offset="65%" stop-color="#00dbff"></stop>
+                                    <stop offset="100%" stop-color="#000000"></stop>
+                                    
+                                </linearGradient>
+                            </defs>
+                            <path fill="url(#P4-Gradient1)" d="M1920,717.6c-58.7-8.4-136.6-22-228.2-35.3c-169.7-25.4-386.7-49.5-608.3-56.1c-221.5-7.6-447.6,2.3-633.4,22.7c-185.9,19.4-331.5,49.3-395.8,57.5c-10.5,1.4-30.6,4.6-54.4,7.6l0-552.5c48.9-41.8,85.1-64.7,128.6-70.6c76.9-9.7,102.5,42.7,159,33.3c61.6-9.8,65.5-77.3,129.4-86.5c84.7-11.9,167.9,92.6,222.4,85.9c45.4-5.3,24.9-79.7,77.3-85.9c66.6-7.5,154.3,102.8,221,99.7c72.9-3.2,75.9-137.7,122.9-137.4c48.9,0.8,65.7,144.1,156.4,152.2c73,7,140.3-78.9,235.1-66.5c86.6,11.9,92.5,92.3,160.1,102.7c85.3,14.2,139.5-105.1,249.2-87.9c17.1,2.6,37.5,10.5,58.7,21.9V717.6z"></path>
+                        </svg>
+                    </div>
+
+                    <!-- Wave 02 -->
+                    <div class="wave_BG_02">
+                        <svg viewBox="0 0 1915 357">
+                            <defs>
+                                <linearGradient id="P4-Gradient2" x1="0" x2="0" y1="1" y2="0">
+                                    <stop offset="70%" stop-color="#000000"></stop>
+                                    <stop offset="100%" stop-color="#00dbff"></stop>
+                                </linearGradient>
+                            </defs>
+                            <path fill="url(#P4-Gradient2)" d="M0,526.1L0,91.3C38,55,88.3,26.7,136.7,33.2c58.8,8,63.6,60.8,139.1,78c43.8,9.9,81.5,0.4,156.8-18.7c103.8-26.3,107-48.3,149.6-43.5c86.7,9.7,108.7,105.1,163.5,97.6C808.6,138,810.3,8.5,869.8,0.4c64.8-8.8,111.3,138.2,181.2,128.9c48.1-6.4,48.5-79.2,107.5-92.8c54.1-12.5,74.7,43.7,154.4,59.5c105.6,20.9,143.4-63.1,239.4-43c91.3,19.1,91.4,102.4,170.6,114.1c83.4,12.4,146.6-70.4,197.1-105.8l0,463.1L0,526.1z"></path>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Glow -->
+                <div class="glow">
+                    <svg viewBox="0 0 1377.8 734.2">
+                        <defs>
+                            <radialGradient  id="P4-Gradient3" cx="0.5" cy="0.5" r="0.5">
+                                <stop offset="0%" stop-color="#00DBFF"></stop>
+                                <stop offset="100%" stop-color="#08E2FF" stop-opacity="0"></stop>
+                            </radialGradient >
+                        </defs>
+                        <ellipse fill="url(#P4-Gradient3)" cx="688.9" cy="367.1" rx="1200" ry="350"></ellipse>
+                    </svg>
+                </div>
+
+                <!-- Wave out -->
+                <div class=wave_out>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                        <path fill="#00034A" d="M0,32L9.6,37.3C19.2,43,38,53,58,74.7C76.8,96,96,128,115,128C134.4,128,154,96,173,90.7C192,85,211,107,230,112C249.6,117,269,107,288,122.7C307.2,139,326,181,346,186.7C364.8,192,384,160,403,160C422.4,160,442,192,461,176C480,160,499,96,518,90.7C537.6,85,557,139,576,149.3C595.2,160,614,128,634,101.3C652.8,75,672,53,691,48C710.4,43,730,53,749,96C768,139,787,213,806,208C825.6,203,845,117,864,69.3C883.2,21,902,11,922,32C940.8,53,960,107,979,117.3C998.4,128,1018,96,1037,117.3C1056,139,1075,213,1094,218.7C1113.6,224,1133,160,1152,144C1171.2,128,1190,160,1210,192C1228.8,224,1248,256,1267,266.7C1286.4,277,1306,267,1325,245.3C1344,224,1363,192,1382,165.3C1401.6,139,1421,117,1430,106.7L1440,96L1440,320L1430.4,320C1420.8,320,1402,320,1382,320C1363.2,320,1344,320,1325,320C1305.6,320,1286,320,1267,320C1248,320,1229,320,1210,320C1190.4,320,1171,320,1152,320C1132.8,320,1114,320,1094,320C1075.2,320,1056,320,1037,320C1017.6,320,998,320,979,320C960,320,941,320,922,320C902.4,320,883,320,864,320C844.8,320,826,320,806,320C787.2,320,768,320,749,320C729.6,320,710,320,691,320C672,320,653,320,634,320C614.4,320,595,320,576,320C556.8,320,538,320,518,320C499.2,320,480,320,461,320C441.6,320,422,320,403,320C384,320,365,320,346,320C326.4,320,307,320,288,320C268.8,320,250,320,230,320C211.2,320,192,320,173,320C153.6,320,134,320,115,320C96,320,77,320,58,320C38.4,320,19,320,10,320L0,320Z"></path>
+                    </svg>
+                </div>
             </div>
-        </div>
 
-        <section id="about">
-            <span id="about_anchor"></span>
-            <div class="content_section">
-                <h3>How we work</h3>
+            <section id="contact">
+                <span id="contact_anchor"></span>
+                <div class="content_section">
+                    <h3>Contact us</h3>
+                    <h5><span>Tell us about your project!</span></h5>
 
-                <div id="step_tree">
-                    <div id="line"></div>
+                    <form action="//formspree.io/contact@firefal.com" method="POST" id="contactForm" class="has-validation-callback disabled-with-errors" _lpchecked="1">
+                        <div id="form_area">
+                            <div id="form_block">
+                                        <ul>
+                                            <li><input type="text" placeholder="Full name" required/></li>
+                                            <li><input type="email" placeholder="Email" required/></li>
+
+                                            <li><input type="tel" placeholder="Phone number"/></li>
+                                            <li><input type="text" placeholder="Company name"/></li>
+
+                                            <textarea name="description" autocomplete="off" minlength="25" placeholder="Describe your ask." required></textarea>
+                                        </ul>
+                            </div>
+                            <div id="block_BG">
+                                <img src="images/background/block-rect_BG_02.png" alt="Background block">
+                                <img src="images/background/block-rect_BG_02.png" alt="Background block">
+                            </div>
+                        </div>
+
+                        <div id="send_button">
+                            <button type="submit" value="SEND"><p>SEND</p></button>
+                        </div>
+                    </form>
+                    <div class="autoscroll_arrow" id="autoscroll_arrow_backhome"><a href="#home"><img src="images/icons/Arrow_UI_02.svg" class="arrow" alt="Arrow"></a></div>
+                </div>
+                <div class="background_section_05">
+                    <img id="moon" src="images/items/moon.svg" alt="Moon">
+                    <img id="city" src="images/items/space_city.svg" alt="Space city">
+
+                    <img id="atmosphere" src="images/background/atmosphere_01.png" alt="Atmosphere">
+                    <img id="stars" src="images/background/stars_03.png" alt="Stars">
+                </div>
+            </section>
+            <footer>
+                <div class="background_footer">
+                    <img id="BG_01" src="images/items/floor_01.svg" alt="Planet floor">
+                    <img id="BG_02" src="images/items/floor_02.svg" alt="Planet floor">
+                    <img id="parable" src="images/items/parable.svg" alt="Parable">
+                    <img id="launcher" src="images/items/ship_launcher.svg" alt="Launcher">
+                    <img id="flag" src="images/items/flag.svg" alt="Flag">
+                </div>
+                <div id="content_footer">
+                    <div id="main_content">
+                        <ul id="info_1">
+                            <li><p>contact@firefal.com</p></li>
+                            <li><p>Rue Arthur Delaby 5, <br>7100 La Louvière</p></li>
+                        </ul>
                     
-                    <div class="sub_block_left">
-                        <div class="step_block">
-                            <div class="label"><img src="images/icons/speak_icon.svg" alt="Step icon"></div>
-                            <div class="title_area">
-                                <h5>Step 1 : Audit and quote</h5>
-                            </div>
-                            <div class="content_area">
-                                <p>Huic quum fas cui suum sunt omne ego. Sed toga rea vim eram tur quum. Adjuvetis perlegere immittant quaslibet separatum nec eas rum uno explorant. Eos mox tur tum casu nunc huic bile meum. Ad sequentia expendere considero se dubitandi. Loco modi regi tur sex apti data olim. </p>
-                            </div>
-                        </div>
+                        <ul id="info_2">
+                            <li><a href="https://github.com/firefalcom" target="_blank"><img src="images/logos/github_label.svg" alt="Github logo"></a></li>
+                            <li><a href="https://twitter.com/firefalcom" target="_blank"><img src="images/logos/tweeter_label.svg" alt="Twitter logo"></a></li>
+                            <li><a href="https://www.facebook.com/firefalcom/" target="_blank"><img src="images/logos/facebook_label.svg" alt="Facebook logo"></a></li>
+                            <li><a href="https://www.linkedin.com/company/fire-falcom/" target="_blank"><img src="images/logos/linkedin_label.svg" alt="Linkedin logo"></a></li>
+                        </ul>
+
+                        <ul id="info_3">
+                            <li><a href="https://www.linkedin.com/in/julienhamaide/" target="_blank"><p>Julien Hamaide | Co-owner<br></p></a></li>
+                            <li><a href="https://www.linkedin.com/in/gauthier-billot-1a499014/" target="_blank"><p>Gauthier Billot | Co-owner</p></a></li>
+                        </ul>
                     </div>
-                    <!--  -->
-                    <div class="sub_block_right">
-                        <div class="step_block">
-                            <div class="label"><img src="images/icons/speak_icon.svg" alt="Step icon"></div>
-                            <div class="title_area">
-                                <h5>Step 2 : Development</h5>
-                            </div>
-                            <div class="content_area">
-                                Active comm, rolling release
-                                <p>Huic quum fas cui suum sunt omne ego. Sed toga rea vim eram tur quum. Adjuvetis perlegere immittant quaslibet separatum nec eas rum uno explorant. Eos mox tur tum casu nunc huic bile meum. Ad sequentia expendere considero se dubitandi. Loco modi regi tur sex apti data olim. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--  -->
-                    <div class="sub_block_left">
-                        <div class="step_block">
-                            <div class="label"><img src="images/icons/speak_icon.svg" alt="Step icon"></div>
-                            <div class="title_area">
-                                <h5>Step 3 : Support and maintenance</h5>
-                            </div>
-                            <div class="content_area">
-                                1 year warranty, follow backport
-                                <p>Huic quum fas cui suum sunt omne ego. Sed toga rea vim eram tur quum. Adjuvetis perlegere immittant quaslibet separatum nec eas rum uno explorant. Eos mox tur tum casu nunc huic bile meum. Ad sequentia expendere considero se dubitandi. Loco modi regi tur sex apti data olim. </p>
-                            </div>
-                        </div>
+
+                    <div id="bottom_info">
+                        <p>Fire Falcom SNC | VAT: BE0685572937</p>
+                        <p>© 2020 Fire Falcom. All Rights Reserved.</p>
                     </div>
                 </div>
-
-                <h3>Why us</h3>
-                <div id="why_us">
-                    <ul>
-                        <li>
-                            <div class="block_content">
-                                <div class="text_content">
-                                    <p class="title_block">Title</p>
-                                    <p class="text_block">Tur solvendae ego archetypi hoc attentius. At potestque ii extitisse in ingeniosi contingit. Partibus vis diversas pauciora actualis vox imo agi. Efficta nec quaedam capacem ita invenit hae cum. Illis mundo aliis ei ab magna. Illi ut quod si sese esto. Is pauciora im ad possumus absoluta pendeant compages. </p>
-                                </div>
-                            </div>
-                            <div class="block_BG">
-                                <img src="images/background/block-rect_BG_01.png" alt="Background block">
-                                <img src="images/background/block-rect_BG_01.png" alt="Background block">
-                            </div>
-                        </li>
-                        <!--  -->
-                        <li>
-                            <div class="block_content">
-                                <div class="text_content">
-                                    <p class="title_block">Title</p>
-                                    <p class="text_block">Tur solvendae ego archetypi hoc attentius. At potestque ii extitisse in ingeniosi contingit. Partibus vis diversas pauciora actualis vox imo agi. Efficta nec quaedam capacem ita invenit hae cum. Illis mundo aliis ei ab magna. Illi ut quod si sese esto. Is pauciora im ad possumus absoluta pendeant compages. </p>
-                                </div>
-                            </div>
-                            <div class="block_BG">
-                                <img src="images/background/block-rect_BG_01.png" alt="Background block">
-                                <img src="images/background/block-rect_BG_01.png" alt="Background block">
-                            </div>
-                        </li>
-                        <!--  -->
-                        <li>
-                            <div class="block_content">
-                                <div class="text_content">
-                                    <p class="title_block">Title</p>
-                                    <p class="text_block">Tur solvendae ego archetypi hoc attentius. At potestque ii extitisse in ingeniosi contingit. Partibus vis diversas pauciora actualis vox imo agi. Efficta nec quaedam capacem ita invenit hae cum. Illis mundo aliis ei ab magna. Illi ut quod si sese esto. Is pauciora im ad possumus absoluta pendeant compages. </p>
-                                </div>
-                            </div>
-                            <div class="block_BG">
-                                <img src="images/background/block-rect_BG_01.png" alt="Background block">
-                                <img src="images/background/block-rect_BG_01.png" alt="Background block">
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="autoscroll_arrow"><a href="#clients_anchor"><img src="images/icons/Arrow_UI.svg" class="arrow" alt="Arrow"></a></div>
-
-            </div>
-
-
-            <div class="background_section_03">
-                <img id="pink_star" src="images/items/sun_01.svg" alt="Pink star">
-                <img id="big_planet" src="images/items/big_planet.svg" alt="Big planet">
-
-                <img id="space_tail" src="images/background/space_tail_06.png" alt="Space tails">
-                <img id="stars" src="images/background/stars_02.png" alt="stars">
-            </div>
-        </section>
-        
-
-        <!-- PORTAL -->
-        <div class="portal-3">
-            <!-- Wave front -->
-            <div class="front_wave">
-                <svg viewBox="0 0 1440 320">
-                    <path fill="#1A0042" d="M0,224L12,213.3C24,203,48,181,72,170.7C96,160,120,160,144,165.3C168,171,192,181,216,176C240,171,264,149,288,138.7C312,128,336,128,360,144C384,160,408,192,432,181.3C456,171,480,117,504,96C528,75,552,85,576,112C600,139,624,181,648,197.3C672,213,696,203,720,213.3C744,224,768,256,792,250.7C816,245,840,203,864,176C888,149,912,139,936,154.7C960,171,984,213,1008,234.7C1032,256,1056,256,1080,250.7C1104,245,1128,235,1152,208C1176,181,1200,139,1224,112C1248,85,1272,75,1296,106.7C1320,139,1344,213,1368,240C1392,267,1416,245,1428,234.7L1440,224L1440,320L1428,320C1416,320,1392,320,1368,320C1344,320,1320,320,1296,320C1272,320,1248,320,1224,320C1200,320,1176,320,1152,320C1128,320,1104,320,1080,320C1056,320,1032,320,1008,320C984,320,960,320,936,320C912,320,888,320,864,320C840,320,816,320,792,320C768,320,744,320,720,320C696,320,672,320,648,320C624,320,600,320,576,320C552,320,528,320,504,320C480,320,456,320,432,320C408,320,384,320,360,320C336,320,312,320,288,320C264,320,240,320,216,320C192,320,168,320,144,320C120,320,96,320,72,320C48,320,24,320,12,320L0,320Z"></path>
-                </svg>
-            </div>
-
-            <!-- Fill center (for hide) -->
-            <div class="fill_transition"></div>
-
-            <!-- Hole -->
-            <div class="hole_content">
-                <img src="images/background/hole_center.svg" id="hole1" alt="hole">
-                <img src="images/background/hole_center.svg" id="hole2" alt="hole">
-                <svg id="border_hole" viewBox="0 0 1920 558.1">
-                    <ellipse fill="#FFF30D" cx="960" cy="279.1" rx="960" ry="279.1"/>
-                </svg>
-            </div>
-
-            <!-- Wave background -->
-            <div class="wave_BG_content">
-                <!-- Wave 01 -->
-                <div class="wave_BG_01">
-                    <svg viewBox="0 0 1915 500">
-                        <defs>
-                            <linearGradient id="P3-Gradient1" x1="0" x2="0" y1="1" y2="0">
-                                <stop offset="65%" stop-color="#FFF30D"/>
-                                <stop offset="100%" stop-color="#262405"/>
-                                
-                            </linearGradient>
-                        </defs>
-                        <path fill="url(#P3-Gradient1)" d="M1920,717.6c-58.7-8.4-136.6-22-228.2-35.3c-169.7-25.4-386.7-49.5-608.3-56.1c-221.5-7.6-447.6,2.3-633.4,22.7c-185.9,19.4-331.5,49.3-395.8,57.5c-10.5,1.4-30.6,4.6-54.4,7.6l0-552.5c48.9-41.8,85.1-64.7,128.6-70.6c76.9-9.7,102.5,42.7,159,33.3c61.6-9.8,65.5-77.3,129.4-86.5c84.7-11.9,167.9,92.6,222.4,85.9c45.4-5.3,24.9-79.7,77.3-85.9c66.6-7.5,154.3,102.8,221,99.7c72.9-3.2,75.9-137.7,122.9-137.4c48.9,0.8,65.7,144.1,156.4,152.2c73,7,140.3-78.9,235.1-66.5c86.6,11.9,92.5,92.3,160.1,102.7c85.3,14.2,139.5-105.1,249.2-87.9c17.1,2.6,37.5,10.5,58.7,21.9V717.6z"/>
-                    </svg>
-                </div>
-
-                <!-- Wave 02 -->
-                <div class="wave_BG_02">
-                    <svg viewBox="0 0 1915 357">
-                        <defs>
-                            <linearGradient id="P3-Gradient2" x1="0" x2="0" y1="1" y2="0">
-                                <stop offset="70%" stop-color="#262405"/>
-                                <stop offset="100%" stop-color="#FFF30D"/>
-                            </linearGradient>
-                        </defs>
-                        <path fill="url(#P3-Gradient2)" d="M0,526.1L0,91.3C38,55,88.3,26.7,136.7,33.2c58.8,8,63.6,60.8,139.1,78c43.8,9.9,81.5,0.4,156.8-18.7c103.8-26.3,107-48.3,149.6-43.5c86.7,9.7,108.7,105.1,163.5,97.6C808.6,138,810.3,8.5,869.8,0.4c64.8-8.8,111.3,138.2,181.2,128.9c48.1-6.4,48.5-79.2,107.5-92.8c54.1-12.5,74.7,43.7,154.4,59.5c105.6,20.9,143.4-63.1,239.4-43c91.3,19.1,91.4,102.4,170.6,114.1c83.4,12.4,146.6-70.4,197.1-105.8l0,463.1L0,526.1z"/>
-                    </svg>
-                </div>
-            </div>
-
-            <!-- Glow -->
-            <div class="glow">
-                <svg viewBox="0 0 1377.8 734.2">
-                    <defs>
-                        <radialGradient  id="P3-Gradient3" cx="0.5" cy="0.5" r="0.5">
-                            <stop offset="0%" stop-color="#FFF30D"/>
-                            <stop offset="100%" stop-color="#736D04" stop-opacity="0"/>
-                        </radialGradient >
-                    </defs>
-                    <ellipse fill="url(#P3-Gradient3)" cx="688.9" cy="367.1" rx="1200" ry="350"/>
-                </svg>
-            </div>
-
-            <!-- Wave out -->
-            <div class=wave_out>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                    <path fill="#1A0042" d="M0,32L9.6,37.3C19.2,43,38,53,58,74.7C76.8,96,96,128,115,128C134.4,128,154,96,173,90.7C192,85,211,107,230,112C249.6,117,269,107,288,122.7C307.2,139,326,181,346,186.7C364.8,192,384,160,403,160C422.4,160,442,192,461,176C480,160,499,96,518,90.7C537.6,85,557,139,576,149.3C595.2,160,614,128,634,101.3C652.8,75,672,53,691,48C710.4,43,730,53,749,96C768,139,787,213,806,208C825.6,203,845,117,864,69.3C883.2,21,902,11,922,32C940.8,53,960,107,979,117.3C998.4,128,1018,96,1037,117.3C1056,139,1075,213,1094,218.7C1113.6,224,1133,160,1152,144C1171.2,128,1190,160,1210,192C1228.8,224,1248,256,1267,266.7C1286.4,277,1306,267,1325,245.3C1344,224,1363,192,1382,165.3C1401.6,139,1421,117,1430,106.7L1440,96L1440,320L1430.4,320C1420.8,320,1402,320,1382,320C1363.2,320,1344,320,1325,320C1305.6,320,1286,320,1267,320C1248,320,1229,320,1210,320C1190.4,320,1171,320,1152,320C1132.8,320,1114,320,1094,320C1075.2,320,1056,320,1037,320C1017.6,320,998,320,979,320C960,320,941,320,922,320C902.4,320,883,320,864,320C844.8,320,826,320,806,320C787.2,320,768,320,749,320C729.6,320,710,320,691,320C672,320,653,320,634,320C614.4,320,595,320,576,320C556.8,320,538,320,518,320C499.2,320,480,320,461,320C441.6,320,422,320,403,320C384,320,365,320,346,320C326.4,320,307,320,288,320C268.8,320,250,320,230,320C211.2,320,192,320,173,320C153.6,320,134,320,115,320C96,320,77,320,58,320C38.4,320,19,320,10,320L0,320Z"></path>
-                </svg>
-            </div>
+            </footer>
         </div>
-
-        <section id="clients">
-            <span id="clients_anchor"></span>
-
-            <div class="content_section">
-                <h3>Our clients</h3>
-                <h5 style="margin:50px 0 100px 0">Many collaborators already trust us</h5>
-
-                <div id="list_block">
-                    <ul>
-                        <li><img src="images/logos/fishing_cactus.png" alt="logo"></li>
-                        <li><img src="images/logos/game_hollywood.png" alt="logo"></li>
-                        <li><img src="images/logos/metidia_white_logo.png" alt="logo" style="width:80%"></li>
-                        <li><img src="images/logos/RTBF_logo.png" alt="logo"></li>
-                        <li><img src="images/logos/SFR.png" alt="logo" style="width:50%"></li>
-
-                        <li><img src="images/logos/uzik.png" alt="logo"></li>
-                        <li><img src="images/logos/addicting_game_logo.png" alt="logo"></li>
-                        <li><img src="images/logos/boss_key_production.png" alt="logo"></li>
-                        <li><img src="images/logos/castle-keep-logo.png" alt="logo" style="width:80%"></li>
-
-                        <div class="block_BG">
-                            <img src="images/background/block-rect_BG_02.png" alt="background">
-                            <img src="images/background/block-rect_BG_02.png" alt="background">
-                        </div>
-                    </ul>
-                </div>
-                <div class="autoscroll_arrow"><a href="#contact_anchor"><img src="images/icons/Arrow_UI.svg" class="arrow" alt="Arrow"></a></div>
-            </div>
-            <div class="background_section_04">
-                <img id="planet" src="images/items/planet-far_03.svg" alt="Planet">
-                <img id="sun" src="images/items/sun_02.svg" alt="Sun">
-                <div id="city_block">
-                    <img id="smog" src="images/items/smog.svg" alt="City smog">
-                    <div id="all_city">
-                        <img id="city" src="images/items/space_city.svg" alt="Space city">
-                        <div id="bottom_block"></div>
-                    </div>
-                </div> 
-            </div>
-        </section>
-        <!-- PORTAL -->
-        <div class="portal-4">
-            <!-- Wave front -->
-            <div class="front_wave">
-                <svg viewBox="0 0 1440 320">
-                    <path fill="#00034A" d="M0,224L12,213.3C24,203,48,181,72,170.7C96,160,120,160,144,165.3C168,171,192,181,216,176C240,171,264,149,288,138.7C312,128,336,128,360,144C384,160,408,192,432,181.3C456,171,480,117,504,96C528,75,552,85,576,112C600,139,624,181,648,197.3C672,213,696,203,720,213.3C744,224,768,256,792,250.7C816,245,840,203,864,176C888,149,912,139,936,154.7C960,171,984,213,1008,234.7C1032,256,1056,256,1080,250.7C1104,245,1128,235,1152,208C1176,181,1200,139,1224,112C1248,85,1272,75,1296,106.7C1320,139,1344,213,1368,240C1392,267,1416,245,1428,234.7L1440,224L1440,320L1428,320C1416,320,1392,320,1368,320C1344,320,1320,320,1296,320C1272,320,1248,320,1224,320C1200,320,1176,320,1152,320C1128,320,1104,320,1080,320C1056,320,1032,320,1008,320C984,320,960,320,936,320C912,320,888,320,864,320C840,320,816,320,792,320C768,320,744,320,720,320C696,320,672,320,648,320C624,320,600,320,576,320C552,320,528,320,504,320C480,320,456,320,432,320C408,320,384,320,360,320C336,320,312,320,288,320C264,320,240,320,216,320C192,320,168,320,144,320C120,320,96,320,72,320C48,320,24,320,12,320L0,320Z"></path>
-                </svg>
-            </div>
-
-            <!-- Fill center (for hide) -->
-            <div class="fill_transition"></div>
-
-            <!-- Hole -->
-            <div class="hole_content">
-                <img src="images/background/hole_center.svg" id="hole1" alt="hole">
-                <img src="images/background/hole_center.svg" id="hole2" alt="hole">
-                <svg id="border_hole" viewBox="0 0 1920 558.1">
-                    <ellipse fill="#00DBFF" cx="960" cy="279.1" rx="960" ry="279.1"/>
-                </svg>
-            </div>
-
-            <!-- Wave background -->
-            <div class="wave_BG_content">
-                <!-- Wave 01 -->
-                <div class="wave_BG_01">
-                    <svg viewBox="0 0 1915 500">
-                        <defs>
-                            <linearGradient id="P4-Gradient1" x1="0" x2="0" y1="1" y2="0">
-                                <stop offset="65%" stop-color="#00dbff"/>
-                                <stop offset="100%" stop-color="#000000"/>
-                                
-                            </linearGradient>
-                        </defs>
-                        <path fill="url(#P4-Gradient1)" d="M1920,717.6c-58.7-8.4-136.6-22-228.2-35.3c-169.7-25.4-386.7-49.5-608.3-56.1c-221.5-7.6-447.6,2.3-633.4,22.7c-185.9,19.4-331.5,49.3-395.8,57.5c-10.5,1.4-30.6,4.6-54.4,7.6l0-552.5c48.9-41.8,85.1-64.7,128.6-70.6c76.9-9.7,102.5,42.7,159,33.3c61.6-9.8,65.5-77.3,129.4-86.5c84.7-11.9,167.9,92.6,222.4,85.9c45.4-5.3,24.9-79.7,77.3-85.9c66.6-7.5,154.3,102.8,221,99.7c72.9-3.2,75.9-137.7,122.9-137.4c48.9,0.8,65.7,144.1,156.4,152.2c73,7,140.3-78.9,235.1-66.5c86.6,11.9,92.5,92.3,160.1,102.7c85.3,14.2,139.5-105.1,249.2-87.9c17.1,2.6,37.5,10.5,58.7,21.9V717.6z"/>
-                    </svg>
-                </div>
-
-                <!-- Wave 02 -->
-                <div class="wave_BG_02">
-                    <svg viewBox="0 0 1915 357">
-                        <defs>
-                            <linearGradient id="P4-Gradient2" x1="0" x2="0" y1="1" y2="0">
-                                <stop offset="70%" stop-color="#000000"/>
-                                <stop offset="100%" stop-color="#00dbff"/>
-                            </linearGradient>
-                        </defs>
-                        <path fill="url(#P4-Gradient2)" d="M0,526.1L0,91.3C38,55,88.3,26.7,136.7,33.2c58.8,8,63.6,60.8,139.1,78c43.8,9.9,81.5,0.4,156.8-18.7c103.8-26.3,107-48.3,149.6-43.5c86.7,9.7,108.7,105.1,163.5,97.6C808.6,138,810.3,8.5,869.8,0.4c64.8-8.8,111.3,138.2,181.2,128.9c48.1-6.4,48.5-79.2,107.5-92.8c54.1-12.5,74.7,43.7,154.4,59.5c105.6,20.9,143.4-63.1,239.4-43c91.3,19.1,91.4,102.4,170.6,114.1c83.4,12.4,146.6-70.4,197.1-105.8l0,463.1L0,526.1z"/>
-                    </svg>
-                </div>
-            </div>
-
-            <!-- Glow -->
-            <div class="glow">
-                <svg viewBox="0 0 1377.8 734.2">
-                    <defs>
-                        <radialGradient  id="P4-Gradient3" cx="0.5" cy="0.5" r="0.5">
-                            <stop offset="0%" stop-color="#00DBFF"/>
-                            <stop offset="100%" stop-color="#08E2FF" stop-opacity="0"/>
-                        </radialGradient >
-                    </defs>
-                    <ellipse fill="url(#P4-Gradient3)" cx="688.9" cy="367.1" rx="1200" ry="350"/>
-                </svg>
-            </div>
-
-            <!-- Wave out -->
-            <div class=wave_out>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                    <path fill="#00034A" d="M0,32L9.6,37.3C19.2,43,38,53,58,74.7C76.8,96,96,128,115,128C134.4,128,154,96,173,90.7C192,85,211,107,230,112C249.6,117,269,107,288,122.7C307.2,139,326,181,346,186.7C364.8,192,384,160,403,160C422.4,160,442,192,461,176C480,160,499,96,518,90.7C537.6,85,557,139,576,149.3C595.2,160,614,128,634,101.3C652.8,75,672,53,691,48C710.4,43,730,53,749,96C768,139,787,213,806,208C825.6,203,845,117,864,69.3C883.2,21,902,11,922,32C940.8,53,960,107,979,117.3C998.4,128,1018,96,1037,117.3C1056,139,1075,213,1094,218.7C1113.6,224,1133,160,1152,144C1171.2,128,1190,160,1210,192C1228.8,224,1248,256,1267,266.7C1286.4,277,1306,267,1325,245.3C1344,224,1363,192,1382,165.3C1401.6,139,1421,117,1430,106.7L1440,96L1440,320L1430.4,320C1420.8,320,1402,320,1382,320C1363.2,320,1344,320,1325,320C1305.6,320,1286,320,1267,320C1248,320,1229,320,1210,320C1190.4,320,1171,320,1152,320C1132.8,320,1114,320,1094,320C1075.2,320,1056,320,1037,320C1017.6,320,998,320,979,320C960,320,941,320,922,320C902.4,320,883,320,864,320C844.8,320,826,320,806,320C787.2,320,768,320,749,320C729.6,320,710,320,691,320C672,320,653,320,634,320C614.4,320,595,320,576,320C556.8,320,538,320,518,320C499.2,320,480,320,461,320C441.6,320,422,320,403,320C384,320,365,320,346,320C326.4,320,307,320,288,320C268.8,320,250,320,230,320C211.2,320,192,320,173,320C153.6,320,134,320,115,320C96,320,77,320,58,320C38.4,320,19,320,10,320L0,320Z"></path>
-                </svg>
-            </div>
-        </div>
-
-        <section id="contact">
-            <span id="contact_anchor"></span>
-            <div class="content_section">
-                <h3>Contact us</h3>
-                <h5><span>Tell us about your project!</span></h5>
-
-                <form action="//formspree.io/contact@firefal.com" method="POST" name="form1" id="contactForm" class="has-validation-callback disabled-with-errors" _lpchecked="1">
-                    <div id="form_area">
-                        <div id="form_block">
-                                    <ul>
-                                        <li><input type="text" placeholder="Full name" required/></li>
-                                        <li><input type="email" placeholder="Email" required/></li>
-
-                                        <li><input type="tel" placeholder="Phone number"/></li>
-                                        <li><input type="text" placeholder="Company name"/></li>
-
-                                        <textarea name="description" autocomplete="off" minlength="25" placeholder="Describe your ask." required></textarea>
-                                    </ul>
-                        </div>
-                        <div id="block_BG">
-                            <img src="images/background/block-rect_BG_02.png" alt="Background block">
-                            <img src="images/background/block-rect_BG_02.png" alt="Background block">
-                        </div>
-                    </div>
-
-                    <div id="send_button">
-                        <button type="submit" from="form1" value="SEND"><p>SEND</p></button>
-                    </div>
-                </form>
-                <div class="autoscroll_arrow" id="autoscroll_arrow_backhome"><a href="#home"><img src="images/icons/Arrow_UI_02.svg" class="arrow" alt="Arrow"></a></div>
-            </div>
-            <div class="background_section_05">
-                <img id="moon" src="images/items/moon.svg" alt="Moon">
-                <img id="city" src="images/items/space_city.svg" alt="Space city">
-
-                <img id="atmosphere" src="images/background/atmosphere_01.png" alt="Atmosphere">
-                <img id="stars" src="images/background/stars_03.png" alt="Stars">
-            </div>
-        </section>
-        <footer>
-            <div class="background_footer">
-                <img id="BG_01" src="images/items/floor_01.svg" alt="Planet floor">
-                <img id="BG_02" src="images/items/floor_02.svg" alt="Planet floor">
-                <img id="parable" src="images/items/parable.svg" alt="Parable">
-                <img id="launcher" src="images/items/ship_launcher.svg" alt="Launcher">
-                <img id="flag" src="images/items/flag.svg" alt="Flag">
-            </div>
-            <div id="content_footer">
-                <div id="main_content">
-                    <ul id="info_1">
-                        <li><p>contact@firefal.com</p></li>
-                        <li><p>Rue Arthur Delaby 5, </br>7100 La Louvière</p></li>
-                    </ul>
-                
-                    <ul id="info_2">
-                        <li><a href="https://github.com/firefalcom" target="_blank"><img src="images/logos/github_label.svg" alt="Github logo"></a></li>
-                        <li><a href="https://twitter.com/firefalcom" target="_blank"><img src="images/logos/tweeter_label.svg" alt="Twitter logo"></a></li>
-                        <li><a href="https://www.facebook.com/firefalcom/" target="_blank"><img src="images/logos/facebook_label.svg" alt="Facebook logo"></a></li>
-                        <li><a href="https://www.linkedin.com/company/fire-falcom/" target="_blank"><img src="images/logos/linkedin_label.svg" alt="Linkedin logo"></a></li>
-                    </ul>
-
-                    <ul id="info_3">
-                        <li><a href="https://www.linkedin.com/in/julienhamaide/" target="_blank"><p>Julien Hamaide | Co-owner</br></p></a></li>
-                        <li><a href="https://www.linkedin.com/in/gauthier-billot-1a499014/" target="_blank"><p>Gauthier Billot | Co-owner</p></a></li>
-                    </ul>
-                </div>
-
-                <div id="bottom_info">
-                    <p>Fire Falcom SNC | VAT: BE0685572937</p>
-                    <p>© 2020 Fire Falcom. All Rights Reserved.</p>
-                </div>
-            </div>
-
-        </footer>
     </body>
 </html>

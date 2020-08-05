@@ -26,12 +26,8 @@
 //-------------------------------
 // 1000 PX
 @media (max-width: 1000px) {
-    header{
-        height:90vh;
-
-        nav{
-            width:50%;
-        }
+    header nav{
+        width:50%;
     }
     h2{
         margin-top: 18vw;
@@ -67,10 +63,6 @@
         li{
             height: 150px;
         }
-        .content_section{
-            padding: 2% 4% 8% 4%;
-        }
-
         #city_block{
             height:60vw;
         }
@@ -80,9 +72,6 @@
     }
 
     #contact{
-        .content_section{
-            padding:2% 4% 150px 4%;
-        }
         #block_BG img:nth-last-child(1){
             width: 100vw;
         }
@@ -110,12 +99,17 @@
             width:50%;
         }
     }
-    
+    #services{
+        #comet{
+            display:none;
+        }
+    }
     #about{
         #why_us{
             ul li{
-                width: 65%;
+                width: 90%;
                 min-width: 0;
+                margin:50px 0;
             }
         }
     }
@@ -163,6 +157,41 @@
         #parable{
             bottom:calc(0% + 10px);
         }
+    }
+
+    //Parallax disabled
+    #parallax{
+        perspective: none !important;
+        height: auto;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    [class^='background_section']{
+        transform: translateZ(0px) scale(1) !important;
+    }
+    [class^='portal']{
+        .wave_BG_02{
+            bottom:calc(8vw + var(--portalHeight)) !important;
+        }
+        .hole_content{
+            bottom:calc(-15vw + var(--portalHeight)) !important;
+            transform: translateZ(0) scale(1);
+        }
+        .wave_BG_01{
+            bottom:calc(-2vw + var(--portalHeight)) !important;
+            transform: translateZ(0) scale(1);
+        }
+        .wave_BG_02{
+            bottom:calc(8vw + var(--portalHeight)) !important;
+            transform: translateZ(0) scale(1);
+        }
+        .glow{
+            bottom:calc(-10vw + var(--portalHeight)) !important;
+            transform: translateZ(0) scale(1);
+        }
+    }
+    .background_section_02{
+        height:100%;
     }
 }
 //-------------------------------
@@ -387,9 +416,6 @@
         li{
             width: 30%;
         }
-        .content_section{
-            padding: 2% 4% 15% 4%;
-        }
         #list_block{
             margin: 0 auto 100px auto;
         }
@@ -427,10 +453,6 @@
     }
 
     #services{
-        #comet{
-            margin: -153% 0px 0px -30%;
-            width: 350px;
-        }
         #our_services li{
             min-width: 0 !important;
             width:75% !important;
@@ -494,14 +516,17 @@
         }
     }
 }
-
+// 400 px
 @media (max-width: 400px) {
+    #about{
+        .title_area h5{
+            font-size:1.2em !important;
+        }
+    }
+
     #clients{
         li{
             width: 48%;
-        }
-        .content_section{
-            padding: 2% 4% 15% 4%;
         }
         #list_block{
             margin: 0 auto 100px auto;
@@ -518,8 +543,6 @@
     }
 
     #services{
-
-    
         #skills{
             #platform_wheel{
                 width:280px
