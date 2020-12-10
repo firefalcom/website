@@ -259,6 +259,69 @@ header{
         margin:0 0 0 2%;
     }
 }
+#fixed_news{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:0;
+    right:17px;
+    z-index: 1;
+    transition: all ease-out 0.01s;
+    // margin-right:17px;
+
+    .twitterContent{
+        position:absolute;
+        bottom:-120%;
+        right:0;
+        width:92.5%;
+        height:93.87%;
+        background-color: white;
+        border-top:10px solid white;
+        border-left:10px solid white;
+        border-radius: 20px 0 0 0;
+        overflow-x: hidden;
+        transition: all ease-out 0.01s;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    .circle{
+        position:absolute;
+        top: 0;
+        left: 0;
+        width: 40px;
+        height: 40px;
+        background-color: rgb(243, 177, 16);
+        border-radius: 50px;
+        z-index: 5;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        cursor:pointer;
+        transition: all ease 0.25s;
+        z-index: 10;
+        &:hover{
+            transform: scale(1.1);
+        }
+        &:active{
+            transform: scale(0.9);
+        }
+    }
+    .circle .bar{
+        position:absolute;
+        width: 45%;
+        height: 5px;
+        background-color:rgb(145 106 8);
+        border-radius: 50px;
+    }
+    .circle .bar:nth-child(1){
+        transform: rotate(0deg);
+    }
+    .circle .bar:nth-child(2){
+        transform: rotate(90deg);
+    }
+}
 
 /* SERVICES */
 /* SERVICES CONTENT */

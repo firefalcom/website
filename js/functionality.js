@@ -29,16 +29,18 @@ else {
 		$(".glow").css("bottom", "50%", "!important");
 		$(".background_section_02").css("height", "75%");
 		scrolltrigger = parseInt($("#services_anchor").offset().top);
-
 		setup();
+		setTimeout(() => {
+			$("#fixed_news .circle").click();
+		}, 1000);
 	});
 }
 
 function setup() {
 	var currentAnimation = false;
+	var newsStatus = false;
 	var wheelStatus = 0;
 	var wheel = parseInt($("#techno_wheel .wheel").offset().top) - 500;
-
 	$("#parallax").scroll(function () {
 		let wintop = $("#parallax").scrollTop();
 		//	Show fixed nav		
@@ -63,6 +65,30 @@ function setup() {
 		}
 	});
 
+	$("#fixed_news .circle").click(function () {
+		if (newsStatus == false) {
+			$(".twitterContent").animate({ "bottom": "0" });
+			$("#fixed_news").stop().animate({ "height" : "490px", "width" : "400px" });
+			setTimeout(
+				function() 
+				{
+					$("#fixed_news .circle").css({ "transform": "rotate(45deg)" });
+				}, 500);
+			newsStatus = true;
+		}
+
+		else {
+			$(".twitterContent").animate({ "bottom" : "-120%" });
+			$("#fixed_news").animate({ "height" : "60px", "width" : "60px" });
+			setTimeout(
+				function() 
+				{
+					$("#fixed_news .circle").css({ "transform": "rotate(0)" });
+				}, 500);
+			newsStatus = false;
+		}
+	})
+
 	// Carousel
 	carousel(1);
 	function carousel(i) {
@@ -84,9 +110,9 @@ function setup() {
 	if ($(window).width() >= 500) {
 		$("#techno_wheel .wheel").click(function () {
 			if (wheelStatus == 0) {
-				wheelStatus = 1;
 				$("#techno_wheel .wheel").css({ "width": "150px", "height": "150px" });
 				$("#skills .circle_list").css({ "transform": "scale(1)" });
+				wheelStatus = 1;
 			}
 			else {
 				$("#techno_wheel .wheel").css({ "width": "300px", "height": "300px" });
