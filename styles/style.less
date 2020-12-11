@@ -259,6 +259,88 @@ header{
         margin:0 0 0 2%;
     }
 }
+#fixed_news{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:0;
+    right:17px;
+    z-index: 1;
+    -webkit-transition: all ease-out 0.01s;
+    -o-transition: all ease-out 0.01s;
+    transition: all ease-out 0.01s;
+
+    .twitterContent{
+        position:absolute;
+        bottom:-120%;
+        right:0;
+        width:94.5%;
+        height:95.4%;
+        background-color: white;
+        border-top:10px solid white;
+        border-left:10px solid white;
+        outline:8px solid rgba(255, 255, 255, 0.274);
+        overflow-x: hidden;
+        -webkit-transition: all ease-out 0.01s;
+        -o-transition: all ease-out 0.01s;
+        transition: all ease-out 0.01s;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    .circle{
+        position:absolute;
+        top: 0;
+        left: 0;
+        width: 40px;
+        height: 40px;
+        background-color: rgb(243, 177, 16);
+        border-radius: 50px;
+        z-index: 5;
+        display:-webkit-box;
+        display:-ms-flexbox;
+        display:flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        cursor:pointer;
+        -webkit-transition: all ease 0.25s;
+        -o-transition: all ease 0.25s;
+        transition: all ease 0.25s;
+        z-index: 10;
+        &:hover{
+            -webkit-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                    transform: scale(1.1);
+        }
+        &:active{
+            -webkit-transform: scale(0.9);
+                -ms-transform: scale(0.9);
+                    transform: scale(0.9);
+        }
+    }
+    .circle .bar{
+        position:absolute;
+        width: 45%;
+        height: 5px;
+        background-color:rgb(145 106 8);
+        border-radius: 50px;
+    }
+    .circle .bar:nth-child(1){
+        -webkit-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    .circle .bar:nth-child(2){
+        -webkit-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+}
 
 /* SERVICES */
 /* SERVICES CONTENT */

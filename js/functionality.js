@@ -6,6 +6,7 @@ var isEdge = !isIE && !!window.StyleMedia;
 
 var scrolltrigger = 0;
 var winheight = $(window).height();
+var newsStatus = false;
 
 // Browser specificities
 if (isFirefox == true || isSafari == true || isEdge == true) {
@@ -29,16 +30,23 @@ else {
 		$(".glow").css("bottom", "50%", "!important");
 		$(".background_section_02").css("height", "75%");
 		scrolltrigger = parseInt($("#services_anchor").offset().top);
-
 		setup();
+		if(newsStatus == false){
+			setTimeout(() => {
+				newsTweeter();
+			}, 500);
+		}
 	});
 }
 
 function setup() {
 	var currentAnimation = false;
-	var wheelStatus = 0;
+	var wheelStatus = false;
 	var wheel = parseInt($("#techno_wheel .wheel").offset().top) - 500;
-
+	var p1 = parseInt($(".portal-1 .front_wave").offset().top);
+	var p2 = parseInt($(".portal-2 .front_wave").offset().top);
+	var p3 = parseInt($(".portal-3 .front_wave").offset().top);
+	var p4 = parseInt($(".portal-4 .front_wave").offset().top);
 	$("#parallax").scroll(function () {
 		let wintop = $("#parallax").scrollTop();
 		//	Show fixed nav		
@@ -59,8 +67,33 @@ function setup() {
 		if (wintop >= wheel) {
 			$("#techno_wheel .wheel").css({ "width": "150px", "height": "150px" });
 			$("#skills .circle_list").css({ "transform": "scale(1)" });
-			wheelStatus = 1;
+			wheelStatus = true;
 		}
+
+		if (newsStatus == true && wintop >= $(window).height() && wintop <= $(window).height()+100) {
+			newsTweeter();
+		}
+
+		// Hide portal hole
+		if(wintop >= p1){
+			$(".portal-1 .hole_content").css({ "display": "none" });
+		}
+		else $(".portal-1 .hole_content").css({ "display": "block" });
+		
+		if(wintop >= p2){
+			$(".portal-2 .hole_content").css({ "display": "none" });
+		}
+		else $(".portal-2 .hole_content").css({ "display": "block" });
+
+		if(wintop >= p3){
+			$(".portal-3 .hole_content").css({ "display": "none" });
+		}
+		else $(".portal-3 .hole_content").css({ "display": "block" });
+
+		if(wintop >= p4){
+			$(".portal-4 .hole_content").css({ "display": "none" });
+		}
+		else $(".portal-4 .hole_content").css({ "display": "block" });
 	});
 
 	// Carousel
@@ -83,15 +116,15 @@ function setup() {
 	// Techno wheel
 	if ($(window).width() >= 500) {
 		$("#techno_wheel .wheel").click(function () {
-			if (wheelStatus == 0) {
-				wheelStatus = 1;
+			if (wheelStatus == false) {
 				$("#techno_wheel .wheel").css({ "width": "150px", "height": "150px" });
 				$("#skills .circle_list").css({ "transform": "scale(1)" });
+				wheelStatus = true;
 			}
 			else {
 				$("#techno_wheel .wheel").css({ "width": "300px", "height": "300px" });
 				$("#skills .circle_list").css({ "transform": "scale(0)" });
-				wheelStatus = 0;
+				wheelStatus = false;
 			}
 		});
 	}
@@ -106,3 +139,26 @@ function setup() {
 		}
 	);
 };
+function newsTweeter(){
+	if (newsStatus == false) {
+		$(".twitterContent").animate({ "bottom": "0" });
+		$("#fixed_news").stop().animate({ "height" : "630px", "width" : "550px" });
+		setTimeout(
+			function() 
+			{
+				$("#fixed_news .circle").css({ "transform": "rotate(45deg)" });
+			}, 500);
+		newsStatus = true;
+	}
+
+	else {
+		$(".twitterContent").animate({ "bottom" : "-120%" });
+		$("#fixed_news").animate({ "height" : "60px", "width" : "60px" });
+		setTimeout(
+			function() 
+			{
+				$("#fixed_news .circle").css({ "transform": "rotate(0)" });
+			}, 500);
+		newsStatus = false;
+	}
+}

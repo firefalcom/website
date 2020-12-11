@@ -3,7 +3,6 @@
     header{
         height:125vh;
     }
-
 }
 
 @media (max-width: 1440px){
@@ -20,6 +19,9 @@
             width: 1500px;
             z-index: 5;
         }
+    }
+    [class^='portal-'] .hole_content {
+        top:0px;
     }
 }
 
@@ -84,6 +86,9 @@
         bottom:4vw;
         }
     }
+    [class^='portal-'] .hole_content {
+        top:50px;
+    }
 }
 
 //-------------------------------
@@ -99,6 +104,10 @@
             width:50%;
         }
     }
+    #fixed_news{
+        display:none;
+    }
+
     #services{
         #comet{
             display:none;
@@ -176,6 +185,7 @@
         .hole_content{
             bottom:calc(-15vw + var(--portalHeight)) !important;
             transform: translateZ(0) scale(1);
+            top: -100px;
         }
         .wave_BG_01{
             bottom:calc(-2vw + var(--portalHeight)) !important;
@@ -300,6 +310,9 @@
             display:none;
             }
         }
+    }
+    [class^='portal-'] .hole_content {
+        top: -70px;
     }
 }
 
@@ -514,6 +527,9 @@
         #content_footer #info_3 p{
             text-align: center;
         }
+    }
+    [class^='portal-'] .hole_content {
+        top: -50px;
     }
 }
 // 400 px
