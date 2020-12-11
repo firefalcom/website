@@ -31,9 +31,11 @@ else {
 		$(".background_section_02").css("height", "75%");
 		scrolltrigger = parseInt($("#services_anchor").offset().top);
 		setup();
-		setTimeout(() => {
-			newsTweeter();
-		}, 500);
+		if(newsStatus == false){
+			setTimeout(() => {
+				newsTweeter();
+			}, 500);
+		}
 	});
 }
 
@@ -41,6 +43,10 @@ function setup() {
 	var currentAnimation = false;
 	var wheelStatus = false;
 	var wheel = parseInt($("#techno_wheel .wheel").offset().top) - 500;
+	var p1 = parseInt($(".portal-1 .front_wave").offset().top);
+	var p2 = parseInt($(".portal-2 .front_wave").offset().top);
+	var p3 = parseInt($(".portal-3 .front_wave").offset().top);
+	var p4 = parseInt($(".portal-4 .front_wave").offset().top);
 	$("#parallax").scroll(function () {
 		let wintop = $("#parallax").scrollTop();
 		//	Show fixed nav		
@@ -67,6 +73,27 @@ function setup() {
 		if (newsStatus == true && wintop >= $(window).height() && wintop <= $(window).height()+100) {
 			newsTweeter();
 		}
+
+		// Hide portal hole
+		if(wintop >= p1){
+			$(".portal-1 .hole_content").css({ "display": "none" });
+		}
+		else $(".portal-1 .hole_content").css({ "display": "block" });
+		
+		if(wintop >= p2){
+			$(".portal-2 .hole_content").css({ "display": "none" });
+		}
+		else $(".portal-2 .hole_content").css({ "display": "block" });
+
+		if(wintop >= p3){
+			$(".portal-3 .hole_content").css({ "display": "none" });
+		}
+		else $(".portal-3 .hole_content").css({ "display": "block" });
+
+		if(wintop >= p4){
+			$(".portal-4 .hole_content").css({ "display": "none" });
+		}
+		else $(".portal-4 .hole_content").css({ "display": "block" });
 	});
 
 	// Carousel

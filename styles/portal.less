@@ -1,17 +1,19 @@
 :root{
     --hightTop:0px;
-    --portalHeight:80vh;
+    --portalHeight:50vh;
 }
-
+// GLOBAL
+[class^='portal-'] .hole_content {
+    display:block;
+    top:-30px;
+}
 // PORTAL 1
-
 .glow{
     -webkit-animation:cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite 4s Flickering1;
             animation:cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite 4s Flickering1;
 }
 .portal-1{
     position: relative;
-    top:0;
     width:100%;
     height:var(--portalHeight);
     z-index:50;
