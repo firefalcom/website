@@ -153,7 +153,7 @@ function newsTweeter(){
 
 	else {
 		$(".twitterContent").animate({ "bottom" : "-120%" });
-		$("#fixed_news").animate({ "height" : "60px", "width" : "60px" });
+		$("#fixed_news").animate({ "height" : "60px", "width" : "120px" });
 		setTimeout(
 			function() 
 			{
