@@ -1,0 +1,211 @@
+#job{
+    overflow-x: hidden;
+    body{
+        margin:0;
+    }
+    header{
+        position: relative;
+        width: 100vw;
+        height:100vh;
+        background: linear-gradient(-45deg, #60b6e2, #1e9cd7, #0075be, #005b97);
+        color:#f3b110;
+        .arrowBack{
+            position: fixed;
+            width:50px;
+            height:50px;
+            top:3vh;
+            left:3vw;
+            padding:1%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: left 0.2s ease;
+            cursor: pointer;
+            z-index: 10;
+        }
+        .arrowBack:hover{
+            left:2.5vw;
+        }
+        .content{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            top:10%;
+            text-align: center;
+            z-index:5;
+        }
+        .FFLogo{
+            position:relative;
+            width:150px;
+            top:10%;
+            margin-bottom:70px;
+        }
+        h1{
+            font-family: "FG-heavy";
+            font-size: 3.5em;
+            margin:20px 20px;
+        }
+        h2{
+            font-family: "MA-medium";
+            font-size: 1.8em;
+            margin:10px 20px;
+        }
+        .background{
+            position: absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            background: center / cover url("../images/background/job_background_space.svg") no-repeat;
+        }
+        .cloudTransition{
+            position: absolute;
+            width:100%;
+            height:0;
+            padding-bottom:20%;
+            background: url("../images/background/job_cloudTransition.svg") center 9vw no-repeat;
+            background-size: 100%;
+            bottom:0;
+            overflow: hidden;
+        }
+    }
+    section{
+        position: relative;
+        width:100vw;
+        padding: 5% 0;
+        h3{
+            font-family: "MA-black";
+            font-size: 3em;
+            color: #1e9cd7;
+            text-align: center;
+        }
+        h4{
+            font-family: "MA-extraBold";
+            font-size: 2em;
+            color: #1e9cd7;
+            text-align: center;
+            margin: 0 0 10% 0;
+            white-space:nowrap;
+        }
+        .skillsCard{
+            position:relative;
+            width:100%;
+            padding:0;
+            margin:10% 0 0 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .skillsCard > li{
+            position: relative;
+            width:40%;
+            margin-bottom:5%
+        }
+        .skillsCard > li:last-child{
+            text-align: center;
+            p{
+                text-align: center;
+            }
+        }
+        .skillsCard .card{
+            position: relative;
+            width:51%;
+            margin: 0 auto;
+            background-color: #f3b110;
+            border-radius: 2.5vw;
+            padding:8%;
+        }
+        .cardTitle{
+            margin:0;
+            font-family:"MA-extraBold";
+            font-size: 1.1em;
+        }
+        .cardContent{
+            margin:5% 0 10% 0;
+            font-family:"MA-regular";
+            font-size: 1em;
+            text-align: justify;
+        }
+        .sendInfo{
+            padding:0;
+            width:100%;
+            text-align: left;
+            padding-left:5%;
+        }
+        .subInfo{
+            font-size: 0.7em;
+        }
+        .recruitgameButton{
+            margin:5% auto 0 auto;
+            padding:5%;
+            width:50%;
+            background-color: black;
+            border-radius: 5vw;
+            color: white;
+            font-family: "FG-heavy";
+            font-size: 1.2em;
+            text-align: center;
+            cursor: pointer;
+            transition: all  0.1s ease;
+            p{
+                margin:0;
+            }
+        }
+        .recruitgameButton:hover{
+            background-color: white;
+            color:black
+        }
+        .backgroundAssets{
+            position: absolute;
+            height:100%;
+            width:100%;
+            top:0;
+            z-index: -1;
+            img{
+                position: absolute;
+                width:10vw;
+            }
+            img:nth-child(1){
+                top:45%;
+                right:8%;
+            }
+            img:nth-child(2){
+                bottom:15%;
+                left:20%;
+            }
+            img:nth-child(3){
+                top:5%;
+                left:8%;
+            }
+        }
+    }
+    @media (max-width: 900px){
+        section{
+            h3{
+                font-size: 2em;
+            }
+            .skillsCard > li{
+                width:70%;
+                margin-bottom: 13%;
+            }
+        }
+    }
+    @media (max-width: 600px){
+        header{
+            h1{
+                font-size: 2.5em;
+            }
+            h2{
+                font-size: 1.2em;
+            }
+        }
+        section{
+            .skillsCard .card{
+                width:80%;
+            }
+        }
+    }
+
+}
