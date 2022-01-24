@@ -28,7 +28,7 @@ else {
 		$(".wave_BG_01").css("bottom", "70%", "!important");
 		$(".wave_BG_02").css("bottom", "80%", "!important");
 		$(".glow").css("bottom", "50%", "!important");
-		$(".background_section_02").css("height", "75%");
+		// $(".background_section_02").css("height", "75%");
 		scrolltrigger = parseInt($("#services_anchor").offset().top);
 		setup();
 		if(newsStatus == false){
