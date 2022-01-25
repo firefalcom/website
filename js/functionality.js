@@ -1,12 +1,12 @@
 // Detect browser
-var isFirefox = typeof InstallTrigger !== 'undefined';
-var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
-var isIE = /*@cc_on!@*/false || !!document.documentMode;
-var isEdge = !isIE && !!window.StyleMedia;
+const isFirefox = typeof InstallTrigger !== 'undefined';
+const isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+const isIE = /*@cc_on!@*/false || !!document.documentMode;
+const isEdge = !isIE && !!window.StyleMedia;
 
-var scrolltrigger = 0;
-var winheight = $(window).height();
-var newsStatus = false;
+let scrolltrigger = 0;
+const winheight = $(window).height();
+let newsStatus = false;
 
 // Browser specificities
 if (isFirefox == true || isSafari == true || isEdge == true) {
@@ -40,60 +40,61 @@ else {
 }
 
 function setup() {
-	var currentAnimation = false;
-	var wheelStatus = false;
-	var wheel = parseInt($("#techno_wheel .wheel").offset().top) - 500;
-	var p1 = parseInt($(".portal-1 .front_wave").offset().top);
-	var p2 = parseInt($(".portal-2 .front_wave").offset().top);
-	var p3 = parseInt($(".portal-3 .front_wave").offset().top);
-	var p4 = parseInt($(".portal-4 .front_wave").offset().top);
+	let currentAnimation = false;
+	let wheelStatus = false;
+	let wheelAutoOpened = false;
+	const wheel = parseInt($("#techno_wheel .wheel").offset().top) - 500;
+	const p1 = parseInt($(".portal-1 .front_wave").offset().top);
+	const p2 = parseInt($(".portal-2 .front_wave").offset().top);
+	const p3 = parseInt($(".portal-3 .front_wave").offset().top);
+	const p4 = parseInt($(".portal-4 .front_wave").offset().top);
+	const fixedNav = $("#fixed_nav");
+	const technoWheel = $("#techno_wheel .wheel");
+	const skills = $("#skills .circle_list");
 	$("#parallax").scroll(function () {
-		let wintop = $("#parallax").scrollTop();
-		//	Show fixed nav		
-		if (wintop >= scrolltrigger) {
-			if (currentAnimation == false) {
-				$("#fixed_nav").stop().animate({ top: '0' });
-				currentAnimation = true;
-			}
+		let wintop = document.getElementById("parallax").scrollTop;
+		//	Show fixed nav
+		if (currentAnimation == false && wintop >= scrolltrigger) {
+			fixedNav.stop().animate({ top: '0' });
+			currentAnimation = true;
 		}
-		else {
-			if (currentAnimation == true) {
-				$("#fixed_nav").stop().animate({ top: '-80px' });
-				currentAnimation = false;
-			}
+		else if(currentAnimation == true && wintop < scrolltrigger){
+			fixedNav.stop().animate({ top: '-80px' });
+			currentAnimation = false;
 		}
 
-		// Auto open techno wheel
-		if (wintop >= wheel) {
-			$("#techno_wheel .wheel").css({ "width": "150px", "height": "150px" });
-			$("#skills .circle_list").css({ "transform": "scale(1)" });
+		// Techno wheel - Auto open
+		if (wheelAutoOpened == false && wintop >= wheel) {
+			technoWheel.css({ "width": "150px", "height": "150px" });
+			skills.css({ "transform": "scale(1)" });
 			wheelStatus = true;
+			wheelAutoOpened = true;
 		}
-
 		if (newsStatus == true && wintop >= $(window).height() && wintop <= $(window).height()+100) {
 			newsTweeter();
 		}
 
+		// TODO: Optimize the JQuery selector in contant
 		// Hide portal hole
-		if(wintop >= p1){
-			$(".portal-1 .hole_content").css({ "display": "none" });
-		}
-		else $(".portal-1 .hole_content").css({ "display": "block" });
+		// if(wintop >= p1){
+		// 	$(".portal-1 .hole_content").css({ "display": "none" });
+		// }
+		// else $(".portal-1 .hole_content").css({ "display": "block" });
 		
-		if(wintop >= p2){
-			$(".portal-2 .hole_content").css({ "display": "none" });
-		}
-		else $(".portal-2 .hole_content").css({ "display": "block" });
+		// if(wintop >= p2){
+		// 	$(".portal-2 .hole_content").css({ "display": "none" });
+		// }
+		// else $(".portal-2 .hole_content").css({ "display": "block" });
 
-		if(wintop >= p3){
-			$(".portal-3 .hole_content").css({ "display": "none" });
-		}
-		else $(".portal-3 .hole_content").css({ "display": "block" });
+		// if(wintop >= p3){
+		// 	$(".portal-3 .hole_content").css({ "display": "none" });
+		// }
+		// else $(".portal-3 .hole_content").css({ "display": "block" });
 
-		if(wintop >= p4){
-			$(".portal-4 .hole_content").css({ "display": "none" });
-		}
-		else $(".portal-4 .hole_content").css({ "display": "block" });
+		// if(wintop >= p4){
+		// 	$(".portal-4 .hole_content").css({ "display": "none" });
+		// }
+		// else $(".portal-4 .hole_content").css({ "display": "block" });
 	});
 
 	// Carousel
@@ -113,7 +114,7 @@ function setup() {
 	}
 
 
-	// Techno wheel
+	// Techno wheel - On click
 	if ($(window).width() >= 500) {
 		$("#techno_wheel .wheel").click(function () {
 			if (wheelStatus == false) {
