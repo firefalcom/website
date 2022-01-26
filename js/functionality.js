@@ -154,7 +154,7 @@ function newsTweeter(){
 
 	else {
 		$(".twitterContent").animate({ "bottom" : "-120%" });
-		$("#fixed_news").animate({ "height" : "60px", "width" : "120px" });
+		$("#fixed_news").animate({ "height" : "60px", "width" : "50px" });
 		setTimeout(
 			function() 
 			{
