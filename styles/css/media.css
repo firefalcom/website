@@ -1,0 +1,521 @@
+@media (min-width: 1440px) {
+  header {
+    height: 125vh;
+  }
+}
+@media (max-width: 1440px) {
+  #portfolio_overview ul {
+    padding: 0 4% !important;
+  }
+  .background_section_03 #big_planet {
+    top: calc(-920px + 20vw);
+    right: -1180px;
+    width: 1700px;
+  }
+  .background_section_03 #pink_star {
+    position: absolute;
+    top: -521px;
+    left: -630px;
+    width: 1500px;
+    z-index: 5;
+  }
+  [class^='portal-'] .hole_content {
+    top: 0px;
+  }
+}
+@media (max-width: 1000px) {
+  header nav {
+    width: 50%;
+  }
+  h2 {
+    margin-top: 18vw;
+  }
+  #services #our_services ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    min-width: 0;
+  }
+  #services #our_services li {
+    width: 50% !important;
+    margin: 50px 0;
+  }
+  .background_section_03 #big_planet {
+    display: none;
+  }
+  .background_section_03 #space_tail {
+    width: 250%;
+    left: -75%;
+  }
+  #clients li {
+    height: 150px;
+  }
+  #clients #city_block {
+    height: 60vw;
+  }
+  #clients #bottom_block {
+    bottom: -15%;
+  }
+  #contact #block_BG img:nth-last-child(1) {
+    width: 100vw;
+  }
+  #contact #block_BG img:nth-last-child(2) {
+    width: 95vw;
+  }
+  .background_footer #launcher {
+    bottom: 4vw;
+  }
+  [class^='portal-'] .hole_content {
+    top: 50px;
+  }
+}
+@media (max-width: 860px) {
+  h2 {
+    margin-top: 150px;
+  }
+  header {
+    height: 120vh;
+  }
+  header nav {
+    width: 50%;
+  }
+  header #portfolio_overview ul {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  header #portfolio_overview li {
+    width: 35% !important;
+    margin: 1% 1% !important;
+  }
+  #fixed_news {
+    display: none;
+  }
+  #services #comet {
+    display: none;
+  }
+  #about #why_us ul li {
+    width: 90%;
+    min-width: 0;
+    margin: 50px 0;
+  }
+  #content_footer #main_content {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  #content_footer #info_1 {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+    width: 48%;
+  }
+  #content_footer #info_2 {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+    margin-top: 20px;
+    width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  #content_footer #info_3 {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    width: 48%;
+  }
+  .background_section_03 #big_planet {
+    display: none;
+  }
+  .background_section_03 #space_tail {
+    width: 2000px;
+    left: -75%;
+  }
+  .background_footer #parable {
+    bottom: calc(0% + 10px);
+  }
+  #parallax {
+    perspective: none !important;
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  [class^='background_section'] {
+    transform: translateZ(0px) scale(1) !important;
+  }
+  [class^='portal'] .wave_BG_02 {
+    bottom: calc(8vw + var(--portalHeight)) !important;
+  }
+  [class^='portal'] .hole_content {
+    bottom: calc(-15vw + var(--portalHeight)) !important;
+    transform: translateZ(0) scale(1);
+    top: -100px;
+  }
+  [class^='portal'] .wave_BG_01 {
+    bottom: calc(-2vw + var(--portalHeight)) !important;
+    transform: translateZ(0) scale(1);
+  }
+  [class^='portal'] .wave_BG_02 {
+    bottom: calc(8vw + var(--portalHeight)) !important;
+    transform: translateZ(0) scale(1);
+  }
+  [class^='portal'] .glow {
+    bottom: calc(-10vw + var(--portalHeight)) !important;
+    transform: translateZ(0) scale(1);
+  }
+  .background_section_02 {
+    height: 100%;
+  }
+}
+@media (max-width: 800px) {
+  header h2 {
+    margin-top: 200px;
+  }
+  header #FF_logo {
+    display: none;
+  }
+  header nav {
+    width: 100%;
+  }
+  header nav ul {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  .content_arrow {
+    margin-top: 70px;
+  }
+  #clients li {
+    width: 20%;
+  }
+  footer #bottom_info {
+    margin-top: 4% !important;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+@media (max-width: 660px) {
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 1em;
+  }
+  nav {
+    float: none;
+    width: 100%;
+  }
+  #about .step_block {
+    width: 75vw !important;
+    margin-bottom: 50px;
+  }
+  #about #line {
+    display: none;
+  }
+  #clients .background_section_04 #city_block {
+    height: 90vw;
+  }
+  #clients .background_section_04 #city_block #city {
+    width: 175%;
+    left: -37.5%;
+  }
+  #clients .background_section_04 #city_block #bottom_block {
+    bottom: -15%;
+  }
+  #contact ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  #contact li {
+    width: 100%;
+  }
+  #contact textarea {
+    padding: 6%;
+    width: 88%;
+  }
+  footer .background_footer #floor {
+    bottom: calc(110%);
+  }
+  footer .background_footer #launcher {
+    display: none;
+  }
+  [class^='portal-'] .hole_content {
+    top: -70px;
+  }
+}
+@media (max-width: 600px) {
+  #fixed_nav li:nth-child(1) {
+    display: none;
+  }
+  #fixed_nav li:nth-last-child(1) {
+    margin: 0 2% 0 2%;
+  }
+  #services #skills #platform_wheel {
+    width: 350px;
+  }
+  #services #skills #platform_wheel .wheel {
+    width: 330px;
+    height: 280px;
+  }
+  #services #skills .wheel .label {
+    position: absolute;
+    background-color: #51DBAB;
+    border-radius: 1000px;
+    width: 100px;
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  #services #skills [class^="myarrow"] .line {
+    height: 5rem;
+  }
+  #services #skills .myarrow-1a {
+    top: 107px;
+    left: 120px;
+    -webkit-transform: rotate(35deg);
+    -ms-transform: rotate(35deg);
+    transform: rotate(35deg);
+  }
+  #services #skills .myarrow-1a .line,
+  #services #skills .myarrow-1a .arrow {
+    border-color: white;
+  }
+  #services #skills .myarrow-1b {
+    top: 89px;
+    left: 101px;
+    -webkit-transform: rotate(215deg);
+    -ms-transform: rotate(215deg);
+    transform: rotate(215deg);
+  }
+  #services #skills .myarrow-1b .line,
+  #services #skills .myarrow-1b .arrow {
+    border-color: white;
+  }
+  #services #skills .myarrow-2a {
+    top: 95px;
+    left: 245px;
+    -webkit-transform: rotate(-35deg);
+    -ms-transform: rotate(-35deg);
+    transform: rotate(-35deg);
+  }
+  #services #skills .myarrow-2a .line,
+  #services #skills .myarrow-2a .arrow {
+    border-color: white;
+  }
+  #services #skills .myarrow-2b {
+    top: 106px;
+    left: 224px;
+    -webkit-transform: rotate(-215deg);
+    -ms-transform: rotate(-215deg);
+    transform: rotate(-215deg);
+  }
+  #services #skills .myarrow-2b .line,
+  #services #skills .myarrow-2b .arrow {
+    border-color: white;
+  }
+  #services #skills .myarrow-3a {
+    top: 204px;
+    left: 176px;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  #services #skills .myarrow-3a .line,
+  #services #skills .myarrow-3a .arrow {
+    border-color: white;
+  }
+  #services #skills .myarrow-3b {
+    top: 180px;
+    left: 176px;
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+  }
+  #services #skills .myarrow-3b .line,
+  #services #skills .myarrow-3b .arrow {
+    border-color: white;
+  }
+  #services #skills #techno_wheel {
+    width: 100%;
+  }
+  #clients li {
+    width: 30%;
+  }
+  #clients #list_block {
+    margin: 0 auto 100px auto;
+  }
+  #clients .background_section_04 #sun {
+    width: 160px;
+    top: 2%;
+  }
+  #clients .background_section_04 #planet {
+    top: 5%;
+  }
+}
+@media (max-width: 500px) {
+  header #stars {
+    width: 220%;
+    min-width: 0;
+  }
+  h3 {
+    font-size: 2.5em;
+  }
+  nav p {
+    font-size: 90%;
+    text-align: center;
+  }
+  #fixed_nav p {
+    font-size: 0.8em;
+  }
+  #services #our_services li {
+    min-width: 0 !important;
+    width: 75% !important;
+    margin: 50px;
+  }
+  #services #our_services li p {
+    font-size: 0.9em;
+  }
+  #services #our_services .title_block {
+    font-size: 1.75em;
+  }
+  #services #skills #techno_wheel {
+    display: none;
+  }
+  #services #skills #techno_wheel .wheel {
+    width: 150px;
+    height: 150px;
+  }
+  #about #why_us .block_BG {
+    left: -6.5%;
+    width: 115%;
+    height: 115%;
+  }
+  #contact input {
+    width: 85%;
+    margin-left: 4.5%;
+    padding: 7px 0% 7px 5%;
+    font-size: 1em;
+  }
+  #contact textarea {
+    width: 79%;
+    margin-left: 4.5%;
+    font-size: 1em;
+  }
+  footer #main_content {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+    -ms-flex-direction: column !important;
+    flex-direction: column !important;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  footer #info_1,
+  footer #info_2,
+  footer #info_3 {
+    width: 100% !important;
+    text-align: center;
+    margin: 15px 0;
+  }
+  footer #content_footer #info_3 p {
+    text-align: center;
+  }
+  [class^='portal-'] .hole_content {
+    top: -50px;
+  }
+}
+@media (max-width: 400px) {
+  #about .title_area h5 {
+    font-size: 1.2em !important;
+  }
+  #clients li {
+    width: 48%;
+  }
+  #clients #list_block {
+    margin: 0 auto 100px auto;
+  }
+  #clients .background_section_04 #sun {
+    width: 160px;
+    top: 2%;
+  }
+  #clients .background_section_04 #planet {
+    top: 5%;
+    width: 75px;
+    min-width: 0;
+  }
+  #services #skills #platform_wheel {
+    width: 280px;
+  }
+  #services #skills #platform_wheel .wheel {
+    width: 280px;
+    height: 250px;
+  }
+  #services #skills .wheel .label {
+    width: 80px;
+    height: 80px;
+  }
+  #services #skills [class^="myarrow"] .line {
+    height: 4rem;
+  }
+  #services #skills .myarrow-1a {
+    top: 98px;
+    left: 95px;
+    -webkit-transform: rotate(35deg);
+    -ms-transform: rotate(35deg);
+    transform: rotate(35deg);
+  }
+  #services #skills .myarrow-1b {
+    top: 82px;
+    left: 75px;
+    -webkit-transform: rotate(215deg);
+    -ms-transform: rotate(215deg);
+    transform: rotate(215deg);
+  }
+  #services #skills .myarrow-2a {
+    top: 82px;
+    left: 207px;
+    -webkit-transform: rotate(-35deg);
+    -ms-transform: rotate(-35deg);
+    transform: rotate(-35deg);
+  }
+  #services #skills .myarrow-2b {
+    top: 94px;
+    left: 186px;
+    -webkit-transform: rotate(-215deg);
+    -ms-transform: rotate(-215deg);
+    transform: rotate(-215deg);
+  }
+  #services #skills .myarrow-3a {
+    top: 185px;
+    left: 140px;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  #services #skills .myarrow-3b {
+    top: 160px;
+    left: 140px;
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+  }
+}
