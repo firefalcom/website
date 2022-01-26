@@ -1,0 +1,204 @@
+#job {
+  overflow-x: hidden;
+}
+#job body {
+  margin: 0;
+}
+#job header {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(-45deg, #60b6e2, #1e9cd7, #0075be, #005b97);
+  color: #f3b110;
+}
+#job header .arrowBack {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  top: 3vh;
+  left: 3vw;
+  padding: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: left 0.2s ease;
+  cursor: pointer;
+  z-index: 10;
+}
+#job header .arrowBack:hover {
+  left: 2.5vw;
+}
+#job header .content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 10%;
+  text-align: center;
+  z-index: 5;
+}
+#job header .FFLogo {
+  position: relative;
+  width: 150px;
+  top: 10%;
+  margin-bottom: 70px;
+}
+#job header h1 {
+  font-family: "FG-heavy";
+  font-size: 3.5em;
+  margin: 20px 20px;
+}
+#job header h2 {
+  font-family: "MA-medium";
+  font-size: 1.8em;
+  margin: 10px 20px;
+}
+#job header .background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: center / cover url("../../images/background/job_background_space.svg") no-repeat;
+}
+#job header .cloudTransition {
+  position: absolute;
+  width: 100%;
+  height: 0;
+  padding-bottom: 20%;
+  background: url("../../images/background/job_cloudTransition.svg") center 9vw no-repeat;
+  background-size: 100%;
+  bottom: 0;
+  overflow: hidden;
+}
+#job section {
+  position: relative;
+  width: 100vw;
+  padding: 5% 0;
+}
+#job section h3 {
+  font-family: "MA-black";
+  font-size: 3em;
+  color: #1e9cd7;
+  text-align: center;
+}
+#job section h4 {
+  font-family: "MA-extraBold";
+  font-size: 2em;
+  color: #1e9cd7;
+  text-align: center;
+  margin: 0 0 10% 0;
+  white-space: nowrap;
+}
+#job section .skillsCard {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  margin: 10% 0 0 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#job section .skillsCard > li {
+  position: relative;
+  width: 40%;
+  margin-bottom: 5%;
+}
+#job section .skillsCard > li:last-child {
+  text-align: center;
+}
+#job section .skillsCard > li:last-child p {
+  text-align: center;
+}
+#job section .skillsCard .card {
+  position: relative;
+  width: 51%;
+  margin: 0 auto;
+  background-color: #f3b110;
+  border-radius: 2.5vw;
+  padding: 8%;
+}
+#job section .cardTitle {
+  margin: 0;
+  font-family: "MA-extraBold";
+  font-size: 1.1em;
+}
+#job section .cardContent {
+  margin: 5% 0 10% 0;
+  font-family: "MA-regular";
+  font-size: 1em;
+  text-align: justify;
+}
+#job section .sendInfo {
+  padding: 0;
+  width: 100%;
+  text-align: left;
+  padding-left: 5%;
+}
+#job section .subInfo {
+  font-size: 0.7em;
+}
+#job section .recruitgameButton {
+  margin: 5% auto 0 auto;
+  padding: 5%;
+  width: 50%;
+  background-color: black;
+  border-radius: 5vw;
+  color: white;
+  font-family: "FG-heavy";
+  font-size: 1.2em;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+#job section .recruitgameButton p {
+  margin: 0;
+}
+#job section .recruitgameButton:hover {
+  background-color: white;
+  color: black;
+}
+#job section .backgroundAssets {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  z-index: -1;
+}
+#job section .backgroundAssets img {
+  position: absolute;
+  width: 10vw;
+}
+#job section .backgroundAssets img:nth-child(1) {
+  top: 45%;
+  right: 8%;
+}
+#job section .backgroundAssets img:nth-child(2) {
+  bottom: 15%;
+  left: 20%;
+}
+#job section .backgroundAssets img:nth-child(3) {
+  top: 5%;
+  left: 8%;
+}
+@media (max-width: 900px) {
+  #job section h3 {
+    font-size: 2em;
+  }
+  #job section .skillsCard > li {
+    width: 70%;
+    margin-bottom: 13%;
+  }
+}
+@media (max-width: 600px) {
+  #job header h1 {
+    font-size: 2.5em;
+  }
+  #job header h2 {
+    font-size: 1.2em;
+  }
+  #job section .skillsCard .card {
+    width: 80%;
+  }
+}
