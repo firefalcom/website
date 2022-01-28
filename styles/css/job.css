@@ -128,7 +128,7 @@
   margin: 5% 0 10% 0;
   font-family: "MA-regular";
   font-size: 1em;
-  text-align: justify;
+  /* text-align: justify; */
 }
 #job section .sendInfo {
   padding: 0;
