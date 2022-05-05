@@ -346,7 +346,7 @@ header{
         left: 0;
         width: 40px;
         height: 40px;
-        background-color: rgb(243, 177, 16);
+        background: url("../../images/logos/twitter_white.svg") no-repeat center center / 60%, #1d9bf0;
         border-radius: 50px;
         z-index: 5;
         display:-webkit-box;
@@ -378,18 +378,19 @@ header{
         position:absolute;
         width: 45%;
         height: 5px;
-        background-color:rgb(145 106 8);
+        background-color:white;
         border-radius: 50px;
+        opacity:0;
     }
     .circle .bar:nth-child(1){
-        -webkit-transform: rotate(0deg);
-            -ms-transform: rotate(0deg);
-                transform: rotate(0deg);
+        -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
     }
     .circle .bar:nth-child(2){
-        -webkit-transform: rotate(90deg);
-            -ms-transform: rotate(90deg);
-                transform: rotate(90deg);
+        -webkit-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+                transform: rotate(-45deg);
     }
 }
 
