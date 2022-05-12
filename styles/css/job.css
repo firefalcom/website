@@ -130,11 +130,14 @@
   font-size: 1em;
   /* text-align: justify; */
 }
-#job section .sendInfo {
+#job section ul.cardContent {
   padding: 0;
   width: 100%;
   text-align: left;
   padding-left: 5%;
+}
+#job section ul.cardContent p {
+  margin: 10px 0;
 }
 #job section .subInfo {
   font-size: 0.7em;
