@@ -1,5 +1,6 @@
 #job {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 #job body {
   margin: 0;
@@ -52,6 +53,19 @@
   font-family: "MA-medium";
   font-size: 1.8em;
   margin: 10px 20px;
+}
+#job header .autoscroll_arrow {
+  margin: 80px 0 0 0;
+  width: 100%;
+  text-align: center;
+  z-index: 200;
+  -webkit-animation: ease-in-out infinite 2s jump;
+  animation: ease-in-out infinite 2s jump;
+}
+#job header .autoscroll_arrow .arrow {
+  width: 25px;
+  position: relative;
+  cursor: pointer;
 }
 #job header .background {
   position: absolute;
@@ -130,11 +144,14 @@
   font-size: 1em;
   /* text-align: justify; */
 }
-#job section .sendInfo {
+#job section ul.cardContent {
   padding: 0;
   width: 100%;
   text-align: left;
   padding-left: 5%;
+}
+#job section ul.cardContent p {
+  margin: 10px 0;
 }
 #job section .subInfo {
   font-size: 0.7em;
