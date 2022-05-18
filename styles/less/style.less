@@ -16,7 +16,7 @@ section, footer{
     position:relative;
 }
 section{
-    overflow: hidden;
+    top:-10%;
 }
 li{
     list-style: none;
@@ -55,7 +55,7 @@ h1{
     text-align: center;
 }
 h2{
-    margin-top: 15vh;
+    margin-top: 10vh;
     font-family: "MA-bold";
     font-size: 1em;
     color: white;
@@ -1422,47 +1422,25 @@ header{
 }
 
 // PARALLAX
-
-//Content
 #parallax{
+    margin: 0;
+    width:100vw;
     height: 100vh;
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: scroll;
+    perspective: 10px;
+    perspective-origin:center;
+    transform-style: preserve-3d;
     scroll-behavior: smooth;
-    // -webkit-perspective: 1px;
-    //    -moz-perspective: none;
-    //     -ms-perspective: none;
-    // -webkit-perspective-origin:center;
-    //    -moz-perspective-origin:center;
-    //     -ms-perspective-origin:center;
-    // -webkit-transform-style: preserve-3d;
-    //    -moz-transform-style: flat;
-    //     -ms-transform-style: flat;
 }
-
-// [class^='background_section'], .content_section, header{
-//     top: 0;
-//     right: 0;
-//     bottom: 0;
-//     left: 0;
-// }
-
-// // Content
-// section .content_section, header .content_section{
-//     -webkit-transform: translateX(0) translateY(0) translateZ(0) scale(1);
-//        -moz-transform: translateX(0) translateY(0) translateZ(0) scale(1);
-//         -ms-transform: translateX(0) translateY(0) translateZ(0) scale(1);
-// }
-// // Backround
-// [class^='background_section'], .space_items{
-//     -webkit-transform: translateX(-12px) translateY(0) translateZ(-1.5px) scale(2.5);
-//        -moz-transform: translateX(0) translateY(0) translateZ(0) scale(1);
-//         -ms-transform: translateX(0) translateY(0) translateZ(0) scale(1);
-// }
-// .background_section_03{
-//     -webkit-transform: translateX(-12px) translateY(800px) translateZ(-1.5px) scale(2.5);
-//        -moz-transform: translateX(0) translateY(0) translateZ(0) scale(1);
-//         -ms-transform: translateX(0) translateY(0) translateZ(0) scale(1);
+// ! Add some parallax on the content but lose the z-index order
+// header, section{
+//     width: 100vw;
+//     transform-style: inherit;
+//     .content_section{
+//         transform-style: inherit;
+//         transform: translateZ(1.5px) scale(0.85);
+//     }
 // }
 
 //portal

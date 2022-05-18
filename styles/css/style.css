@@ -16,7 +16,7 @@ footer {
   position: relative;
 }
 section {
-  overflow: hidden;
+  top: -10%;
 }
 li {
   list-style: none;
@@ -54,7 +54,7 @@ h1 {
   text-align: center;
 }
 h2 {
-  margin-top: 15vh;
+  margin-top: 10vh;
   font-family: "MA-bold";
   font-size: 1em;
   color: white;
@@ -1409,9 +1409,14 @@ header #portfolio_overview .description {
   font-size: 0.95em;
 }
 #parallax {
+  margin: 0;
+  width: 100vw;
   height: 100vh;
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: scroll;
+  perspective: 10px;
+  perspective-origin: center;
+  transform-style: preserve-3d;
   scroll-behavior: smooth;
 }
 .hole_content {

@@ -2,6 +2,13 @@
   --hightTop: 0px;
   --portalHeight: 50vh;
 }
+[class^='portal-'] {
+  position: relative;
+  width: 100%;
+  height: var(--portalHeight);
+  z-index: 50;
+  transform: translateZ(2px) scale(0.81);
+}
 [class^='portal-'] .hole_content {
   display: block;
   top: -100px;
@@ -11,11 +18,6 @@
   animation: cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite 4s Flickering1;
 }
 .portal-1 {
-  position: relative;
-  width: 100%;
-  height: var(--portalHeight);
-  z-index: 50;
-  background-color: #00034A;
   /* Front wave */
   /* Fill */
   /* Hole */
@@ -95,11 +97,6 @@
   z-index: 65;
 }
 .portal-2 {
-  position: relative;
-  width: 100%;
-  height: var(--portalHeight);
-  z-index: 50;
-  background-color: #00034A;
   /* Front wave */
   /* Fill */
   /* Hole */
@@ -179,11 +176,6 @@
   z-index: 65;
 }
 .portal-3 {
-  position: relative;
-  width: 100%;
-  height: var(--portalHeight);
-  z-index: 50;
-  background-color: #00034A;
   /* Front wave */
   /* Fill */
   /* Hole */
@@ -263,11 +255,6 @@
   z-index: 65;
 }
 .portal-4 {
-  position: relative;
-  width: 100%;
-  height: var(--portalHeight);
-  z-index: 50;
-  background-color: #00034A;
   /* Front wave */
   /* Fill */
   /* Hole */
