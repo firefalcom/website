@@ -13,7 +13,6 @@ if (isFirefox == true || isSafari == true || isEdge == true) {
 	$(window).ready(function () {
 		if( isEdge == true){
 			$("[class^='background_section'], #planet, #sun, #city_block, .space_items").css("transform", "translateX(0) translateY(0) translateZ(0) scale(1)");
-			$(".hole_content").css("bottom", "calc(-20vw + var(--portalHeight))");
 		}
 		$("#clients .space_items #sun").css("top", "5%");
 		scrolltrigger = winheight;
@@ -24,10 +23,6 @@ if (isFirefox == true || isSafari == true || isEdge == true) {
 else {
 	$(window).on("load", function () {
 		$("[class^='background_section'], #planet, #sun, #city_block").css("transition", "none");
-		$(".hole_content").css("bottom", "calc(-15vw + var(--portalHeight) - 250px)");
-		$(".wave_BG_01").css("bottom", "70%", "!important");
-		$(".wave_BG_02").css("bottom", "80%", "!important");
-		$(".glow").css("bottom", "50%", "!important");
 		// $(".background_section_02").css("height", "75%");
 		scrolltrigger = parseInt($("#services_anchor").offset().top);
 		setup();
@@ -44,10 +39,10 @@ function setup() {
 	let wheelStatus = false;
 	let wheelAutoOpened = false;
 	const wheel = parseInt($("#techno_wheel .wheel").offset().top) - 500;
-	const p1 = parseInt($(".portal-1 .front_wave").offset().top);
-	const p2 = parseInt($(".portal-2 .front_wave").offset().top);
-	const p3 = parseInt($(".portal-3 .front_wave").offset().top);
-	const p4 = parseInt($(".portal-4 .front_wave").offset().top);
+	// const p1 = parseInt($(".portal-1 .front_wave").offset().top);
+	// const p2 = parseInt($(".portal-2 .front_wave").offset().top);
+	// const p3 = parseInt($(".portal-3 .front_wave").offset().top);
+	// const p4 = parseInt($(".portal-4 .front_wave").offset().top);
 	const fixedNav = $("#fixed_nav");
 	const technoWheel = $("#techno_wheel .wheel");
 	const skills = $("#skills .circle_list");

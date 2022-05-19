@@ -1,92 +1,85 @@
 :root {
   --hightTop: 0px;
-  --portalHeight: 50vh;
+  --portalHeight: 21vh;
 }
 [class^='portal-'] {
   position: relative;
   width: 100%;
   height: var(--portalHeight);
   z-index: 50;
+  -webkit-transform: translateZ(2px) scale(0.81);
   transform: translateZ(2px) scale(0.81);
 }
-[class^='portal-'] .hole_content {
-  display: block;
-  top: -100px;
-}
-.glow {
-  -webkit-animation: cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite 4s Flickering1;
-  animation: cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite 4s Flickering1;
-}
-.portal-1 {
-  /* Front wave */
-  /* Fill */
-  /* Hole */
-  /* Wave BG */
-  /* Glow */
-  /* Wave out */
-}
-.portal-1 .front_wave {
+[class^='portal-'] .front_wave {
   position: absolute;
   bottom: calc(-20px + var(--portalHeight));
   width: 100%;
   z-index: 59;
 }
-.portal-1 .fill_transition {
+[class^='portal-'] .fill_transition {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: #00034A;
   z-index: 60;
 }
-.portal-1 .hole_content {
+[class^='portal-'] .hole_content {
   position: absolute;
+  display: block;
   width: 100%;
   margin: 0 auto;
+  top: -215px;
   left: 0;
   right: 0;
   z-index: 55;
+  /* V From JS V */
+  bottom: calc(-15vw + var(--portalHeight) - 250px);
 }
-.portal-1 #hole1,
-.portal-1 #hole2 {
+[class^='portal-'] .hole1,
+[class^='portal-'] .hole2 {
   position: absolute;
   margin: 0 auto;
   left: 0;
   right: 0;
   z-index: 55;
 }
-.portal-1 #hole1 {
+[class^='portal-'] .hole1 {
   width: 90%;
   top: 20px;
   opacity: 0.7;
 }
-.portal-1 #hole2 {
+[class^='portal-'] .hole2 {
   width: 75%;
   top: 50px;
   opacity: 0.4;
 }
-.portal-1 .wave_BG_01 {
+[class^='portal-'] .wave_BG_01 {
   position: absolute;
-  bottom: calc(-2vw + var(--portalHeight));
+  /* V From JS V */
+  bottom: 60%;
   z-index: 52;
   width: 100%;
 }
-.portal-1 .wave_BG_02 {
+[class^='portal-'] .wave_BG_02 {
   position: absolute;
-  bottom: calc(8vw + var(--portalHeight));
+  bottom: 120%;
   left: 0;
   opacity: 0.6;
   z-index: 51;
   width: 100%;
 }
-.portal-1 .glow {
+[class^='portal-'] .glow {
   position: absolute;
-  bottom: calc(-10vw + var(--portalHeight));
+  bottom: -15%;
   width: 100%;
   z-index: 50;
   opacity: 1;
+  -webkit-transform: scaleX(1.5);
+  transform: scaleX(1.5);
+  -webkit-animation: cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite 4s Flickering1;
+  animation: cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite 4s Flickering1;
 }
-.portal-1 .wave_out {
+[class^='portal-'] .wave_out {
   position: absolute;
   top: calc(-10px + var(--portalHeight));
   /* To stay down when resizing */
@@ -96,240 +89,27 @@
   transform: rotate(180deg);
   z-index: 65;
 }
-.portal-2 {
-  /* Front wave */
-  /* Fill */
-  /* Hole */
-  /* Wave BG */
-  /* Glow */
-  /* Wave out */
+.portal-1 .fill_transition {
+  background-color: #00034A;
 }
-.portal-2 .front_wave {
-  position: absolute;
-  bottom: calc(-20px + var(--portalHeight));
-  width: 100%;
-  z-index: 59;
+.portal-1 .glow {
+  opacity: 1;
 }
 .portal-2 .fill_transition {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
   background-color: #1A0042;
-  z-index: 60;
-}
-.portal-2 .hole_content {
-  position: absolute;
-  width: 100%;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-  z-index: 55;
-}
-.portal-2 #hole1,
-.portal-2 #hole2 {
-  position: absolute;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-  z-index: 55;
-}
-.portal-2 #hole1 {
-  width: 90%;
-  top: 20px;
-  opacity: 0.7;
-}
-.portal-2 #hole2 {
-  width: 75%;
-  top: 50px;
-  opacity: 0.4;
-}
-.portal-2 .wave_BG_01 {
-  position: absolute;
-  bottom: calc(-2vw + var(--portalHeight));
-  z-index: 52;
-  width: 100%;
-}
-.portal-2 .wave_BG_02 {
-  position: absolute;
-  bottom: calc(8vw + var(--portalHeight));
-  left: 0;
-  opacity: 0.6;
-  z-index: 51;
-  width: 100%;
 }
 .portal-2 .glow {
-  position: absolute;
-  bottom: calc(-10vw + var(--portalHeight));
-  width: 100%;
-  z-index: 50;
   opacity: 0.7;
-}
-.portal-2 .wave_out {
-  position: absolute;
-  top: calc(-10px + var(--portalHeight));
-  /* To stay down when resizing */
-  width: 100%;
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
-  z-index: 65;
-}
-.portal-3 {
-  /* Front wave */
-  /* Fill */
-  /* Hole */
-  /* Wave BG */
-  /* Glow */
-  /* Wave out */
-}
-.portal-3 .front_wave {
-  position: absolute;
-  bottom: calc(-20px + var(--portalHeight));
-  width: 100%;
-  z-index: 59;
 }
 .portal-3 .fill_transition {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
   background-color: #1A0042;
-  z-index: 60;
-}
-.portal-3 .hole_content {
-  position: absolute;
-  width: 100%;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-  z-index: 55;
-}
-.portal-3 #hole1,
-.portal-3 #hole2 {
-  position: absolute;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-  z-index: 55;
-}
-.portal-3 #hole1 {
-  width: 90%;
-  top: 20px;
-  opacity: 0.7;
-}
-.portal-3 #hole2 {
-  width: 75%;
-  top: 50px;
-  opacity: 0.4;
-}
-.portal-3 .wave_BG_01 {
-  position: absolute;
-  bottom: calc(-2vw + var(--portalHeight));
-  z-index: 52;
-  width: 100%;
-}
-.portal-3 .wave_BG_02 {
-  position: absolute;
-  bottom: calc(8vw + var(--portalHeight));
-  left: 0;
-  opacity: 0.6;
-  z-index: 51;
-  width: 100%;
 }
 .portal-3 .glow {
-  position: absolute;
-  bottom: calc(-10vw + var(--portalHeight));
-  width: 100%;
-  z-index: 50;
   opacity: 0.7;
-}
-.portal-3 .wave_out {
-  position: absolute;
-  top: calc(-10px + var(--portalHeight));
-  /* To stay down when resizing */
-  width: 100%;
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
-  z-index: 65;
-}
-.portal-4 {
-  /* Front wave */
-  /* Fill */
-  /* Hole */
-  /* Wave BG */
-  /* Glow */
-  /* Wave out */
-}
-.portal-4 .front_wave {
-  position: absolute;
-  bottom: calc(-20px + var(--portalHeight));
-  width: 100%;
-  z-index: 59;
 }
 .portal-4 .fill_transition {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
   background-color: #00034A;
-  z-index: 60;
-}
-.portal-4 .hole_content {
-  position: absolute;
-  width: 100%;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-  z-index: 55;
-}
-.portal-4 #hole1,
-.portal-4 #hole2 {
-  position: absolute;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-  z-index: 55;
-}
-.portal-4 #hole1 {
-  width: 90%;
-  top: 20px;
-  opacity: 0.7;
-}
-.portal-4 #hole2 {
-  width: 75%;
-  top: 50px;
-  opacity: 0.4;
-}
-.portal-4 .wave_BG_01 {
-  position: absolute;
-  bottom: calc(-2vw + var(--portalHeight));
-  z-index: 52;
-  width: 100%;
-}
-.portal-4 .wave_BG_02 {
-  position: absolute;
-  bottom: calc(8vw + var(--portalHeight));
-  left: 0;
-  opacity: 0.6;
-  z-index: 51;
-  width: 100%;
 }
 .portal-4 .glow {
-  position: absolute;
-  bottom: calc(-10vw + var(--portalHeight));
-  width: 100%;
-  z-index: 50;
   opacity: 0.7;
-}
-.portal-4 .wave_out {
-  position: absolute;
-  top: calc(-10px + var(--portalHeight));
-  /* To stay down when resizing */
-  width: 100%;
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
-  z-index: 65;
 }
