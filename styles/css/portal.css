@@ -28,12 +28,10 @@
   display: block;
   width: 100%;
   margin: 0 auto;
-  top: -215px;
+  bottom: -7.5vw;
   left: 0;
   right: 0;
   z-index: 55;
-  /* V From JS V */
-  bottom: calc(-15vw + var(--portalHeight) - 250px);
 }
 [class^='portal-'] .hole1,
 [class^='portal-'] .hole2 {
@@ -55,7 +53,6 @@
 }
 [class^='portal-'] .wave_BG_01 {
   position: absolute;
-  /* V From JS V */
   bottom: 60%;
   z-index: 52;
   width: 100%;
@@ -70,10 +67,9 @@
 }
 [class^='portal-'] .glow {
   position: absolute;
-  bottom: -15%;
+  bottom: -4vw;
   width: 100%;
   z-index: 50;
-  opacity: 1;
   -webkit-transform: scaleX(1.5);
   transform: scaleX(1.5);
   -webkit-animation: cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite 4s Flickering1;
@@ -92,24 +88,12 @@
 .portal-1 .fill_transition {
   background-color: #00034A;
 }
-.portal-1 .glow {
-  opacity: 1;
-}
 .portal-2 .fill_transition {
   background-color: #1A0042;
-}
-.portal-2 .glow {
-  opacity: 0.7;
 }
 .portal-3 .fill_transition {
   background-color: #1A0042;
 }
-.portal-3 .glow {
-  opacity: 0.7;
-}
 .portal-4 .fill_transition {
   background-color: #00034A;
-}
-.portal-4 .glow {
-  opacity: 0.7;
 }

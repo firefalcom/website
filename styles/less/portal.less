@@ -30,12 +30,10 @@
         display:block;
         width:100%;
         margin:0 auto;
-        top:-215px;
+        bottom:-7.5vw;
         left:0;
         right:0;
         z-index:55;
-        /* V From JS V */
-        bottom:calc(-15vw + var(--portalHeight) - 250px);
     }
     .hole1, .hole2{
         position:absolute;
@@ -56,14 +54,13 @@
     }
     .wave_BG_01{
         position:absolute;
-        /* V From JS V */
-        bottom:/*calc(-2vw + var(--portalHeight))*/ /*From JS ->*/ 60%;
+        bottom:60%;
         z-index: 52;
         width: 100%;
     }
     .wave_BG_02{
         position:absolute;
-        bottom:/*calc(8vw + var(--portalHeight))*/ /*From JS ->*/ 120%;
+        bottom:120%;
         left:0;
         opacity:0.6;
         z-index: 51;
@@ -71,10 +68,9 @@
     }
     .glow{
         position:absolute;
-        bottom:/*calc(-10vw + var(--portalHeight))*/ /*From JS ->*/ -15%;
+        bottom:-4vw;
         width:100%;
         z-index:50;
-        opacity:1;
         -webkit-transform: scaleX(1.5);
                 transform: scaleX(1.5);
         -webkit-animation:cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite 4s Flickering1;
@@ -96,17 +92,11 @@
     .fill_transition{
         background-color: #00034A;
     }
-    .glow{
-        opacity:1;
-    }
 }
 
 .portal-2{
     .fill_transition{
         background-color: #1A0042;
-    }
-    .glow{
-        opacity:0.7;
     }
 }
 
@@ -114,16 +104,10 @@
     .fill_transition{
         background-color: #1A0042;
     }
-    .glow{
-        opacity:0.7;
-    }
 }
 
 .portal-4{
     .fill_transition{
         background-color: #00034A;
-    }
-    .glow{
-        opacity:0.7;
     }
 }
