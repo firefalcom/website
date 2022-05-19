@@ -223,6 +223,7 @@ header #portfolio_overview .description {
 .autoscroll_arrow .arrow {
   width: 25px;
   position: relative;
+  padding: 3%;
   cursor: pointer;
 }
 #autoscroll_arrow_backhome {
@@ -312,6 +313,70 @@ header #portfolio_overview .description {
   -webkit-transition: all ease-out 0.01s;
   -o-transition: all ease-out 0.01s;
   transition: all ease-out 0.01s;
+}
+#fixed_news .popup_info_bubble {
+  position: absolute;
+  width: auto;
+  height: auto;
+  bottom: 13px;
+  right: 3px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 50px;
+  opacity: 0;
+  animation: appear 1s ease 2s 1 forwards;
+}
+#fixed_news .popup_info_bubble .content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+#fixed_news .popup_info_bubble .content > * {
+  margin: 15px;
+}
+#fixed_news .popup_info_bubble .content p {
+  font-family: "MA-bold";
+  font-size: 1.2em;
+  color: white;
+  white-space: nowrap;
+}
+#fixed_news .popup_info_bubble .content img {
+  width: 10px;
+  margin: 0 60px 0 0;
+}
+#fixed_news .popup_info_bubble .remove_content {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: -25px;
+  left: -25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  padding: 20px;
+  cursor: pointer;
+  transition: transform ease 0.15s;
+  opacity: 0;
+  animation: appear 1s ease 3s 1 forwards;
+}
+#fixed_news .popup_info_bubble .remove_content:hover {
+  transform: scale(1.2);
+}
+#fixed_news .popup_info_bubble .remove_content img {
+  position: absolute;
+  width: 20%;
+  z-index: 2;
+}
+#fixed_news .popup_info_bubble .background {
+  position: absolute;
+  background-color: white;
+  width: 40%;
+  height: 40%;
+  border-radius: 50px;
+  z-index: 1;
 }
 #fixed_news .twitterContent {
   position: absolute;

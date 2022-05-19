@@ -23,14 +23,8 @@ if (isFirefox == true || isSafari == true || isEdge == true) {
 else {
 	$(window).on("load", function () {
 		$("[class^='background_section'], #planet, #sun, #city_block").css("transition", "none");
-		// $(".background_section_02").css("height", "75%");
 		scrolltrigger = parseInt($("#services_anchor").offset().top);
 		setup();
-		if(newsStatus == false){
-			setTimeout(() => {
-				newsTweeter();
-			}, 500);
-		}
 	});
 }
 
@@ -64,9 +58,6 @@ function setup() {
 			skills.css({ "transform": "scale(1)" });
 			wheelStatus = true;
 			wheelAutoOpened = true;
-		}
-		if (newsStatus == true && wintop >= $(window).height() && wintop <= $(window).height()+100) {
-			newsTweeter();
 		}
 
 		// TODO: Optimize the JQuery selector in contant
@@ -135,10 +126,18 @@ function setup() {
 		}
 	);
 };
-function newsTweeter(){
+
+// Twitter info bubble
+function popupInfoBubble(){
+	$(".popup_info_bubble").css({"display": "none"});
+}
+
+// Twitter button
+function newsTwitter(){
 	if (newsStatus == false) {
 		$(".twitterContent").animate({ "bottom": "0" });
 		$("#fixed_news").stop().animate({ "height" : "630px", "width" : "550px" });
+		popupInfoBubble();
 		setTimeout(
 			function() 
 			{
