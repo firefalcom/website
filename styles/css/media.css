@@ -20,7 +20,10 @@
     z-index: 5;
   }
   [class^='portal-'] .hole_content {
-    top: 0px;
+    top: -11vw;
+  }
+  [class^='portal-']:not(.portal-1) {
+    margin-top: -10%;
   }
 }
 @media (max-width: 1000px) {
@@ -28,7 +31,7 @@
     width: 50%;
   }
   h2 {
-    margin-top: 18vw;
+    margin-top: 8vw;
   }
   #services #our_services ul {
     -webkit-box-orient: vertical;
@@ -44,6 +47,19 @@
   #services #our_services li {
     width: 50% !important;
     margin: 50px 0;
+  }
+  #services #skills #cross_platform {
+    margin-bottom: 0;
+  }
+  #services .autoscroll_arrow {
+    margin-top: 0;
+  }
+  #about #why_us {
+    margin-bottom: 50px;
+  }
+  #about .autoscroll_arrow {
+    margin-top: 0;
+    margin-bottom: 50px;
   }
   .background_section_03 #big_planet {
     display: none;
@@ -70,16 +86,19 @@
   .background_footer #launcher {
     bottom: 4vw;
   }
-  [class^='portal-'] .hole_content {
-    top: 50px;
+  [class^='portal-'] .wave_BG_01 {
+    bottom: 70%;
   }
 }
 @media (max-width: 860px) {
   h2 {
-    margin-top: 150px;
+    margin-top: 120px;
   }
   header {
-    height: 120vh;
+    height: auto;
+  }
+  header .content_section {
+    padding: 2% 4% 25%;
   }
   header nav {
     width: 50%;
@@ -92,6 +111,9 @@
     width: 35% !important;
     margin: 1% 1% !important;
   }
+  section .content_section {
+    padding-bottom: 40%;
+  }
   #fixed_news {
     display: none;
   }
@@ -102,6 +124,9 @@
     width: 90%;
     min-width: 0;
     margin: 50px 0;
+  }
+  #autoscroll_arrow_backhome {
+    margin: 50px 0 0 0;
   }
   #content_footer #main_content {
     -ms-flex-wrap: wrap;
@@ -148,24 +173,7 @@
   [class^='background_section'] {
     transform: translateZ(0px) scale(1) !important;
   }
-  [class^='portal'] .wave_BG_02 {
-    bottom: calc(8vw + var(--portalHeight)) !important;
-  }
-  [class^='portal'] .hole_content {
-    bottom: calc(-15vw + var(--portalHeight)) !important;
-    transform: translateZ(0) scale(1);
-    top: -100px;
-  }
-  [class^='portal'] .wave_BG_01 {
-    bottom: calc(-2vw + var(--portalHeight)) !important;
-    transform: translateZ(0) scale(1);
-  }
-  [class^='portal'] .wave_BG_02 {
-    bottom: calc(8vw + var(--portalHeight)) !important;
-    transform: translateZ(0) scale(1);
-  }
-  [class^='portal'] .glow {
-    bottom: calc(-10vw + var(--portalHeight)) !important;
+  [class^='portal-'] {
     transform: translateZ(0) scale(1);
   }
   .background_section_02 {
@@ -202,15 +210,22 @@
   }
 }
 @media (max-width: 660px) {
-  h1 {
+  header h1 {
     font-size: 3em;
   }
-  h2 {
+  header h2 {
     font-size: 1em;
+    margin-top: 100px;
   }
-  nav {
+  header nav {
     float: none;
     width: 100%;
+  }
+  header #portfolio_overview .content_image {
+    border-radius: 10px;
+  }
+  #about #step_tree {
+    margin: 130px auto 50px auto;
   }
   #about .step_block {
     width: 75vw !important;
@@ -252,7 +267,13 @@
     display: none;
   }
   [class^='portal-'] .hole_content {
-    top: -70px;
+    top: -60px;
+  }
+  [class^='portal-'] .wave_BG_01 {
+    bottom: 78%;
+  }
+  [class^='portal-'] .wave_BG_02 {
+    bottom: 105%;
   }
 }
 @media (max-width: 600px) {
@@ -370,8 +391,14 @@
   #clients .background_section_04 #planet {
     top: 5%;
   }
+  [class^='portal-'] .glow {
+    bottom: 30%;
+  }
 }
 @media (max-width: 500px) {
+  header .content_section #portfolio_overview .description {
+    font-size: 0.85em;
+  }
   header #stars {
     width: 220%;
     min-width: 0;
@@ -409,6 +436,13 @@
     width: 115%;
     height: 115%;
   }
+  #clients .content_section {
+    padding-bottom: 60vw;
+  }
+  #clients li {
+    width: 25%;
+    height: 110px;
+  }
   #contact input {
     width: 85%;
     margin-left: 4.5%;
@@ -440,12 +474,18 @@
     text-align: center;
   }
   [class^='portal-'] .hole_content {
-    top: -50px;
+    top: -10vw;
+  }
+  [class^='portal-'] .wave_BG_01 {
+    bottom: 80%;
   }
 }
 @media (max-width: 400px) {
   #about .title_area h5 {
     font-size: 1.2em !important;
+  }
+  #clients .content_section {
+    padding-bottom: 90vw;
   }
   #clients li {
     width: 48%;
@@ -517,5 +557,11 @@
     -webkit-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
     transform: rotate(-90deg);
+  }
+  [class^='portal-'] .wave_BG_01 {
+    bottom: 85%;
+  }
+  [class^='portal-'] .glow {
+    bottom: 22vw;
   }
 }

@@ -51,13 +51,23 @@
         </div>
 
         <div id="fixed_news">
-            <div class="circle" onclick="newsTweeter()">
+            <div class="popup_info_bubble">
+                <div class="content">
+                    <p>Show the last news</p>
+                    <img src="images/icons/arrow_UI_03.svg" alt="Arrow right">
+                </div>
+                <div class="remove_content" onclick="popupInfoBubble()">
+                    <img src="images/icons/cross_UI.svg" alt="Remove popup">
+                    <div class="background"></div>
+                </div>
+            </div>
+            <div class="circle" onclick="newsTwitter()">
                 <div class="bar"></div>
                 <div class="bar"></div>
             </div>
             <div class="twitterContent">
                 <a class="twitter-timeline" data-tweet-limit="5" href="https://twitter.com/FireFalcom?ref_src=twsrc%5Etfw">Tweets by FireFalcom</a>
-                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>    
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
         </div>
 
@@ -125,11 +135,11 @@
                 </div>
                 
                 <!-- BACKGROUND -->
-                <div class="background_section">
+                <div class="background_section_01">
                     <img src="images/background/FFlogo_BG.svg" id="logo_BG" alt="Blue shape">
                     <img src="images/background/spaceTrail_01.svg" id="ST" alt="Space trail">
                     <img src="images/background/stars_01.png" id="stars" alt="Stars">
-                </div>
+                </div> 
             </header>
 
             <!-- PORTAL -->
@@ -146,8 +156,8 @@
 
                 <!-- Hole -->
                 <div class="hole_content">
-                    <img src="images/background/hole_center.svg" id="hole1" alt="hole">
-                    <img src="images/background/hole_center.svg" id="hole2" alt="hole">
+                    <img src="images/background/hole_center.svg" class="hole1" alt="hole">
+                    <img src="images/background/hole_center.svg" class="hole2" alt="hole">
                     <svg id="border_hole" viewBox="0 0 1920 558.1">
                         <ellipse fill="#11F2A5" cx="960" cy="279.1" rx="960" ry="279.1"></ellipse>
                     </svg>
@@ -367,8 +377,8 @@
 
                 <!-- Hole -->
                 <div class="hole_content">
-                    <img src="images/background/hole_center.svg" id="hole1" alt="hole">
-                    <img src="images/background/hole_center.svg" id="hole2" alt="hole">
+                    <img src="images/background/hole_center.svg" class="hole1" alt="hole">
+                    <img src="images/background/hole_center.svg" class="hole2" alt="hole">
                     <svg id="border_hole" viewBox="0 0 1920 558.1">
                         <ellipse fill="#B608FF" cx="960" cy="279.1" rx="960" ry="279.1"></ellipse>
                     </svg>
@@ -563,8 +573,8 @@
 
                 <!-- Hole -->
                 <div class="hole_content">
-                    <img src="images/background/hole_center.svg" id="hole1" alt="hole">
-                    <img src="images/background/hole_center.svg" id="hole2" alt="hole">
+                    <img src="images/background/hole_center.svg" class="hole1" alt="hole">
+                    <img src="images/background/hole_center.svg" class="hole2" alt="hole">
                     <svg id="border_hole" viewBox="0 0 1920 558.1">
                         <ellipse fill="#FFF30D" cx="960" cy="279.1" rx="960" ry="279.1"></ellipse>
                     </svg>
@@ -679,8 +689,8 @@
 
                 <!-- Hole -->
                 <div class="hole_content">
-                    <img src="images/background/hole_center.svg" id="hole1" alt="hole">
-                    <img src="images/background/hole_center.svg" id="hole2" alt="hole">
+                    <img src="images/background/hole_center.svg" class="hole1" alt="hole">
+                    <img src="images/background/hole_center.svg" class="hole2" alt="hole">
                     <svg id="border_hole" viewBox="0 0 1920 558.1">
                         <ellipse fill="#00DBFF" cx="960" cy="279.1" rx="960" ry="279.1"></ellipse>
                     </svg>
@@ -796,7 +806,7 @@
                     
                         <ul id="info_2">
                             <li><a href="https://github.com/firefalcom" target="_blank"><img src="images/logos/github_label.svg" alt="Github logo"></a></li>
-                            <li><a href="https://twitter.com/firefalcom" target="_blank"><img src="images/logos/tweeter_label.svg" alt="Twitter logo"></a></li>
+                            <li><a href="https://twitter.com/firefalcom" target="_blank"><img src="images/logos/twitter_label.svg" alt="Twitter logo"></a></li>
                             <li><a href="https://www.facebook.com/firefalcom/" target="_blank"><img src="images/logos/facebook_label.svg" alt="Facebook logo"></a></li>
                             <li><a href="https://www.linkedin.com/company/fire-falcom/" target="_blank"><img src="images/logos/linkedin_label.svg" alt="Linkedin logo"></a></li>
                             <li><a href="https://web.libera.chat/#firefalcom" target="_blank"><img src="images/logos/IRC_label.svg" alt="IRC logo"></a></li>

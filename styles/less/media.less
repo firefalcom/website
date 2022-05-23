@@ -25,8 +25,13 @@
             z-index: 5;
         }
     }
-    [class^='portal-'] .hole_content {
-        top:0px;
+    [class^='portal-']{
+        .hole_content{
+            top:-11vw;
+        }
+    }
+    [class^='portal-']:not(.portal-1){
+        margin-top:-10%;
     }
 }
 
@@ -37,23 +42,40 @@
         width:50%;
     }
     h2{
-        margin-top: 18vw;
+        margin-top: 8vw;
     }
-    #services #our_services ul{
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        width:100%;
-        min-width:0;
+    #services{
+        #our_services ul{
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            width:100%;
+            min-width:0;
 
+        }
+        #our_services li{
+            width:50% !important;
+            margin:50px 0;
+        }
+        #skills #cross_platform{
+            margin-bottom:0;
+        }
+        .autoscroll_arrow{
+            margin-top:0;
+        }
     }
-    #services #our_services li{
-        width:50% !important;
-        margin:50px 0;
+    #about{
+        #why_us{
+            margin-bottom: 50px;
+        }
+        .autoscroll_arrow{
+            margin-top:0;
+            margin-bottom:50px;
+        }
     }
 
     .background_section_03{
@@ -91,8 +113,10 @@
         bottom:4vw;
         }
     }
-    [class^='portal-'] .hole_content {
-        top:50px;
+    [class^='portal-']{
+        .wave_BG_01{
+            bottom:70%;
+        }
     }
 }
 
@@ -100,11 +124,13 @@
 // 860 PX
 @media (max-width: 860px) {
     h2{
-        margin-top: 150px;
+        margin-top: 120px;
     }
     header{
-        height:120vh;
-
+        height:auto;
+        .content_section{
+            padding: 2% 4% 25%;
+        }
         nav{
             width:50%;
         }
@@ -117,6 +143,11 @@
                 width:35% !important;
                 margin: 1% 1% !important;
             }
+        }
+    }
+    section{
+        .content_section{
+            padding-bottom: 40%;
         }
     }
     #fixed_news{
@@ -137,12 +168,13 @@
             }
         }
     }
-
+    #autoscroll_arrow_backhome{
+        margin: 50px 0 0 0;
+    }
     #content_footer{
         #main_content{
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-
         }
         #info_1{
             -webkit-box-ordinal-group:2;
@@ -159,7 +191,6 @@
             -webkit-box-pack: center;
                 -ms-flex-pack: center;
                     justify-content: center;
-            
         }
         #info_3{
             -webkit-box-ordinal-group:3;
@@ -193,27 +224,8 @@
     [class^='background_section']{
         transform: translateZ(0px) scale(1) !important;
     }
-    [class^='portal']{
-        .wave_BG_02{
-            bottom:calc(8vw + var(--portalHeight)) !important;
-        }
-        .hole_content{
-            bottom:calc(-15vw + var(--portalHeight)) !important;
+    [class^='portal-']{
             transform: translateZ(0) scale(1);
-            top: -100px;
-        }
-        .wave_BG_01{
-            bottom:calc(-2vw + var(--portalHeight)) !important;
-            transform: translateZ(0) scale(1);
-        }
-        .wave_BG_02{
-            bottom:calc(8vw + var(--portalHeight)) !important;
-            transform: translateZ(0) scale(1);
-        }
-        .glow{
-            bottom:calc(-10vw + var(--portalHeight)) !important;
-            transform: translateZ(0) scale(1);
-        }
     }
     .background_section_02{
         height:100%;
@@ -263,18 +275,27 @@
 //-------------------------------
 // 660 PX
 @media (max-width: 660px) {
-    h1{
-        font-size: 3em;
-    }
-    h2{
-        font-size: 1em;
-    }
-    nav{
-        float:none;
-        width:100%;
+    header{
+        h1{
+            font-size: 3em;
+        }
+        h2{
+            font-size: 1em;
+            margin-top: 100px;
+        }
+        nav{
+            float:none;
+            width:100%;
+        }
+        #portfolio_overview .content_image{
+            border-radius: 10px;
+        }
     }
 
     #about{
+        #step_tree{
+            margin: 130px auto 50px auto;
+        }
         .step_block{
             width: 75vw !important;
             margin-bottom: 50px;
@@ -326,8 +347,16 @@
             }
         }
     }
-    [class^='portal-'] .hole_content {
-        top: -70px;
+    [class^='portal-'] {
+        .hole_content{
+            top: -60px;
+        }
+        .wave_BG_01{
+            bottom:78%;
+        }
+        .wave_BG_02{
+            bottom:105%;
+        }
     }
 }
 
@@ -455,12 +484,20 @@
             top: 5%;
         }
     }
+    [class^='portal-']{
+        .glow{
+            bottom:30%;
+        }
+    }
 }
 
 //-------------------------------
 // 500 PX
 @media (max-width: 500px) {
     header{
+        .content_section #portfolio_overview .description{
+            font-size: 0.85em;
+        }
         #stars{
             width: 220%;
             min-width: 0;
@@ -503,10 +540,21 @@
         }
     }
 
-    #about #why_us .block_BG{
-        left:-6.5%;
-        width:115%;
-        height:115%;
+    #about{
+        #why_us .block_BG{
+            left:-6.5%;
+            width:115%;
+            height:115%;
+        }
+    }
+    #clients{
+        .content_section{
+            padding-bottom: 60vw;
+        }
+        li{
+            width:25%;
+            height:110px;
+        }
     }
 
     #contact input{
@@ -543,8 +591,13 @@
             text-align: center;
         }
     }
-    [class^='portal-'] .hole_content {
-        top: -50px;
+    [class^='portal-']{
+        .hole_content {
+            top: -10vw;
+        }
+        .wave_BG_01{
+            bottom:80%;
+        }
     }
 }
 // 400 px
@@ -556,6 +609,9 @@
     }
 
     #clients{
+        .content_section{
+            padding-bottom: 90vw;
+        }
         li{
             width: 48%;
         }
@@ -636,6 +692,14 @@
                     -ms-transform: rotate(-90deg);
                         transform: rotate(-90deg);
             }
+        }
+    }
+    [class^='portal-']{
+        .wave_BG_01{
+            bottom:85%;
+        }
+        .glow{
+            bottom:22vw;
         }
     }
 }

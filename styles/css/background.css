@@ -5,10 +5,7 @@
 #city_block {
   transition: none;
 }
-.background_section,
-.background_section_02,
-.background_section_03,
-.background_section_05 {
+[class^='background_section']:not(.background_section_04) {
   position: absolute;
   top: 0;
   left: 0;
@@ -17,7 +14,7 @@
   overflow: hidden;
   z-index: 1;
 }
-.background_section #logo_BG {
+.background_section_01 #logo_BG {
   position: absolute;
   width: 45%;
   min-width: 500px;
@@ -26,14 +23,14 @@
   left: 0;
   z-index: 0;
 }
-.background_section #ST {
+.background_section_01 #ST {
   position: absolute;
   left: 0;
   min-width: 1100px;
   opacity: 0.04;
   top: 0;
 }
-.background_section #stars {
+.background_section_01 #stars {
   position: absolute;
   margin: 0 auto;
   left: 0;

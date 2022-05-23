@@ -2,8 +2,7 @@
 [class^='background_section'], #planet, #sun, #city_block{
     transition: none;
 }
-
-.background_section, .background_section_02, .background_section_03, .background_section_05{
+[class^='background_section']:not(.background_section_04){
     position: absolute;
     top:0;
     left:0;
@@ -14,7 +13,7 @@
 }
 
 // Background 01
-.background_section{
+.background_section_01{
     #logo_BG{
         position:absolute;
         width: 45%;
