@@ -7,34 +7,26 @@
   src: url("../../fonts/FranklinGothic/FranklinGothic-heavy.ttf");
 }
 @font-face {
-  font-family: "MA-thin";
-  src: url("../../fonts/MontserratAlternates/MontserratAlternates-Thin.ttf");
+  font-family: "RHD-light";
+  src: url("../../fonts/RedHatDisplay/RedHatDisplay-Light.ttf");
 }
 @font-face {
-  font-family: "MA-light";
-  src: url("../../fonts/MontserratAlternates/MontserratAlternates-Light.ttf");
+  font-family: "RHD-regular";
+  src: url("../../fonts/RedHatDisplay/RedHatDisplay-Regular.ttf");
 }
 @font-face {
-  font-family: "MA-extraLight";
-  src: url("../../fonts/MontserratAlternates/MontserratAlternates-ExtraLight.ttf");
+  font-family: "RHD-medium";
+  src: url("../../fonts/RedHatDisplay/RedHatDisplay-Medium.ttf");
 }
 @font-face {
-  font-family: "MA-regular";
-  src: url("../../fonts/MontserratAlternates/MontserratAlternates-Regular.ttf");
+  font-family: "RHD-bold";
+  src: url("../../fonts/RedHatDisplay/RedHatDisplay-Bold.ttf");
 }
 @font-face {
-  font-family: "MA-medium";
-  src: url("../../fonts/MontserratAlternates/MontserratAlternates-Medium.ttf");
+  font-family: "RHD-extraBold";
+  src: url("../../fonts/RedHatDisplay/RedHatDisplay-ExtraBold.ttf");
 }
 @font-face {
-  font-family: "MA-bold";
-  src: url("../../fonts/MontserratAlternates/MontserratAlternates-Bold.ttf");
-}
-@font-face {
-  font-family: "MA-extraBold";
-  src: url("../../fonts/MontserratAlternates/MontserratAlternates-ExtraBold.ttf");
-}
-@font-face {
-  font-family: "MA-black";
-  src: url("../../fonts/MontserratAlternates/MontserratAlternates-Black.ttf");
+  font-family: "RHD-Black";
+  src: url("../../fonts/RedHatDisplay/RedHatDisplay-Black.ttf");
 }
