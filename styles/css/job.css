@@ -50,7 +50,7 @@
   margin: 20px 20px;
 }
 #job header h2 {
-  font-family: "MA-medium";
+  font-family: "RHD-medium";
   font-size: 1.8em;
   margin: 10px 20px;
 }
@@ -91,13 +91,13 @@
   padding: 5% 0;
 }
 #job section h3 {
-  font-family: "MA-black";
+  font-family: "RHD-Black";
   font-size: 3em;
   color: #1e9cd7;
   text-align: center;
 }
 #job section h4 {
-  font-family: "MA-extraBold";
+  font-family: "RHD-extraBold";
   font-size: 2em;
   color: #1e9cd7;
   text-align: center;
@@ -135,12 +135,12 @@
 }
 #job section .cardTitle {
   margin: 0;
-  font-family: "MA-extraBold";
+  font-family: "RHD-extraBold";
   font-size: 1.1em;
 }
 #job section .cardContent {
   margin: 5% 0 10% 0;
-  font-family: "MA-regular";
+  font-family: "RHD-regular";
   font-size: 1em;
 }
 #job section ul.cardContent {
