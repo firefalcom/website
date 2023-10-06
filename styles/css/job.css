@@ -42,12 +42,12 @@
   position: relative;
   width: 150px;
   top: 10%;
-  margin-bottom: 70px;
+  margin-bottom: 20px;
 }
 #job header h1 {
   font-family: "FG-heavy";
   font-size: 3.5em;
-  margin: 20px 20px;
+  margin: 0 20px;
 }
 #job header h2 {
   font-family: "RHD-medium";
