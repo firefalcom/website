@@ -6,7 +6,7 @@
   position: relative;
   width: 100%;
   height: var(--portalHeight);
-  z-index: 50;
+  z-index: 150;
   -webkit-transform: translateZ(2px) scale(0.81);
   transform: translateZ(2px) scale(0.81);
 }
@@ -85,8 +85,19 @@
   transform: rotate(180deg);
   z-index: 65;
 }
+.portal-1 {
+  height: 45%;
+  -webkit-transform: translateZ(1px) scale(0.9);
+  transform: translateZ(1px) scale(0.9);
+  margin-bottom: -10%;
+}
+.portal-1 .front_wave {
+  transform: scaleY(0.5);
+}
 .portal-1 .fill_transition {
   background-color: #00034A;
+  top: 23%;
+  height: 30%;
 }
 .portal-2 .fill_transition {
   background-color: #1A0042;

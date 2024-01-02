@@ -67,6 +67,10 @@ header{
     background: -o-radial-gradient(circle, rgba(0,55,127,1) 0%, rgba(0,25,88,1) 77%, rgba(0,3,74,1) 100%);
     background: radial-gradient(circle, rgba(0,55,127,1) 0%, rgba(0,25,88,1) 77%, rgba(0,3,74,1) 100%);
 
+    #header_bar{
+        position: relative;
+        padding:1%;
+    }
     #FF_logo{
         position:relative;
         top:5px;
@@ -127,9 +131,76 @@ header{
     }
     #portfolio{
         position: relative;
-        background-color: #ff0000c5;
-        width:50%;
-        height:50%;
+        width:100vw;
+        height:85vh;
+        overflow: hidden;
+        // display:none;
+        ul{
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        li{
+            // Need to align all li horizontally to be able to move the carousel properly.
+        }
+        .project_info{
+            position: absolute;
+            width: 30%;
+            height: 25%;
+            right: 5%;
+            top: 10%;
+            z-index: 1;
+            text-align: right;
+            p{
+                padding:0;
+                margin:0;
+                color: white;
+            }
+            .title{
+                font-family: "RHD-bold";
+                font-size: 2.75em;
+                margin-bottom:5%;
+            }
+            .subtitle{
+                font-family: "RHD-medium";
+                font-size: 1.75em;
+            }
+        }
+        .device{
+            position: absolute;
+            bottom:18%;
+            right:5%;
+            width:37%;
+            padding-bottom:18.5%;
+            z-index: 1;
+            filter: drop-shadow(0 0 20px black);
+            img.mobile{
+                position: absolute;
+                width:100%;
+                z-index: 1;
+            }
+            .video_container{
+                position: absolute;
+                width:94%;
+                height:90%;
+                top: 5%;
+                left: 3%;
+                display: flex;
+                align-items: center;
+                overflow: hidden;
+            }
+            video{
+                position: absolute;
+                width: 100%;
+                height:120%;
+                z-index: 0;
+            }
+        }
+        .background{
+            position: absolute;
+            background-size: 100%;
+        }
     }
 }
 .autoscroll_arrow{
