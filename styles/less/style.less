@@ -131,31 +131,42 @@ header{
     }
     #portfolio{
         position: relative;
-        width:100vw;
+        width:100%;
         height:85vh;
         overflow: hidden;
-        // display:none;
         ul{
             width: 100%;
             height: 100%;
             padding: 0;
             margin: 0;
+            list-style-type: none;
+            white-space: nowrap;
+            overflow: hidden;
         }
         li{
-            // Need to align all li horizontally to be able to move the carousel properly.
+            position:relative;
+            width:100%;
+            height:100%;
+            margin:0;
+            padding:0;
+            display: inline-block;
+            overflow: hidden;
         }
         .project_info{
             position: absolute;
             width: 30%;
             height: 25%;
             right: 5%;
-            top: 10%;
+            top: 7%;
             z-index: 1;
             text-align: right;
             p{
                 padding:0;
                 margin:0;
                 color: white;
+                text-wrap: wrap;
+                display: block;
+                filter: drop-shadow(0 0 10px black);
             }
             .title{
                 font-family: "RHD-bold";
@@ -167,7 +178,8 @@ header{
                 font-size: 1.75em;
             }
         }
-        .device{
+        // Portfolio Mobile Device
+        .mobile_device{
             position: absolute;
             bottom:18%;
             right:5%;
@@ -197,9 +209,51 @@ header{
                 z-index: 0;
             }
         }
+        // Portfolio PC Device
+        .pc_device{
+            position: absolute;
+            bottom:18%;
+            right:1%;
+            width:40%;
+            padding-bottom:18.5%;
+            z-index: 1;
+            img.desktop, img.laptop{
+                position: absolute;
+                width:60%;
+                z-index: 1;
+                filter: drop-shadow(0 0 20px black);
+            }
+            img.desktop{
+                top:0;
+                left:0;
+                z-index: 1;
+            }
+            img.laptop{
+                top:40%;
+                left:35%;
+                z-index: 3;
+            }
+            video{
+                position: absolute;
+                z-index: 0;
+                height:auto;
+            }
+            .video_desktop{
+                width: 56%;
+                top: 5%;
+                left: 2%;
+                z-index: 0;
+            }
+            .video_laptop{
+                width: 47%;
+                top: 43%;
+                right: 11%;
+                z-index: 2;
+            }
+        }
         .background{
             position: absolute;
-            background-size: 100%;
+            background-size: cover;
         }
     }
 }

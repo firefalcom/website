@@ -83,6 +83,49 @@ function setup() {
 		// else $(".portal-4 .hole_content").css({ "display": "block" });
 	});
 
+	// Portfolio header slider
+	function portfolioSlider() {
+		const portfolioParent = $('#portfolio ul')[0];
+		const portfolioList = $('#portfolio li');
+
+		let totalItems = $('#portfolio li').length;
+		portfolioParent.appendChild(portfolioList[0].cloneNode(true));
+		
+		let slidePosition = 0;
+		let currentIndex = 0;
+		
+		doAnimate = async () => {
+			await new Promise((resolve) => {
+				$("#portfolio li").animate(
+					{ 'left': slidePosition + "%" },
+					{ 
+						easing: 'swing',
+						duration: 1000, 
+						complete: () => {
+							
+							if(currentIndex >= totalItems)
+							{
+								slidePosition = 0;
+								currentIndex = 0;
+		
+								$("#portfolio li").stop();
+								$("#portfolio li").css("left", "0");
+							}
+							resolve();
+						}
+					}
+				);
+			});
+
+			slidePosition -= 100;
+			currentIndex++;
+			setTimeout(doAnimate, 5000);
+		}
+
+		setTimeout(doAnimate, 1000);
+	}
+	portfolioSlider();
+
 	// Carousel
 	carousel(1);
 	function carousel(i) {
