@@ -77,6 +77,17 @@ header #FF_logo {
   max-width: 250px;
   z-index: 3;
 }
+header #FF_logo2 {
+  position: absolute;
+  width: 400px;
+  top: 15%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 150;
+  display: none;
+  filter: drop-shadow(0 0 10px black);
+}
 header nav {
   position: relative;
   float: right;
@@ -150,10 +161,16 @@ header #portfolio li {
   display: inline-block;
   overflow: hidden;
 }
+header #portfolio #arrow_carrousel {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  z-index: 150;
+}
 header #portfolio .project_info {
   position: absolute;
-  width: 30%;
-  height: 25%;
+  width: 45%;
   right: 5%;
   top: 7%;
   z-index: 1;
@@ -178,7 +195,7 @@ header #portfolio .project_info .subtitle {
 }
 header #portfolio .mobile_device {
   position: absolute;
-  bottom: 18%;
+  top: 35%;
   right: 5%;
   width: 37%;
   padding-bottom: 18.5%;
@@ -208,7 +225,7 @@ header #portfolio .mobile_device video {
 }
 header #portfolio .pc_device {
   position: absolute;
-  bottom: 18%;
+  top: 35%;
   right: 1%;
   width: 40%;
   padding-bottom: 18.5%;
@@ -250,6 +267,8 @@ header #portfolio .pc_device .video_laptop {
 }
 header #portfolio .background {
   position: absolute;
+  width: 100%;
+  min-width: 1700px;
   background-size: cover;
 }
 .autoscroll_arrow {

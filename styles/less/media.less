@@ -5,10 +5,24 @@
     }
 }
 
+@media (max-width: 1660px) {
+    .portal-1{
+        width:1750px;
+        left:-2%;
+    }
+}
+
 @media (max-width: 1440px){
-    #portfolio_overview{
-        ul{
-            padding: 0 4% !important;
+    header{
+        height:75vh;
+        #portfolio{
+            .mobile_device, .pc_device{
+                width:532px;
+                padding-bottom: 266px;
+            }
+            .video_container{
+                height:auto;
+            }
         }
     }
     .background_section_03{
@@ -33,13 +47,40 @@
     [class^='portal-']:not(.portal-1){
         margin-top:-10%;
     }
+    .portal-1{
+        width:1540px;
+        left:-4%;
+    }
+    .portal-1 .fill_transition{
+        top:calc(-6vw + var(--portalHeight));
+    }
 }
 
 //-------------------------------
 // 1000 PX
 @media (max-width: 1000px) {
-    header nav{
-        width:50%;
+    header{
+        nav{
+            width:50%;
+        }
+        #portfolio{
+            .project_info{
+                right:0;
+                left:0;
+                margin:0 auto;
+                text-align: center;
+                width:60%;
+            }
+            .mobile_device, .pc_device{
+                top:40%;
+                right:0;
+                left:0;
+                margin:0 auto;
+            }
+            .video_container{
+                height:auto;
+            }
+        }
     }
     h2{
         margin-top: 8vw;
@@ -129,20 +170,10 @@
     header{
         height:auto;
         .content_section{
-            padding: 2% 4% 25%;
+            padding: 0 0 25%;
         }
         nav{
             width:50%;
-        }
-        #portfolio_overview{
-            ul{
-                justify-content: center;
-                flex-wrap: wrap;
-            }
-            li{
-                width:35% !important;
-                margin: 1% 1% !important;
-            }
         }
     }
     section{
@@ -214,7 +245,7 @@
         }
     }
 
-    //Parallax disabled
+    // Parallax disabled
     #parallax{
         perspective: none !important;
         height: auto;
@@ -225,10 +256,22 @@
         transform: translateZ(0px) scale(1) !important;
     }
     [class^='portal-']{
-            transform: translateZ(0) scale(1);
+        transform: translateZ(0) scale(1);
     }
     .background_section_02{
         height:100%;
+    }
+    .portal-1{
+        height:0;
+        .front_wave{
+            bottom:10vw;
+        }
+        .fill_transition{
+            top:calc(-43vh + var(--portalHeight));
+        }
+        .wave_out{
+            top:calc(-36vh + var(--portalHeight));
+        }
     }
 }
 //-------------------------------
@@ -240,6 +283,18 @@
         }
         #FF_logo{
             display:none;
+        }
+        #FF_logo2{
+            display:inline-block;
+        }
+        #portfolio{
+            .project_info{
+                width:75%;
+                top:30%;
+            }
+            .mobile_device, .pc_device{
+                display:none;
+            }
         }
         nav{
             width:100%;
@@ -286,9 +341,6 @@
         nav{
             float:none;
             width:100%;
-        }
-        #portfolio_overview .content_image{
-            border-radius: 10px;
         }
     }
 
@@ -489,6 +541,9 @@
             bottom:30%;
         }
     }
+    .portal-1{
+        top:4vh;
+    }
 }
 
 //-------------------------------
@@ -501,6 +556,9 @@
         #stars{
             width: 220%;
             min-width: 0;
+        }
+        #FF_logo2{
+            width:75%;
         }
     }
     h3{

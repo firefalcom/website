@@ -3,9 +3,23 @@
     height: 80vh;
   }
 }
+@media (max-width: 1660px) {
+  .portal-1 {
+    width: 1750px;
+    left: -2%;
+  }
+}
 @media (max-width: 1440px) {
-  #portfolio_overview ul {
-    padding: 0 4% !important;
+  header {
+    height: 75vh;
+  }
+  header #portfolio .mobile_device,
+  header #portfolio .pc_device {
+    width: 532px;
+    padding-bottom: 266px;
+  }
+  header #portfolio .video_container {
+    height: auto;
   }
   .background_section_03 #big_planet {
     top: calc(-920px + 20vw);
@@ -25,10 +39,34 @@
   [class^='portal-']:not(.portal-1) {
     margin-top: -10%;
   }
+  .portal-1 {
+    width: 1540px;
+    left: -4%;
+  }
+  .portal-1 .fill_transition {
+    top: calc(-6vw + var(--portalHeight));
+  }
 }
 @media (max-width: 1000px) {
   header nav {
     width: 50%;
+  }
+  header #portfolio .project_info {
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    text-align: center;
+    width: 60%;
+  }
+  header #portfolio .mobile_device,
+  header #portfolio .pc_device {
+    top: 40%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+  }
+  header #portfolio .video_container {
+    height: auto;
   }
   h2 {
     margin-top: 8vw;
@@ -98,18 +136,10 @@
     height: auto;
   }
   header .content_section {
-    padding: 2% 4% 25%;
+    padding: 0 0 25%;
   }
   header nav {
     width: 50%;
-  }
-  header #portfolio_overview ul {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  header #portfolio_overview li {
-    width: 35% !important;
-    margin: 1% 1% !important;
   }
   section .content_section {
     padding-bottom: 40%;
@@ -179,12 +209,35 @@
   .background_section_02 {
     height: 100%;
   }
+  .portal-1 {
+    height: 0;
+  }
+  .portal-1 .front_wave {
+    bottom: 10vw;
+  }
+  .portal-1 .fill_transition {
+    top: calc(-43vh + var(--portalHeight));
+  }
+  .portal-1 .wave_out {
+    top: calc(-36vh + var(--portalHeight));
+  }
 }
 @media (max-width: 800px) {
   header h2 {
     margin-top: 200px;
   }
   header #FF_logo {
+    display: none;
+  }
+  header #FF_logo2 {
+    display: inline-block;
+  }
+  header #portfolio .project_info {
+    width: 75%;
+    top: 30%;
+  }
+  header #portfolio .mobile_device,
+  header #portfolio .pc_device {
     display: none;
   }
   header nav {
@@ -220,9 +273,6 @@
   header nav {
     float: none;
     width: 100%;
-  }
-  header #portfolio_overview .content_image {
-    border-radius: 10px;
   }
   #about #step_tree {
     margin: 130px auto 50px auto;
@@ -394,6 +444,9 @@
   [class^='portal-'] .glow {
     bottom: 30%;
   }
+  .portal-1 {
+    top: 4vh;
+  }
 }
 @media (max-width: 500px) {
   header .content_section #portfolio_overview .description {
@@ -402,6 +455,9 @@
   header #stars {
     width: 220%;
     min-width: 0;
+  }
+  header #FF_logo2 {
+    width: 75%;
   }
   h3 {
     font-size: 2.5em;

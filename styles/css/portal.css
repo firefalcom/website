@@ -96,8 +96,9 @@
 }
 .portal-1 .fill_transition {
   background-color: #00034A;
-  top: 23%;
-  height: 30%;
+  top: calc(-4vw + var(--portalHeight));
+  height: auto;
+  padding-bottom: 5%;
 }
 .portal-2 .fill_transition {
   background-color: #1A0042;
