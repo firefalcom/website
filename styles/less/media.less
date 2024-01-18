@@ -1,21 +1,9 @@
 // 1440 PX
-@media (min-width: 1440px) {
-    header{
-        height:80vh;
-    }
-}
-
-@media (max-width: 1660px) {
-    .portal-1{
-        width:1750px;
-        left:-2%;
-    }
-}
-
 @media (max-width: 1440px){
     header{
-        height:75vh;
+        height:810px;
         #portfolio{
+            height: calc(810px - 107.5px);
             .mobile_device, .pc_device{
                 width:532px;
                 padding-bottom: 266px;
@@ -48,11 +36,18 @@
         margin-top:-10%;
     }
     .portal-1{
-        width:1540px;
+        width:1580px;
         left:-4%;
     }
     .portal-1 .fill_transition{
-        top:calc(-6vw + var(--portalHeight));
+        display:none;
+    }
+    .portal-1 .front_wave{
+        bottom:-90px;
+        top:auto;
+    }
+    #services .content_section{
+        padding: 30% 4% 15%;
     }
 }
 
@@ -168,7 +163,6 @@
         margin-top: 120px;
     }
     header{
-        height:auto;
         .content_section{
             padding: 0 0 25%;
         }
@@ -261,18 +255,6 @@
     .background_section_02{
         height:100%;
     }
-    .portal-1{
-        height:0;
-        .front_wave{
-            bottom:10vw;
-        }
-        .fill_transition{
-            top:calc(-43vh + var(--portalHeight));
-        }
-        .wave_out{
-            top:calc(-36vh + var(--portalHeight));
-        }
-    }
 }
 //-------------------------------
 // 800 PX
@@ -342,6 +324,10 @@
             float:none;
             width:100%;
         }
+    }
+
+    #services .content_section{
+        padding: 40% 4% 40%;
     }
 
     #about{
@@ -559,6 +545,7 @@
         }
         #FF_logo2{
             width:75%;
+            top:170px
         }
     }
     h3{
@@ -595,6 +582,9 @@
                 width:150px;
                 height:150px;
             }
+        }
+        .content_section{
+            padding: 55% 4% 40%;
         }
     }
 
@@ -656,6 +646,9 @@
         .wave_BG_01{
             bottom:80%;
         }
+    }
+    .portal-1 .front_wave{
+        bottom:-100px;
     }
 }
 // 400 px

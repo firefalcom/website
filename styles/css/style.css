@@ -62,14 +62,15 @@ h4 {
 /* HEADER CONTENT */
 header {
   position: relative;
-  height: calc(20vw + 80vh);
+  height: 47.5vw;
   width: 100%;
   background: -o-radial-gradient(circle, #00377f 0%, #001958 77%, #00034a 100%);
   background: radial-gradient(circle, #00377f 0%, #001958 77%, #00034a 100%);
+  overflow: hidden;
 }
 header #header_bar {
   position: relative;
-  padding: 1%;
+  padding: 20px;
 }
 header #FF_logo {
   position: relative;
@@ -140,7 +141,7 @@ header nav p:active {
 header #portfolio {
   position: relative;
   width: 100%;
-  height: 85vh;
+  height: calc(47.5vw - 107.5px);
   overflow: hidden;
 }
 header #portfolio ul {
@@ -170,7 +171,7 @@ header #portfolio #arrow_carrousel {
 }
 header #portfolio .project_info {
   position: absolute;
-  width: 45%;
+  width: 800px;
   right: 5%;
   top: 7%;
   z-index: 1;
@@ -268,7 +269,7 @@ header #portfolio .pc_device .video_laptop {
 header #portfolio .background {
   position: absolute;
   width: 100%;
-  min-width: 1700px;
+  min-width: 1440px;
   background-size: cover;
 }
 .autoscroll_arrow {
@@ -514,6 +515,7 @@ header #portfolio .background {
   background: -webkit-gradient(linear, left top, left bottom, from(#30b196), color-stop(33%, #338a7c), color-stop(60%, #113c57), to(#020e12));
   background: -o-linear-gradient(top, #30b196 0%, #338a7c 33%, #113c57 60%, #020e12 100%);
   background: linear-gradient(180deg, #30b196 0%, #338a7c 33%, #113c57 60%, #020e12 100%);
+  top: 0;
 }
 #services #our_services {
   margin-bottom: 80px;

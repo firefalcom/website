@@ -89,18 +89,23 @@
 
 // PORTALS
 .portal-1{
-    height:45%;
-    -webkit-transform: translateZ(1px) scale(0.9);
-    transform: translateZ(1px) scale(0.9);
-    margin-bottom:-10%;
+    position: relative;
+    height:0;
+    -webkit-transform: translateZ(0.75px) scale(0.95);
+    transform: translateZ(0.75px) scale(0.95);
     .front_wave{
         transform:scaleY(0.5);
+        top:-19vw;
+        bottom:auto;
     }
     .fill_transition{
         background-color: #00034A;
-        top:calc(-4vw + var(--portalHeight));
+        top:-3.5vw;
         height:auto;
-        padding-bottom:5%;
+        padding-bottom:6%;
+    }
+    .wave_out{
+        top:-1vw;
     }
 }
 

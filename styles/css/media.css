@@ -1,17 +1,9 @@
-@media (min-width: 1440px) {
-  header {
-    height: 80vh;
-  }
-}
-@media (max-width: 1660px) {
-  .portal-1 {
-    width: 1750px;
-    left: -2%;
-  }
-}
 @media (max-width: 1440px) {
   header {
-    height: 75vh;
+    height: 810px;
+  }
+  header #portfolio {
+    height: calc(810px - 107.5px);
   }
   header #portfolio .mobile_device,
   header #portfolio .pc_device {
@@ -40,11 +32,18 @@
     margin-top: -10%;
   }
   .portal-1 {
-    width: 1540px;
+    width: 1580px;
     left: -4%;
   }
   .portal-1 .fill_transition {
-    top: calc(-6vw + var(--portalHeight));
+    display: none;
+  }
+  .portal-1 .front_wave {
+    bottom: -90px;
+    top: auto;
+  }
+  #services .content_section {
+    padding: 30% 4% 15%;
   }
 }
 @media (max-width: 1000px) {
@@ -132,9 +131,6 @@
   h2 {
     margin-top: 120px;
   }
-  header {
-    height: auto;
-  }
   header .content_section {
     padding: 0 0 25%;
   }
@@ -209,18 +205,6 @@
   .background_section_02 {
     height: 100%;
   }
-  .portal-1 {
-    height: 0;
-  }
-  .portal-1 .front_wave {
-    bottom: 10vw;
-  }
-  .portal-1 .fill_transition {
-    top: calc(-43vh + var(--portalHeight));
-  }
-  .portal-1 .wave_out {
-    top: calc(-36vh + var(--portalHeight));
-  }
 }
 @media (max-width: 800px) {
   header h2 {
@@ -273,6 +257,9 @@
   header nav {
     float: none;
     width: 100%;
+  }
+  #services .content_section {
+    padding: 40% 4% 40%;
   }
   #about #step_tree {
     margin: 130px auto 50px auto;
@@ -458,6 +445,7 @@
   }
   header #FF_logo2 {
     width: 75%;
+    top: 170px;
   }
   h3 {
     font-size: 2.5em;
@@ -486,6 +474,9 @@
   #services #skills #techno_wheel .wheel {
     width: 150px;
     height: 150px;
+  }
+  #services .content_section {
+    padding: 55% 4% 40%;
   }
   #about #why_us .block_BG {
     left: -6.5%;
@@ -534,6 +525,9 @@
   }
   [class^='portal-'] .wave_BG_01 {
     bottom: 80%;
+  }
+  .portal-1 .front_wave {
+    bottom: -100px;
   }
 }
 @media (max-width: 400px) {
