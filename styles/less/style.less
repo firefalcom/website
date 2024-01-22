@@ -146,6 +146,7 @@ header{
         width:100%;
         height: calc(47.5vw - 107.5px);
         overflow: hidden;
+        user-select: none;
         ul{
             width: 100%;
             height: 100%;
@@ -154,6 +155,7 @@ header{
             list-style-type: none;
             white-space: nowrap;
             overflow: hidden;
+            background-color: black;
         }
         li{
             position:relative;
@@ -163,19 +165,47 @@ header{
             padding:0;
             display: inline-block;
             overflow: hidden;
-            // left:-200%; Substract 100% to the left value to move the portfolio's carousel.
         }
         #arrow_carrousel{
             position:absolute;
-            width:50px;
+            width:100%;
             height:50px;
-            background-color: red;
             z-index: 150;
+            top:40%;
+            #left, #right{
+                position: absolute;
+                width:50px;
+                height:50px;
+                background: url("../../images/icons/arrow_UI_03.svg") no-repeat center/30%;
+                border-radius: 50px;
+                background-color: rgba(37, 37, 37, 0.75);
+                overflow: hidden;
+                cursor: pointer;
+
+                &:hover{
+                    background-color: rgba(92, 92, 92, 0.5);
+                }
+            }
+            #left{
+                left:2%;
+                transform: rotateY(180deg);
+            }
+            #right{
+                right:2%;
+            }
+            .fill_up{
+                position: absolute;
+                width:100%;
+                height:100%;
+                background-color: rgba(255, 255, 255, 0.5);
+                transform: scaleX(50%);
+                transform-origin: center left;
+            }
         }
         .project_info{
             position: absolute;
             width: 800px;
-            right: 5%;
+            right: 7%;
             top: 7%;
             z-index: 1;
             text-align: right;
@@ -201,7 +231,7 @@ header{
         .mobile_device{
             position: absolute;
             top:35%;
-            right:5%;
+            right:7%;
             width:37%;
             padding-bottom:18.5%;
             z-index: 1;

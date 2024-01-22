@@ -85,45 +85,60 @@ function setup() {
 
 	// Portfolio header slider
 	function portfolioSlider() {
-		const portfolioParent = $('#portfolio ul')[0];
-		const portfolioList = $('#portfolio li');
+		var $portfolioList = $("#portfolio ul li");
+		var numberOfItems = $portfolioList.length;
+		var currentIndex = 0;
+		var canClick = true;
+		var scrollPortfolioInterval = 0;
 
-		let totalItems = $('#portfolio li').length;
-		portfolioParent.appendChild(portfolioList[0].cloneNode(true));
-		
-		let slidePosition = 0;
-		let currentIndex = 0;
-		
-		doAnimate = async () => {
-			await new Promise((resolve) => {
-				$("#portfolio li").animate(
-					{ 'left': slidePosition + "%" },
-					{ 
-						easing: 'swing',
-						duration: 1000, 
-						complete: () => {
-							
-							if(currentIndex >= totalItems)
-							{
-								slidePosition = 0;
-								currentIndex = 0;
-		
-								$("#portfolio li").stop();
-								$("#portfolio li").css("left", "0");
-							}
-							resolve();
-						}
-					}
-				);
-			});
-
-			slidePosition -= 100;
-			currentIndex++;
-			setTimeout(doAnimate, 5000);
+		function scrollPortfolio(indexIncrement=1) {
+			$portfolioList.fadeOut(500);
+			currentIndex += indexIncrement;
+			if(currentIndex >= numberOfItems)
+			{
+				currentIndex = 0;
+			}
+			else if(currentIndex <= 0)
+			{
+				currentIndex = numberOfItems - 1;
+			}
+			console.log(currentIndex);
+			const currentElement = $portfolioList[currentIndex];
+			setTimeout(() => {
+				$(currentElement).fadeIn(500);
+			}, 500);
 		}
+		scrollPortfolioInterval = setInterval(scrollPortfolio, 7500);
 
-		setTimeout(doAnimate, 1000);
-	}
+		// Manage click nav
+		$("#arrow_carrousel #right").click(() => {
+            if(canClick)
+            {
+                scrollPortfolio(+1);
+                canClick = false;
+                
+                canClickTimeout = setTimeout(() => {
+                    canClick = true;
+                }, 1000);
+				clearInterval(scrollPortfolioInterval);
+				scrollPortfolioInterval = setInterval(scrollPortfolio, 7500);
+            }
+        });
+
+		$("#arrow_carrousel #left").click(() => {
+            if(canClick)
+            {
+                scrollPortfolio(-1);
+                canClick = false;
+                
+                canClickTimeout = setTimeout(() => {
+                    canClick = true;
+                }, 1000);
+				clearInterval(scrollPortfolioInterval);
+				scrollPortfolioInterval = setInterval(scrollPortfolio, 7500);
+            }
+        });
+	}	  
 	portfolioSlider();
 
 	// Carousel

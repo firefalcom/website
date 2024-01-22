@@ -143,6 +143,7 @@ header #portfolio {
   width: 100%;
   height: calc(47.5vw - 107.5px);
   overflow: hidden;
+  user-select: none;
 }
 header #portfolio ul {
   width: 100%;
@@ -152,6 +153,7 @@ header #portfolio ul {
   list-style-type: none;
   white-space: nowrap;
   overflow: hidden;
+  background-color: black;
 }
 header #portfolio li {
   position: relative;
@@ -164,15 +166,45 @@ header #portfolio li {
 }
 header #portfolio #arrow_carrousel {
   position: absolute;
+  width: 100%;
+  height: 50px;
+  z-index: 150;
+  top: 40%;
+}
+header #portfolio #arrow_carrousel #left,
+header #portfolio #arrow_carrousel #right {
+  position: absolute;
   width: 50px;
   height: 50px;
-  background-color: red;
-  z-index: 150;
+  background: url("../../images/icons/arrow_UI_03.svg") no-repeat center / 30%;
+  border-radius: 50px;
+  background-color: rgba(37, 37, 37, 0.75);
+  overflow: hidden;
+  cursor: pointer;
+}
+header #portfolio #arrow_carrousel #left:hover,
+header #portfolio #arrow_carrousel #right:hover {
+  background-color: rgba(92, 92, 92, 0.5);
+}
+header #portfolio #arrow_carrousel #left {
+  left: 2%;
+  transform: rotateY(180deg);
+}
+header #portfolio #arrow_carrousel #right {
+  right: 2%;
+}
+header #portfolio #arrow_carrousel .fill_up {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  transform: scaleX(50%);
+  transform-origin: center left;
 }
 header #portfolio .project_info {
   position: absolute;
   width: 800px;
-  right: 5%;
+  right: 7%;
   top: 7%;
   z-index: 1;
   text-align: right;
@@ -197,7 +229,7 @@ header #portfolio .project_info .subtitle {
 header #portfolio .mobile_device {
   position: absolute;
   top: 35%;
-  right: 5%;
+  right: 7%;
   width: 37%;
   padding-bottom: 18.5%;
   z-index: 1;
