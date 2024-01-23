@@ -46,6 +46,16 @@
     padding: 30% 4% 15%;
   }
 }
+@media (max-width: 1200px) {
+  header #portfolio .linkMessage {
+    width: 30%;
+    top: auto;
+    bottom: 28%;
+  }
+  header #portfolio .linkMessage p {
+    text-wrap: wrap;
+  }
+}
 @media (max-width: 1000px) {
   header nav {
     width: 50%;
@@ -56,6 +66,9 @@
     margin: 0 auto;
     text-align: center;
     width: 60%;
+  }
+  header #portfolio .linkMessage {
+    display: none;
   }
   header #portfolio .mobile_device,
   header #portfolio .pc_device {
@@ -207,6 +220,15 @@
   }
 }
 @media (max-width: 800px) {
+  header #portfolio .linkMessage {
+    bottom: 20%;
+    top: auto;
+    width: 60%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: inline-block;
+  }
   header h2 {
     margin-top: 200px;
   }
@@ -436,9 +458,6 @@
   }
 }
 @media (max-width: 500px) {
-  header .content_section #portfolio_overview .description {
-    font-size: 0.85em;
-  }
   header #stars {
     width: 220%;
     min-width: 0;
@@ -446,6 +465,16 @@
   header #FF_logo2 {
     width: 75%;
     top: 170px;
+  }
+  header #portfolio .project_info .title {
+    font-size: 2.25em;
+  }
+  header #portfolio .project_info .subtitle {
+    font-size: 1.5em;
+  }
+  header #portfolio .linkMessage {
+    bottom: 15%;
+    width: 75%;
   }
   h3 {
     font-size: 2.5em;

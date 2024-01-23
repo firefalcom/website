@@ -226,6 +226,30 @@ header #portfolio .project_info .subtitle {
   font-family: "RHD-medium";
   font-size: 1.75em;
 }
+header #portfolio .linkMessage {
+  position: absolute;
+  top: 7%;
+  left: 7%;
+  z-index: 100;
+}
+header #portfolio .linkMessage a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background-color: rgba(37, 37, 37, 0.75);
+}
+header #portfolio .linkMessage a:hover {
+  background-color: rgba(92, 92, 92, 0.5);
+}
+header #portfolio .linkMessage p {
+  display: inline-block;
+  margin: 30px 50px;
+  font-family: "RHD-Black";
+  color: white;
+  text-align: center;
+  font-size: 1.25em;
+}
 header #portfolio .mobile_device {
   position: absolute;
   top: 35%;
