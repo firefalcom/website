@@ -74,7 +74,7 @@
                 left:0;
                 margin:0 auto;
                 text-align: center;
-                width:60%;
+                width:75%;
             }
             .linkMessage{
                 display:none;
@@ -273,15 +273,6 @@
 // 800 PX
 @media (max-width: 800px) {
     header{
-        #portfolio .linkMessage{
-            bottom:20%;
-            top:auto;
-            width:60%;
-            left:0;
-            right:0;
-            margin: 0 auto;
-            display: inline-block;
-        }
         h2{
             margin-top: 200px;
         }
@@ -294,7 +285,16 @@
         #portfolio{
             .project_info{
                 width:75%;
-                top:30%;
+                top:25%;
+            }
+            .linkMessage{
+                bottom:20%;
+                top:auto;
+                width:60%;
+                left:0;
+                right:0;
+                margin: 0 auto;
+                display: inline-block;
             }
             .mobile_device, .pc_device{
                 display:none;
@@ -430,6 +430,24 @@
             margin:0 2% 0 2%;
         }
     }
+    header #portfolio{
+        #dead_cells {
+            left:-265px;
+            transform: translateX(0);
+        }
+        #Blade_of_Darkness{
+            left:-400px;
+            transform: translateX(0);
+        }
+        #omega_zodiac{
+            left:-275px;
+            transform: translateX(0);
+        }
+        #wonderboy{
+            left:-250px;
+            transform: translateX(0);
+        }
+    }
     #services{
         #skills{
             #platform_wheel{
@@ -558,26 +576,32 @@
 // 500 PX
 @media (max-width: 500px) {
     header{
+        #header_bar{
+            padding:0;
+        }
         #stars{
             width: 220%;
             min-width: 0;
         }
         #FF_logo2{
             width:75%;
-            top:170px
+            top:100px
         }
         #portfolio{
             .project_info{
                 .title{
-                    font-size: 2.25em;
+                    font-size: 8vw;
                 }
                 .subtitle{
-                    font-size: 1.5em;
+                    font-size: 6vw;
                 }
             }
             .linkMessage{
                 bottom:15%;
                 width:75%;
+                p{
+                    margin:15px 25px;
+                }
             }
         }
     }

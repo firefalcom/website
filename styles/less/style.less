@@ -211,11 +211,10 @@ header{
             text-align: right;
             p{
                 padding:0;
-                margin:0;
                 color: white;
-                text-wrap: wrap;
+                white-space: normal;
                 display: block;
-                filter: drop-shadow(0 0 10px black);
+                filter: drop-shadow(0 0 10px black) drop-shadow(0 0 30px black);
             }
             .title{
                 font-family: "RHD-bold";
@@ -249,6 +248,7 @@ header{
                 color:white;
                 text-align: center;
                 font-size: 1.25em;
+                white-space: normal;
             }
         }
         // Portfolio Mobile Device
@@ -329,6 +329,8 @@ header{
             width:100%;
             min-width: 1440px;
             background-size:cover;
+            left: 50%;
+            transform: translateX(-50%);
         }
     }
 }

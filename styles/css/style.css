@@ -211,11 +211,10 @@ header #portfolio .project_info {
 }
 header #portfolio .project_info p {
   padding: 0;
-  margin: 0;
   color: white;
-  text-wrap: wrap;
+  white-space: normal;
   display: block;
-  filter: drop-shadow(0 0 10px black);
+  filter: drop-shadow(0 0 10px black) drop-shadow(0 0 30px black);
 }
 header #portfolio .project_info .title {
   font-family: "RHD-bold";
@@ -249,6 +248,7 @@ header #portfolio .linkMessage p {
   color: white;
   text-align: center;
   font-size: 1.25em;
+  white-space: normal;
 }
 header #portfolio .mobile_device {
   position: absolute;
@@ -327,6 +327,8 @@ header #portfolio .background {
   width: 100%;
   min-width: 1440px;
   background-size: cover;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .autoscroll_arrow {
   margin-top: 80px;
