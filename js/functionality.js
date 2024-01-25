@@ -98,7 +98,7 @@ function setup() {
 			{
 				currentIndex = 0;
 			}
-			else if(currentIndex <= 0)
+			else if(currentIndex < 0)
 			{
 				currentIndex = numberOfItems - 1;
 			}

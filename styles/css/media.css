@@ -13,6 +13,10 @@
   header #portfolio .video_container {
     height: auto;
   }
+  header #portfolio .pc_device,
+  header #portfolio .mobile_device {
+    top: 42%;
+  }
   .background_section_03 #big_planet {
     top: calc(-920px + 20vw);
     right: -1180px;
@@ -50,7 +54,7 @@
   header #portfolio .linkMessage {
     width: 30%;
     top: auto;
-    bottom: 28%;
+    bottom: 21%;
   }
   header #portfolio .linkMessage p {
     text-wrap: wrap;
