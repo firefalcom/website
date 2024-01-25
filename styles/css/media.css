@@ -1,11 +1,17 @@
-@media (min-width: 1440px) {
-  header {
-    height: 125vh;
-  }
-}
 @media (max-width: 1440px) {
-  #portfolio_overview ul {
-    padding: 0 4% !important;
+  header {
+    height: 810px;
+  }
+  header #portfolio {
+    height: calc(810px - 107.5px);
+  }
+  header #portfolio .mobile_device,
+  header #portfolio .pc_device {
+    width: 532px;
+    padding-bottom: 266px;
+  }
+  header #portfolio .video_container {
+    height: auto;
   }
   .background_section_03 #big_planet {
     top: calc(-920px + 20vw);
@@ -25,10 +31,54 @@
   [class^='portal-']:not(.portal-1) {
     margin-top: -10%;
   }
+  .portal-1 {
+    width: 1580px;
+    left: -4%;
+  }
+  .portal-1 .fill_transition {
+    display: none;
+  }
+  .portal-1 .front_wave {
+    bottom: -90px;
+    top: auto;
+  }
+  #services .content_section {
+    padding: 30% 4% 15%;
+  }
+}
+@media (max-width: 1200px) {
+  header #portfolio .linkMessage {
+    width: 30%;
+    top: auto;
+    bottom: 28%;
+  }
+  header #portfolio .linkMessage p {
+    text-wrap: wrap;
+  }
 }
 @media (max-width: 1000px) {
   header nav {
     width: 50%;
+  }
+  header #portfolio .project_info {
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    text-align: center;
+    width: 75%;
+  }
+  header #portfolio .linkMessage {
+    display: none;
+  }
+  header #portfolio .mobile_device,
+  header #portfolio .pc_device {
+    top: 40%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+  }
+  header #portfolio .video_container {
+    height: auto;
   }
   h2 {
     margin-top: 8vw;
@@ -94,22 +144,11 @@
   h2 {
     margin-top: 120px;
   }
-  header {
-    height: auto;
-  }
   header .content_section {
-    padding: 2% 4% 25%;
+    padding: 0 0 25%;
   }
   header nav {
     width: 50%;
-  }
-  header #portfolio_overview ul {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  header #portfolio_overview li {
-    width: 35% !important;
-    margin: 1% 1% !important;
   }
   section .content_section {
     padding-bottom: 40%;
@@ -187,6 +226,26 @@
   header #FF_logo {
     display: none;
   }
+  header #FF_logo2 {
+    display: inline-block;
+  }
+  header #portfolio .project_info {
+    width: 75%;
+    top: 25%;
+  }
+  header #portfolio .linkMessage {
+    bottom: 20%;
+    top: auto;
+    width: 60%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: inline-block;
+  }
+  header #portfolio .mobile_device,
+  header #portfolio .pc_device {
+    display: none;
+  }
   header nav {
     width: 100%;
   }
@@ -221,8 +280,8 @@
     float: none;
     width: 100%;
   }
-  header #portfolio_overview .content_image {
-    border-radius: 10px;
+  #services .content_section {
+    padding: 40% 4% 40%;
   }
   #about #step_tree {
     margin: 130px auto 50px auto;
@@ -282,6 +341,22 @@
   }
   #fixed_nav li:nth-last-child(1) {
     margin: 0 2% 0 2%;
+  }
+  header #portfolio #dead_cells {
+    left: -265px;
+    transform: translateX(0);
+  }
+  header #portfolio #Blade_of_Darkness {
+    left: -400px;
+    transform: translateX(0);
+  }
+  header #portfolio #omega_zodiac {
+    left: -275px;
+    transform: translateX(0);
+  }
+  header #portfolio #wonderboy {
+    left: -250px;
+    transform: translateX(0);
   }
   #services #skills #platform_wheel {
     width: 350px;
@@ -394,14 +469,34 @@
   [class^='portal-'] .glow {
     bottom: 30%;
   }
+  .portal-1 {
+    top: 4vh;
+  }
 }
 @media (max-width: 500px) {
-  header .content_section #portfolio_overview .description {
-    font-size: 0.85em;
+  header #header_bar {
+    padding: 0;
   }
   header #stars {
     width: 220%;
     min-width: 0;
+  }
+  header #FF_logo2 {
+    width: 75%;
+    top: 100px;
+  }
+  header #portfolio .project_info .title {
+    font-size: 8vw;
+  }
+  header #portfolio .project_info .subtitle {
+    font-size: 6vw;
+  }
+  header #portfolio .linkMessage {
+    bottom: 15%;
+    width: 75%;
+  }
+  header #portfolio .linkMessage p {
+    margin: 15px 25px;
   }
   h3 {
     font-size: 2.5em;
@@ -430,6 +525,9 @@
   #services #skills #techno_wheel .wheel {
     width: 150px;
     height: 150px;
+  }
+  #services .content_section {
+    padding: 55% 4% 40%;
   }
   #about #why_us .block_BG {
     left: -6.5%;
@@ -478,6 +576,9 @@
   }
   [class^='portal-'] .wave_BG_01 {
     bottom: 80%;
+  }
+  .portal-1 .front_wave {
+    bottom: -100px;
   }
 }
 @media (max-width: 400px) {

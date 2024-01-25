@@ -83,6 +83,64 @@ function setup() {
 		// else $(".portal-4 .hole_content").css({ "display": "block" });
 	});
 
+	// Portfolio header slider
+	function portfolioSlider() {
+		var $portfolioList = $("#portfolio ul li");
+		var numberOfItems = $portfolioList.length;
+		var currentIndex = 0;
+		var canClick = true;
+		var scrollPortfolioInterval = 0;
+
+		function scrollPortfolio(indexIncrement=1) {
+			$portfolioList.fadeOut(500);
+			currentIndex += indexIncrement;
+			if(currentIndex >= numberOfItems)
+			{
+				currentIndex = 0;
+			}
+			else if(currentIndex <= 0)
+			{
+				currentIndex = numberOfItems - 1;
+			}
+			console.log(currentIndex);
+			const currentElement = $portfolioList[currentIndex];
+			setTimeout(() => {
+				$(currentElement).fadeIn(500);
+			}, 500);
+		}
+		scrollPortfolioInterval = setInterval(scrollPortfolio, 7500);
+
+		// Manage click nav
+		$("#arrow_carrousel #right").click(() => {
+            if(canClick)
+            {
+                scrollPortfolio(+1);
+                canClick = false;
+                
+                canClickTimeout = setTimeout(() => {
+                    canClick = true;
+                }, 1000);
+				clearInterval(scrollPortfolioInterval);
+				scrollPortfolioInterval = setInterval(scrollPortfolio, 7500);
+            }
+        });
+
+		$("#arrow_carrousel #left").click(() => {
+            if(canClick)
+            {
+                scrollPortfolio(-1);
+                canClick = false;
+                
+                canClickTimeout = setTimeout(() => {
+                    canClick = true;
+                }, 1000);
+				clearInterval(scrollPortfolioInterval);
+				scrollPortfolioInterval = setInterval(scrollPortfolio, 7500);
+            }
+        });
+	}	  
+	portfolioSlider();
+
 	// Carousel
 	carousel(1);
 	function carousel(i) {

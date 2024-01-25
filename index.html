@@ -75,80 +75,150 @@
             <header id="home">
                 <!-- CONTENT -->
                 <div class="content_section">
-                    <img src="images/logos/firefalcom_logo.svg" id="FF_logo" alt="Fire Falcom logo">
-                    <nav>
+                    <div id="header_bar">
+                        <img src="images/logos/firefalcom_logo.svg" id="FF_logo" alt="Fire Falcom logo">
+                        <nav>
+                            <ul>
+                                <li><a href="#services_anchor"><p>OUR SERVICES</p></a></li>
+                                <li><a href="#about_anchor"><p>HOW WE WORK</p></a></li>
+                                <!-- <li><a href="#clients_anchor"><p>CLIENTS</p></a></li> -->
+                                <li><a href="#contact_anchor"><p>CONTACT</p></a></li>
+                                <li><a href="job.html"><p>JOBS</p></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <img src="images/logos/firefalcom_logo.svg" id="FF_logo2" alt="Fire Falcom logo">
+                    <div id="portfolio">
+                        <div id="arrow_carrousel">
+                            <div id="left"></div>
+                            <div id="right"></div>
+                        </div>
                         <ul>
-                            <li><a href="#services_anchor"><p>OUR SERVICES</p></a></li>
-                            <li><a href="#about_anchor"><p>HOW WE WORK</p></a></li>
-                            <!-- <li><a href="#clients_anchor"><p>CLIENTS</p></a></li> -->
-                            <li><a href="#contact_anchor"><p>CONTACT</p></a></li>
-                            <li><a href="job.html"><p>JOBS</p></a></li>
-                        </ul>
-                    </nav>
-                    <h2>Porting and remaking with</h2>
-                    <h1>Fire Falcom</h1>
-                    <div id="portfolio_overview">
-                        <ul>
                             <li>
-                                <a class="content_image" href="https://www.omegazodiac.com/?fbclid=IwAR2WvCQs_xyGKapaIT4XQA-CjX3x-tD8r5f-cakZYpAJ90c6Q5O2zBgHpK8" target="_blank">
-                                    <p class="linkMessage">Go to website</p>
-                                    <img src="images/portfolio/omegaZodiac_cover.jpg" alt="Omega Zodiac game cover" class="cover">
-                                    <video width="256" height="256" loop autoplay muted>
-                                        <source src="images/portfolio/omegaZodiac.mp4" type="video/mp4">
-                                    </video>
-                                </a>
-                                <p class="description">Fully ported Omega Zodiac from Flash to HTML5/WebGL</p>
-                            </li>
-                            <li>
-                                <a class="content_image" href="https://play.google.com/store/apps/details?id=com.dotemu.wonderboy.dragonstrap" target="_blank">
-                                    <p class="linkMessage">Go to store</p>
-                                    <img src="images/portfolio/wonderBoy_cover.jpg" alt="Wonder Boy game cover" class="cover">
-                                    <video width="256" height="256" loop autoplay muted>
-                                        <source src="images/portfolio/wonderBoy.mp4" type="video/mp4">
-                                    </video>
-                                </a>
-                                <p class="description">Worked on the mobile port of Wonderboy</p>
-                            </li>
-                            <li>
-                                <a class="content_image" href="https://store.steampowered.com/app/1710170/Severance_Blade_of_Darkness/" target="_blank">
-                                    <p class="linkMessage">Go to Steam</p>
-                                    <img src="images/portfolio/bladeOfDarkness_cover.jpg" alt="Blade of Darkness game cover" class="cover">
-                                    <video width="256" height="256" loop autoplay muted>
+                                <div class="project_info">
+                                    <p class="title">Little Nightmares on Mobile</p>
+                                    <p class="subtitle">Fully ported Little Nightmares to Android & iOS</p>
+                                </div>
+
+                                <div class="linkMessage">
+                                    <a href="https://en.bandainamcoent.eu/little-nightmares/little-nightmares" target="_blank">
+                                        <p>Go to Little Nightmares website</p>
+                                    </a>
+                                </div>
+
+                                <div class="mobile_device">
+                                    <img src="images/portfolio/Smartphone_Android.png" class="mobile" alt="Mobile device">
+                                    <div class="video_container">
+                                        <video width="1280" height="720" loop autoplay muted>
+                                            <source src="images/portfolio/LittleNightmares.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                                <img src="images/portfolio/Portfolio_LittleNightmares_Background.jpg" class="background" alt="Little Nightmares Game Background">
+                            </li><!-- 
+
+                         --><li>
+                                <div class="project_info">
+                                    <p class="title">Dead Cell's on Mobile</p>
+                                    <p class="subtitle">Worked on Dead Cell's mobile updates</p>
+                                </div>
+
+                                <div class="linkMessage">
+                                    <a href="https://playdigious.com/dead-cells-mobile-5-million-units-sold/" target="_blank">
+                                        <p>Go to Dead Cell's website</p>
+                                    </a>
+                                </div>
+
+                                <div class="mobile_device">
+                                    <img src="images/portfolio/Smartphone_Android.png" class="mobile" alt="Mobile device">
+                                    <div class="video_container">
+                                        <video width="1280" height="720" loop autoplay muted>
+                                            <source src="images/portfolio/deadCells.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                                <img src="images/portfolio/Portfolio_DeadCells_Background.jpg" class="background" id="dead_cells" alt="Dead Cells Game Background">
+                            </li><!-- 
+
+                         --><li>
+                                <div class="project_info">
+                                    <p class="title">Blade Of Darkness on PC</p>
+                                    <p class="subtitle">Modernized Blade Of Darkness</p>
+                                </div>
+
+                                <div class="linkMessage">
+                                    <a href="https://store.steampowered.com/app/1710170/Severance_Blade_of_Darkness/" target="_blank">
+                                        <p>See Blade Of Darkness on Steam</p>
+                                    </a>
+                                </div>
+
+                                <div class="pc_device">
+                                    <img src="images/portfolio/Desktop.png" class="desktop" alt="Desktop device">
+                                    <img src="images/portfolio/Laptop.png" class="laptop" alt="Laptop device">
+                                    <video class="video_desktop" width="1280" height="720" loop autoplay muted>
                                         <source src="images/portfolio/bladeOfDarkness.mp4" type="video/mp4">
                                     </video>
-                                </a>
-                                <p class="description">Modernized Blade Of Darkness</p>
-                            </li>
-                            <li>
-                                <a class="content_image" href="https://playdigious.com/dead-cells/" target="_blank">
-                                    <p class="linkMessage">Go to store</p>
-                                    <img src="images/portfolio/deadCells_cover.jpg" alt="Dead Cells game cover" class="cover">
-                                    <video width="256" height="256" loop autoplay muted>
-                                        <source src="images/portfolio/deadCells.mp4" type="video/mp4">
+                                    <video class="video_laptop" width="1280" height="720" loop autoplay muted>
+                                        <source src="images/portfolio/bladeOfDarkness.mp4" type="video/mp4">
                                     </video>
-                                </a>
-                                <p class="description">Worked on Dead Cells' mobile updates</p>
-                            </li>
-                            <li>
-                                <a class="content_image" href="https://en.bandainamcoent.eu/little-nightmares/little-nightmares" target="_blank">
-                                    <p class="linkMessage">Go to website</p>
-                                    <img src="images/portfolio/theLittleNightmares_cover.jpg" alt="The Little Nightmares game cover" class="cover">
-                                    <video width="256" height="256" loop autoplay muted>
-                                        <source src="images/portfolio/theLittleNightmares.mp4" type="video/mp4">
+                                </div>
+                                <img src="images/portfolio/Portfolio_BladeOfDarkness_Background.jpg" class="background" id="BladeOfDarkness" alt="Blade of Darkness Game Background">
+                            </li><!-- 
+
+                         --><li>
+                                <div class="project_info">
+                                    <p class="title">Omega Zodiac on PC</p>
+                                    <p class="subtitle">Fully ported Omega Zodiac from Flash to HTML5/WebGL</p>
+                                </div>
+
+                                <div class="linkMessage">
+                                    <a href="https://www.omegazodiac.com/?fbclid=IwAR2WvCQs_xyGKapaIT4XQA-CjX3x-tD8r5f-cakZYpAJ90c6Q5O2zBgHpK8" target="_blank">
+                                        <p>Go to Omega Zodiac website</p>
+                                    </a>
+                                </div>
+
+                                <div class="pc_device">
+                                    <img src="images/portfolio/Desktop.png" class="desktop" alt="Desktop device">
+                                    <img src="images/portfolio/Laptop.png" class="laptop" alt="Laptop device">
+                                    <video class="video_desktop" width="1280" height="720" loop autoplay muted>
+                                        <source src="images/portfolio/omegaZodiac.mp4" type="video/mp4">
                                     </video>
-                                </a>
-                                <p class="description">Fully ported Little Nightmares to Android & iOS</p>
+                                    <video class="video_laptop" width="1280" height="720" loop autoplay muted>
+                                        <source src="images/portfolio/omegaZodiac.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <img src="images/portfolio/Portfolio_OmegaZodiac_Background.jpg" class="background" id="omega_zodiac" alt="Omega Zodiac Game Background">
+                            </li><!-- 
+
+                         --><li>
+                                <div class="project_info">
+                                    <p class="title">WonderBoy on Mobile</p>
+                                    <p class="subtitle">Worked on the mobile port of WonderBoy</p>
+                                </div>
+
+                                <div class="linkMessage">
+                                    <a href="https://play.google.com/store/apps/details?id=com.dotemu.wonderboy.dragonstrap" target="_blank">
+                                        <p>See WonderBoy on Google Play</p>
+                                    </a>
+                                </div>
+
+                                <div class="mobile_device">
+                                    <img src="images/portfolio/Smartphone_Android.png" class="mobile" alt="Mobile device">
+                                    <div class="video_container">
+                                        <video width="1280" height="720" loop autoplay muted>
+                                            <source src="images/portfolio/wonderBoy.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                                <img src="images/portfolio/Portfolio_WonderBoy_Background.jpg" class="background" id="wonderboy" alt="WonderBoy Game Background">
                             </li>
                         </ul>
                     </div>
-                    <div class="autoscroll_arrow"><a href="#services_anchor"><img src="images/icons/arrow_UI.svg" class="arrow" alt="Arrow"></a></div>
                 </div>
-                
                 <!-- BACKGROUND -->
                 <div class="background_section_01">
                     <img src="images/background/FFlogo_BG.svg" id="logo_BG" alt="Blue shape">
                     <img src="images/background/spaceTrail_01.svg" id="ST" alt="Space trail">
-                    <img src="images/background/stars_01.png" id="stars" alt="Stars">
                 </div> 
             </header>
 
@@ -163,57 +233,6 @@
 
                 <!-- Fill center (for hide) -->
                 <div class="fill_transition"></div>
-
-                <!-- Hole -->
-                <div class="hole_content">
-                    <img src="images/background/hole_center.svg" class="hole1" alt="hole">
-                    <img src="images/background/hole_center.svg" class="hole2" alt="hole">
-                    <svg id="border_hole" viewBox="0 0 1920 558.1">
-                        <ellipse fill="#11F2A5" cx="960" cy="279.1" rx="960" ry="279.1"></ellipse>
-                    </svg>
-                </div>
-
-                <!-- Wave background -->
-                <div class="wave_BG_content">
-                    <!-- Wave 01 -->
-                    <div class="wave_BG_01">
-                        <svg viewBox="0 0 1915 500">
-                            <defs>
-                                <linearGradient id="P1-Gradient1" x1="0" x2="0" y1="1" y2="0">
-                                    <stop offset="60%" stop-color="#11F2A5"></stop>
-                                    <stop offset="98%" stop-color="#043B5F"></stop>
-                                </linearGradient>
-                            </defs>
-                            <path fill="url(#P1-Gradient1)" d="M1920,717.6c-58.7-8.4-136.6-22-228.2-35.3c-169.7-25.4-386.7-49.5-608.3-56.1c-221.5-7.6-447.6,2.3-633.4,22.7c-185.9,19.4-331.5,49.3-395.8,57.5c-10.5,1.4-30.6,4.6-54.4,7.6l0-552.5c48.9-41.8,85.1-64.7,128.6-70.6c76.9-9.7,102.5,42.7,159,33.3c61.6-9.8,65.5-77.3,129.4-86.5c84.7-11.9,167.9,92.6,222.4,85.9c45.4-5.3,24.9-79.7,77.3-85.9c66.6-7.5,154.3,102.8,221,99.7c72.9-3.2,75.9-137.7,122.9-137.4c48.9,0.8,65.7,144.1,156.4,152.2c73,7,140.3-78.9,235.1-66.5c86.6,11.9,92.5,92.3,160.1,102.7c85.3,14.2,139.5-105.1,249.2-87.9c17.1,2.6,37.5,10.5,58.7,21.9V717.6z"></path>
-                        </svg>
-                    </div>
-
-                    <!-- Wave 02 -->
-                    <div class="wave_BG_02">
-                        <svg viewBox="0 0 1915 357">
-                            <defs>
-                                <linearGradient id="P1-Gradient2" x1="0" x2="0" y1="1" y2="0">
-                                    <stop offset="65%" stop-color="#00034A"></stop>
-                                    <stop offset="100%" stop-color="#46B38D"></stop>
-                                </linearGradient>
-                            </defs>
-                            <path fill="url(#P1-Gradient2)" d="M0,526.1L0,91.3C38,55,88.3,26.7,136.7,33.2c58.8,8,63.6,60.8,139.1,78c43.8,9.9,81.5,0.4,156.8-18.7c103.8-26.3,107-48.3,149.6-43.5c86.7,9.7,108.7,105.1,163.5,97.6C808.6,138,810.3,8.5,869.8,0.4c64.8-8.8,111.3,138.2,181.2,128.9c48.1-6.4,48.5-79.2,107.5-92.8c54.1-12.5,74.7,43.7,154.4,59.5c105.6,20.9,143.4-63.1,239.4-43c91.3,19.1,91.4,102.4,170.6,114.1c83.4,12.4,146.6-70.4,197.1-105.8l0,463.1L0,526.1z"></path>
-                        </svg>
-                    </div>
-                </div>
-
-                <!-- Glow -->
-                <div class="glow">
-                    <svg viewBox="0 0 1377.8 734.2">
-                        <defs>
-                            <radialGradient  id="P1-Gradient3" cx="0.5" cy="0.5" r="0.5">
-                                <stop offset="0%" stop-color="#46B38D"></stop>
-                                <stop offset="90%" stop-color="#00034A" stop-opacity="0"></stop>
-                            </radialGradient >
-                        </defs>
-                        <ellipse fill="url(#P1-Gradient3)" cx="688.9" cy="367.1" rx="1200" ry="350"></ellipse>
-                    </svg>
-                </div>
 
                 <!-- Wave out -->
                 <div class=wave_out>
