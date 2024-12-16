@@ -6,7 +6,8 @@
     height: calc(810px - 107.5px);
   }
   header #portfolio .mobile_device,
-  header #portfolio .pc_device {
+  header #portfolio .pc_device,
+  header #portfolio .switch_device {
     width: 532px;
     padding-bottom: 266px;
   }
@@ -14,7 +15,8 @@
     height: auto;
   }
   header #portfolio .pc_device,
-  header #portfolio .mobile_device {
+  header #portfolio .mobile_device,
+  header #portfolio .switch_device {
     top: 42%;
   }
   .background_section_03 #big_planet {
@@ -75,7 +77,8 @@
     display: none;
   }
   header #portfolio .mobile_device,
-  header #portfolio .pc_device {
+  header #portfolio .pc_device,
+  header #portfolio .switch_device {
     top: 40%;
     right: 0;
     left: 0;
@@ -247,7 +250,8 @@
     display: inline-block;
   }
   header #portfolio .mobile_device,
-  header #portfolio .pc_device {
+  header #portfolio .pc_device,
+  header #portfolio .switch_device {
     display: none;
   }
   header nav {
