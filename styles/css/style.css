@@ -92,7 +92,7 @@ header #FF_logo2 {
 header nav {
   position: relative;
   float: right;
-  width: 520px;
+  width: 565px;
 }
 header nav ul {
   padding: 0;
@@ -1048,6 +1048,118 @@ header #portfolio .background {
   -webkit-transform: rotate(225deg) translate(10.2em) rotate(-225deg);
   -ms-transform: rotate(225deg) translate(10.2em) rotate(-225deg);
   transform: rotate(225deg) translate(10.2em) rotate(-225deg);
+}
+#projects {
+  background: linear-gradient(-20deg, #000000 -50%, #000126 50%, #000000 150%);
+}
+#projects ul {
+  margin: 0;
+  padding: 0 10%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#projects ul li {
+  position: relative;
+  margin: 4% 0;
+  padding: 0;
+  width: 28%;
+  transition: all cubic-bezier(0.5, -0.53, 0.22, 1.56) 0.3s;
+  cursor: pointer;
+}
+#projects ul li:hover {
+  transform: scale(1.1);
+}
+#projects ul .card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-radius: 75px;
+  overflow: hidden;
+  z-index: 1;
+}
+#projects ul .card_banner {
+  position: relative;
+  width: 100%;
+  height: 24vh;
+}
+#projects ul .card_banner img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+#projects ul .card_content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#projects ul .card_content .card_text {
+  position: relative;
+  text-align: left;
+  padding: 15px 30px 25px;
+}
+#projects ul .card_content h5 {
+  margin: 0;
+  font-family: "RHD-bold";
+  font-size: 1.75em;
+  color: white;
+}
+#projects ul .card_content p {
+  margin: 10px 0 0 0;
+  text-wrap: wrap;
+  font-family: "RHD-medium";
+  font-size: 1em;
+  line-height: 1.1em;
+  color: white;
+}
+#projects ul .card_footer {
+  position: relative;
+  width: fit-content;
+  height: 50px;
+  margin: 0 auto;
+  padding: 0 30px;
+  border-radius: 40px 40px 0 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+#projects ul .card_footer img {
+  display: block;
+  height: 60%;
+  margin: 0 10px;
+}
+#projects ul .card_background {
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  filter: blur(8px) brightness(0.4);
+  z-index: -1;
+  object-fit: cover;
+  object-position: center;
+}
+#projects ul .card_border {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 115%;
+  height: 115%;
+  z-index: -1;
+}
+#projects ul .card_border img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.15;
 }
 #about {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(16%, #14183D), color-stop(42%, #453180), color-stop(70%, #9F6AE0), to(#9756B3));
