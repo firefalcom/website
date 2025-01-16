@@ -19,6 +19,12 @@
   header #portfolio .switch_device {
     top: 42%;
   }
+  #projects .content_section {
+    padding: 26% 4% 25%;
+  }
+  #projects ul {
+    padding: 0 5%;
+  }
   .background_section_03 #big_planet {
     top: calc(-920px + 20vw);
     right: -1180px;
@@ -60,6 +66,13 @@
   }
   header #portfolio .linkMessage p {
     text-wrap: wrap;
+  }
+  #projects .content_section {
+    padding: 320px 4% 25%;
+  }
+  #projects ul li {
+    width: 45%;
+    margin: 6% 0;
   }
 }
 @media (max-width: 1000px) {
@@ -260,6 +273,18 @@
   header nav ul {
     -ms-flex-pack: distribute;
     justify-content: space-around;
+  }
+  #projects .content_section {
+    padding: 320px 4% 40%;
+  }
+  #projects ul {
+    justify-content: center;
+    padding: 0;
+  }
+  #projects ul li {
+    width: 60%;
+    min-width: 350px;
+    margin: 40px 0;
   }
   .content_arrow {
     margin-top: 70px;
@@ -516,6 +541,16 @@
   #fixed_nav p {
     font-size: 0.8em;
   }
+  #projects ul li {
+    width: 80%;
+    min-width: 250px;
+  }
+  #projects ul .card_content h5 {
+    font-size: 1.4em;
+  }
+  #projects ul .card_content p {
+    font-size: 0.8em;
+  }
   #services #our_services li {
     min-width: 0 !important;
     width: 75% !important;
@@ -590,6 +625,10 @@
   }
 }
 @media (max-width: 400px) {
+  #projects ul li {
+    width: 90%;
+    min-width: 150px;
+  }
   #about .title_area h5 {
     font-size: 1.2em !important;
   }
