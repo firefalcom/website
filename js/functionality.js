@@ -199,7 +199,7 @@ function newsTwitter(){
 		setTimeout(
 			function() 
 			{
-				$("#fixed_news .circle").css({ 'background': 'url("images/logos/twitter_white.svg") no-repeat center center / 0%, #1d9bf0' });
+				$("#fixed_news .circle").css({ 'background': 'url("images/logos/X_logo_white.svg") no-repeat center center / 0%, #000000' });
 				$("#fixed_news .circle .bar").css({ "opacity": "1" });
 			}, 500);
 		newsStatus = true;
@@ -211,7 +211,7 @@ function newsTwitter(){
 		setTimeout(
 			function() 
 			{
-				$("#fixed_news .circle").css({ 'background': 'url("images/logos/twitter_white.svg") no-repeat center center / 60%, #1d9bf0' });
+				$("#fixed_news .circle").css({ 'background': 'url("images/logos/X_logo_white.svg") no-repeat center center / 60%, #000000' });
 				$("#fixed_news .circle .bar").css({ "opacity": "0" });
 			}, 500);
 		newsStatus = false;
