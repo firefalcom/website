@@ -23,7 +23,7 @@ if (isFirefox == true || isSafari == true || isEdge == true) {
 else {
 	$(window).on("load", function () {
 		$("[class^='background_section'], #planet, #sun, #city_block").css("transition", "none");
-		scrolltrigger = parseInt($("#services_anchor").offset().top);
+		scrolltrigger = parseInt($("#projects_anchor").offset().top);
 		setup();
 	});
 }

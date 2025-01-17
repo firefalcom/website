@@ -22,9 +22,6 @@
   #projects .content_section {
     padding: 26% 4% 25%;
   }
-  #projects ul {
-    padding: 0 5%;
-  }
   .background_section_03 #big_planet {
     top: calc(-920px + 20vw);
     right: -1180px;
@@ -69,6 +66,9 @@
   }
   #projects .content_section {
     padding: 320px 4% 25%;
+  }
+  #projects ul {
+    width: 90%;
   }
   #projects ul li {
     width: 45%;

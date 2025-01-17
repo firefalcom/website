@@ -614,8 +614,10 @@ header{
     background:linear-gradient(-20deg, #000000 -50%, #000126 50%, #000000 150%);
 
     ul{
-        margin:0;
-        padding:0 15%;
+        margin:0 auto;
+        padding:0;
+        width:100%;
+        max-width: 1140px;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -642,7 +644,7 @@ header{
         .card_banner{
             position: relative;
             width:100%;
-            height:21vh;
+            height:37%;
             img{
                 display: block;
                 width:100%;
@@ -667,7 +669,7 @@ header{
             h5{                
                 margin:0;
                 font-family:"RHD-bold";
-                font-size: 1.75em;
+                font-size: 1.5em;
                 color: white;
             }
             p{
@@ -705,6 +707,7 @@ header{
             width:100%;
             top:0;
             filter: blur(8px) brightness(0.4);
+            transform: scaleY(-1);
             z-index: -1;
             object-fit: cover;
             object-position: center;
