@@ -551,7 +551,7 @@ header #portfolio .background {
   left: 0;
   width: 40px;
   height: 40px;
-  background: url("../../images/logos/twitter_white.svg") no-repeat center center / 60%, #1d9bf0;
+  background: url("../../images/logos/X_logo_white.svg") no-repeat center center / 60%, black;
   border-radius: 50px;
   z-index: 5;
   display: -webkit-box;
