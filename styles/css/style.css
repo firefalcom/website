@@ -715,7 +715,7 @@ header #portfolio .background {
   background: -webkit-gradient(linear, left top, left bottom, from(#30b196), color-stop(33%, #338a7c), color-stop(60%, #113c57), to(#020e12));
   background: -o-linear-gradient(top, #30b196 0%, #338a7c 33%, #113c57 60%, #020e12 100%);
   background: linear-gradient(180deg, #30b196 0%, #338a7c 33%, #113c57 60%, #020e12 100%);
-  top: 0;
+  top: -80px;
 }
 #services #our_services {
   margin-bottom: 80px;
