@@ -391,6 +391,14 @@
     left: -250px;
     transform: translateX(0);
   }
+  header #portfolio #wizard101 {
+    left: -250px;
+    transform: translateX(0);
+  }
+  header #portfolio #wargroove {
+    left: -100px;
+    transform: translateX(0);
+  }
   #services #skills #platform_wheel {
     width: 350px;
   }
