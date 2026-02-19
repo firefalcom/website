@@ -1374,9 +1374,21 @@ header #portfolio .background {
 }
 #clients h5 {
   font-family: "RHD-light";
-  font-size: 1.3em;
+  font-size: 1.0em;
   text-align: center;
   color: white;
+  margin-bottom:0;
+  margin-left:10%;
+  margin-right:10%;
+  font-style:italic;
+}
+#clients h6 {
+  font-family: "RHD-light";
+  font-size: 1.0em;
+  text-align: right;
+  color: white;
+  margin-top:5px;
+  margin-right:10%;
 }
 #clients #list_block {
   position: relative;
