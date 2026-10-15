@@ -6,7 +6,6 @@ const isEdge = !isIE && !!window.StyleMedia;
 
 let scrolltrigger = 0;
 const winheight = $(window).height();
-let newsStatus = false;
 
 // Browser specificities
 if (isFirefox == true || isSafari == true || isEdge == true) {
@@ -102,7 +101,7 @@ function setup() {
 			{
 				currentIndex = numberOfItems - 1;
 			}
-			console.log(currentIndex);
+			// console.log(currentIndex);
 			const currentElement = $portfolioList[currentIndex];
 			setTimeout(() => {
 				$(currentElement).fadeIn(500);
@@ -184,36 +183,3 @@ function setup() {
 		}
 	);
 };
-
-// Twitter info bubble
-function popupInfoBubble(){
-	$(".popup_info_bubble").css({"display": "none"});
-}
-
-// Twitter button
-function newsTwitter(){
-	if (newsStatus == false) {
-		$(".twitterContent").animate({ "bottom": "0" });
-		$("#fixed_news").stop().animate({ "height" : "630px", "width" : "550px" });
-		popupInfoBubble();
-		setTimeout(
-			function() 
-			{
-				$("#fixed_news .circle").css({ 'background': 'url("images/logos/X_logo_white.svg") no-repeat center center / 0%, #000000' });
-				$("#fixed_news .circle .bar").css({ "opacity": "1" });
-			}, 500);
-		newsStatus = true;
-	}
-
-	else {
-		$(".twitterContent").animate({ "bottom" : "-120%" });
-		$("#fixed_news").animate({ "height" : "60px", "width" : "50px" });
-		setTimeout(
-			function() 
-			{
-				$("#fixed_news .circle").css({ 'background': 'url("images/logos/X_logo_white.svg") no-repeat center center / 60%, #000000' });
-				$("#fixed_news .circle .bar").css({ "opacity": "0" });
-			}, 500);
-		newsStatus = false;
-	}
-}
